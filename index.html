@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<title></title>
+	<link rel="canonical" href="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<!--link rel="shortcut icon" href="favicon.ico">-->
+	<link rel="stylesheet" type="text/css" href="inc/css/Jalnan.css">
+	<script src="inc/js/jquery-3.7.0.min.js"></script>
+	<script src="inc/js/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="inc/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/responsive.css">
+	<script>
+	function gnbOpen(){
+		$('.gnb').addClass('active');
+		$('.gnb .dep2_list').show();
+		$('.btn_gnb_open').hide();
+		$('.btn_gnb_close').show();
+	}
+	function gnbClose(){
+		$('.gnb').removeClass('active');
+		$('.gnb .dep2_list').hide();
+		$('.btn_gnb_open').show();
+		$('.btn_gnb_close').hide();
+	}
+	$(function(){
+		//gnb오픈아닐때..등등
+		$('.gnb .dep1_list li a').mouseover(function(){
+			//$('.gnb').addClass('active');
+			$(this).next('.dep2_list').addClass('active');
+		});
+		//$('.gnb .dep1_list li a').mouseleave(function(){
+		$('.gnb').mouseleave(function(){
+			$('.gnb').removeClass('active');
+			//$('.gnb .dep1_list li').children('a').removeClass('on');
+			$('.gnb .dep2_list').removeClass('active');
+		});
+	});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+		<!-- Header -->
+		<header class="header">
+			<h1><a href="#">Seed Learning</a></h1>
+			<div class="search_box">
+				<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." value="" onfocus="">
+				<a href="javascript://" class="btn_search">검색</a>
+			</div>
+			<div class="lang">
+				<a href="#">KOR</a>
+				<a href="#">ENG</a>
+			</div>
+		</header>
+		<!--// Header -->
+		<nav class="gnb">
+			<div class="inner">
+				<button type="button" onclick="javascript:gnbOpen();" class="btn_gnb_open">GNB열기</button>
+				<button type="button" onclick="javascript:gnbClose();" class="btn_gnb_close">GNB닫기</button>
+				<ul class="dep1_list">
+					<li><a href="javascript://">교재 소개</a>
+						<div class="dep2_list">
+							<ul>
+								<li><a href="#">test2</a></li>
+								<li><a href="#">test2</a></li>
+								<li><a href="#">test2</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">학습/수업 자료</a></li>
+					<li><a href="javascript://">온라인 서비스</a>
+						<div class="dep2_list">
+							<ul><li><a href="#">선샤인리딩클럽</a></li></ul>
+						</div>
+					</li>
+					<li><a href="javascript://">고객센터</a>
+						<div class="dep2_list">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">자주하는 질문</a></li>
+								<li><a href="#">1:1문의</a></li>
+								<li><a href="#">구매안내</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="util" data-device="pc">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+				</div>
+			</div>
+		</nav>
+		<nav class="nav_mo" data-device="mo">
+			<div class="lang">
+				<a href="#">KOR</a>
+				<a href="#">ENG</a>
+			</div>
+			<div class="util">
+				<a href="#">로그인</a>
+				<a href="#">회원가입</a>
+			</div>
+			<ul class="link_list">
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+			</ul>
+			<ul class="quick">
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+				<li><a href="#">test</a></li>
+			</ul>
+		</nav>
+		<!-- Content -->
+		<div id="content">
+			<script>
+				$(function(){
+					//배너 슬라이드
+					var swiper = new Swiper('.main_visual', {
+						slidesPerView: 1,
+						loop: false,
+						effect: 'fade',
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+						autoplay: {
+							delay:3000,
+						},
+					});
+				});
+			</script>
+			<section class="swiper-container main_visual">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="inc/images/main_slide.jpg" alt=""></div>
+				</div>
+			</section>
+			<div class="inner">
+				<section>
+					<ul class="menu_list">
+						<li>
+							<a href="#">
+								<strong class="menu_tit">Level Chart</strong>
+								<p class="txt">영역별/레벨별 교재 리스트</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong class="menu_tit">Level Test</strong>
+								<p class="txt">무료 레벨 테스트</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong class="menu_tit">Download</strong>
+								<p class="txt">교재별 부가자료</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong class="menu_tit">Catalog</strong>
+								<p class="txt">씨드러닝 교재 카탈로그</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong class="menu_tit">Offline</strong>
+								<p class="txt">지역별 구매처 안내</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="notice_area">
+					<strong class="tit_notice">NOTICE +</strong>
+					<div>
+						<a href="#">씨드러닝 공지사항</a>
+						<span>2023-05-01</span>
+					</div>
+				</section>
+				<section class="barogagi">
+					<a href="#">
+						<p>SSOCLASS</p>
+						<p>온라인 리딩 프로그램 SRC<br>(Sunshine Reading Club)</p>
+					</a>
+					<a href="#">
+						<p>SEE</p>
+						<p>영어 공부방/교습소/방과후<br>수업자료 및 운영 정보 까페</p>
+					</a>
+				</section>
+			</div>
+		</div>
+		<!--// Content -->
+		<!-- Footer -->
+		<footer>
+			<div class="inner">
+				<div class="top_area">
+					<ul class="nav">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">오시는길</a></li>
+					</ul>
+					<div class="family_site">
+						<a href="#">FAMILY SITE</a>
+						<ul class="sel_fam">
+							<li><a href="#">SSOCLASs</a></li>
+							<li><a href="#">SEE</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p>씨드러닝  (주)대표이사 : 강기철,이재영
+	(13616) 경기도 성남시 분당구 정자일로 1, C동 1813호
+	(금곡동, 코오롱트리폴리스1)
+	Tel : 070-7522-7404 | Fax : 070-8289-7404
+	E-mail : manager@seed-learning.com
+	사업자 등록번호 : 220-87-33426
+	통신판매업신고 : 제2015-경기성남-1064호</p>
+	<p class="copy">&copy; Seed-Learning, Inc. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+		<!--// Footer -->
+	</div>
+	<!--// wrap -->
+</body>
+</html>

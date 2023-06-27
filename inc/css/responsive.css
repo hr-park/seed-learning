@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* reset css */
+html,body{/*min-width:320px;*/margin:0;padding:0;height:100%}
+html{-webkit-text-size-adjust:none;/*Chrome, Safari, newer versions of Opera*/-moz-text-size-adjust:none;/*Firefox*/-ms-text-size-adjust:none;/*Ie*/-o-text-size-adjust:none; /*old versions of Opera*/}
+body{overflow-y:auto;font:14px/1 Noto Sans KR, '돋움', Dotum, 'Apple Gothic', sans-serif;color:#000;letter-spacing:-.02em;}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,tbody,tfoot,thead,th,td{margin:0;padding:0;}
+input,textarea,select,td,th,button{font:14px/1 Noto Sans KR, '돋움', Dotum, 'Apple Gothic', sans-serif;color:#000;vertical-align:middle;font-weight:400;}
+input,textarea,select{color:#000}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+table{width:100%;border-spacing:0;border-collapse:collapse;table-layout:fixed;}
+ol,ul,li{list-style:none;}
+hr, legend, .hidden{position:absolute;top:0;left:-9999px;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%}
+caption{position:relative;visibility:hidden;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%}
+.blind{overflow:hidden;position:absolute;left:-9999px !important;top:-9999px !important}
+img,fieldset{border:0 none;}
+label,button{cursor:pointer;}
+address{font-style:normal;}
+em{font-style:normal;font-weight:700}
+strong{font-weight:normal;}
+a:link,a:visited{color:#000;text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:none;}
+img{vertical-align:top;}
+select {-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0;}
+select::-ms-expand {display:none;}
+input{border-radius:0;}
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=tel],
+textarea{-webkit-appearance:none;appearance:none;box-shadow:0 0;-moz-appearance:textfield;}
+input::placeholder,
+textarea::placeholder{color:#999;}
+input:-ms-input-placeholder{color:#999;}
+textarea:-ms-input-placeholder{color:#999;}
+/*select:focus {outline:none;}*/
+input:focus{outline:none;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+input[type=text]:foucs{border-bottom:1px solid #82308e !important;color:#82308e !important;}
+
+.clearfix:after{content:'';display:block;clear:both;}
+.hide{display:inline-block;text-indent:-9999px;position:absolute;left:-9999px;top:0}
+
+/**/
+.wrap{}
+
