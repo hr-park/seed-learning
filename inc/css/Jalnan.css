@@ -2,10 +2,7 @@
     font-family: 'Jalnan';
     font-weight: normal;
     font-style: normal;
-    src: url('../inc/font/Jalnan/Jalnan.eot');
-    src: url('../inc/font/Jalnan/Jalnan.eot?#iefix') format('embedded-opentype'),
-        url('../inc/font/Jalnan/Jalnan.woff2') format('woff2'),
-        url('../inc/font/Jalnan/Jalnan.woff') format('woff'),
-        url('../inc/font/Jalnan/Jalnan.ttf') format("truetype");
+    src: url('../font/Jalnan/Jalnan.woff') format('woff'),
+		url('../font/Jalnan/Jalnan.woff2') format('woff2');
     font-display: swap;
 }
