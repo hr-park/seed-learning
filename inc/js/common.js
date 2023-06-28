@@ -14,7 +14,7 @@ function gnbCloseMo(){
 }
 
 function gnbOverPc(){
-	if(!$('.gnb.active').length==1){
+	if($('.gnb.active').length==0){
 		$('.gnb .dep1_list > li').mouseover(function(){
 			$(this).find('.dep2_list').addClass('active');
 		});
@@ -48,8 +48,13 @@ $(function(){
 			gnbOverPc();
 		}else{
 			//gnbOverPc();
-			$('.gnb, .gnb .dep1_list li a').off('mouseover mouseleave');
+			$('.gnb, .gnb .dep1_list > li').off('mouseover mouseleave');
 			gnbMo();
 		}
 	}).trigger("resize");
+
+	$('.family_site .btn_family').on('click', function(){
+		$(this).toggleClass('active');
+		$(this).next('.family_list').toggle();
+	});
 });
