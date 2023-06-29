@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/responsive.css">
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
+	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
@@ -32,7 +33,7 @@
 			<div class="top_sch">
 				<h1><a href="#">Seed Learning</a></h1>
 				<div class="search_box">
-					<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." value="" onfocus="">
+					<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." onfocus="">
 					<a href="javascript://" class="btn_search">검색</a>
 				</div>
 				<div class="lang" data-device="pc">
@@ -109,21 +110,21 @@
 		<div id="content">
 			<div class="login_wrap">
 				<div class="sub_tit">
-					<strong>Seed-Learning</strong>
-					<h2>로그인</h2>
+					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
+					<h2 data-i18n="member.login.title"><!-- 로그인 --></h2>
 				</div>
 				<div class="inp_box">
-					<input type="text" id="" name="" placeholder="아이디 또는 이메일을 입력하세요.">
-					<input type="password" id="" name="" placeholder="비밀번호를 입력하세요.">
+					<input type="text" id="" name="" data-i18n="[placeholder]member.login.id-ph">
+					<input type="password" id="" name="" data-i18n="[placeholder]member.login.id-ph">
 				</div>
 				<div class="inp_check">
 					<input type="checkbox" id="keepLogin">
-					<label for="keepLogin">아이디/이메일저장</label>
+					<label for="keepLogin" data-i18n="member.login.save-id"></label>
 				</div>
-				<a href="#" class="btn btn_fill">로그인</a>
+				<a href="#" class="btn btn_fill" data-i18n="member.login.id-ph"><!-- 로그인 --></a>
 				<div class="join_sch">
-					<a href="#" class="btn_join">회원가입</a>
-					<a href="#">아이디/비밀번호 찾기</a>
+					<a href="#" class="btn_join" data-i18n="member.login.join"><!-- 회원가입 --></a>
+					<a href="#" data-i18n="member.login.forget"><!-- 아이디/비밀번호 찾기 --></a>
 				</div>
 			</div>
 		</div>

@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/responsive.css">
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
+	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
@@ -32,7 +33,7 @@
 			<div class="top_sch">
 				<h1><a href="#">Seed Learning</a></h1>
 				<div class="search_box">
-					<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." value="" onfocus="">
+					<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." onfocus="">
 					<a href="javascript://" class="btn_search">검색</a>
 				</div>
 				<div class="lang" data-device="pc">
@@ -120,11 +121,11 @@
 		<div id="content">
 			<div class="join_wrap">
 				<div class="sub_tit">
-					<strong>Seed-Learning</strong>
-					<h2>회원가입</h2>
+					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
+					<h2 data-i18n="member.join.title"><!-- 회원가입 --></h2>
 				</div>
 				<div class="page_nav">
-					<h3>회원가입 정보를 입력해주세요.</h3>
+					<h3 data-i18n="member.joinform.desc-info"><!-- 회원가입 정보를 입력해주세요. --></h3>
 					<div>
 						<span>1</span>
 						<span class="active">2</span>
@@ -133,45 +134,86 @@
 				<div class="join_form">
 					<form>
 						<fieldset>
-							<legend>회원가입 정보 입력</legend>
+							<legend data-i18n="member.joinform.form-title"><!-- 회원가입 정보 입력 --></legend>
 							<div class="input_field">
-								<label for="">이름<span class="required">*</span></label>
+								<label for="" data-i18n="member.joinform.username"><!-- 이름 --><span class="required">*</span></label>
 								<div class="inp_box">
-									<input type="text" id="" placeholder="이름을 입력하세요." name="" value="">
+									<input type="text" id="" data-i18n="[placeholder]member.joinform.username-ph" name="">
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">이메일<span class="required">*</span></label>
+								<label for="" data-i18n="member.joinform.email"><!-- 이메일 --><span class="required">*</span></label>
 								<div class="inp_box">
-									<input type="text" id="" placeholder="아이디로 쓰일 이메일을 입력하세요. 본인 확인 메일을 발송합니다." name="" value="">
-									<a href="#">인증하기</a>
+									<input type="text" id="" data-i18n="[placeholder]member.joinform.email-ph" name="">
+									<a href="#" data-i18n="member.joinform.email-auth"><!-- 인증하기 --></a>
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">이메일<span class="required">*</span></label>
+								<label for="" data-i18n="member.joinform.pwd"><!-- 비밀번호 --><span class="required">*</span></label>
 								<div class="inp_box">
-									<input type="password" id="" placeholder="비밀번호를 입력하세요.(영문, 숫자, 특수문자 조합 8~12자리)" name="" value="">
+									<input type="password" id="" data-i18n="[placeholder]member.joinform.pwd-ph" name="">
 								</div>
 								<div class="inp_box">
-									<input type="password" id="" placeholder="비밀번호를 한 번 더  입력하세요." name="" value="">x
+									<input type="password" id="" data-i18n="[placeholder]member.joinform.pwd-ph2" name="">
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">휴대폰 번호<span class="required">*</span></label>
+								<label for="" data-i18n="[placeholder]member.joinform.phone"><!-- 휴대폰 번호 --><span class="required">*</span></label>
 								<div class="inp_box">
-									<input type="password" id="" placeholder="비밀번호를 입력하세요.(영문, 숫자, 특수문자 조합 8~12자리)" name="" value="">
+									<select class="sel_box">
+										<option value="" selected data-i18n="member.joinform.phone-opt"><!-- 대한민국 +82 --></option>
+										<option>010</option>
+									</select>
 								</div>
 								<div class="inp_box">
-									<input type="password" id="" placeholder="비밀번호를 한 번 더  입력하세요." name="" value="">x
+									<input type="password" id="" ata-i18n="[placeholder]member.joinform.phone-ph" name="">
 								</div>
 							</div>
-
+							<div class="input_field">
+								<label for="" data-i18n="member.joinform.target"><!-- 학습대상연령 <span class='txt_option'>(선택)</span> --></label>
+								<div class="inp_box">
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk1"><!-- 유아 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk2"><!-- 예비초 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk3"><!-- 초등 저학년 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk4"><!-- 초등 고학년 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk5"><!-- 중등 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinform.target-chk6"><!-- 고등 이상 --></label>
+									</span>
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinform.area"><!-- 지역명 <span class="txt_option">(선택)</span> --></label>
+								<div class="inp_box">
+									<select class="sel_box">
+										<option value="" selected data-i18n="member.joinform.area-ph"><!-- 지역명을 선택하세요. --></option>
+										<option>test</option>
+										<option>test</option>
+									</select>
+								</div>
+							</div>
 						</fieldset>
 					</form>
 				</div>
 				<div class="btn_confirm">
-					<a href="#" class="btn btn_disabled">취소</a>
-					<a href="#" class="btn btn_fill">확인</a>
+					<a href="#" class="btn btn_disabled" data-i18n="member.joinform.cancel"></a>><!-- 취소 --></a>
+					<a href="#" class="btn btn_fill" data-i18n="member.joinform.ok"></a>><!-- 확인 --></a>
 				</div>
 			</div>
 		</div>

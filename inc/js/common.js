@@ -32,6 +32,23 @@ function gnbMo(){
 }
 
 $(function(){
+	const lang = "en";
+  	$.i18n.init({
+    	load : 'unspecific',
+      	lng : lang,
+      	fallbackLng : 'en', // 실패할 경우 언어
+      	resGetPath : '/inc/js/messages-ko.json', // 위에서 설정한 lng
+      	useDataAttrOptions : true,
+  	}, function(err, t) {
+		//console.log(err);
+      	//console.log(t);
+		//i18n = t;
+		
+		i18n = $.i18n.t;
+
+		$('html').i18n();
+  	});
+
 	let vh = window.innerHeight * 0.01
 	document.documentElement.style.setProperty('--vh', vh + 'px')
 	$(window).resize(function(){
