@@ -37,7 +37,7 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'en',
-      	resGetPath : 'js/messages-ko.json',
+      	resGetPath : 'messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
