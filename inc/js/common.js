@@ -36,8 +36,8 @@ $(function(){
   	$.i18n.init({
     	load : 'unspecific',
       	lng : lang,
-      	fallbackLng : 'en', // 실패할 경우 언어
-      	resGetPath : '/inc/js/messages-ko.json', // 위에서 설정한 lng
+      	fallbackLng : 'en',
+      	resGetPath : 'js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
