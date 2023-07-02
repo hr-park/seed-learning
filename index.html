@@ -130,7 +130,7 @@
 			<script>
 				$(function(){
 					let swiper = new Swiper('.main_visual', {
-						slidesPerView: 1,
+						slidesPerView: 4,
 						loop: false,
 						effect: 'fade',
 						navigation: {
@@ -152,7 +152,16 @@
 							<img src="inc/images/main_slide.jpg" alt="">
 						</picture>
 					</div>
+					<div class="swiper-slide">
+						<picture>
+							<source media="(max-width:768px)" srcset="inc/images/main_slide_m.jpg">
+							<source media="(min-width:769px)" srcset="inc/images/main_slide.jpg">
+							<img src="inc/images/main_slide.jpg" alt="">
+						</picture>
+					</div>
 				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</section>
 			<div class="inner">
 				<section>
@@ -177,7 +186,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<strong class="menu_tit" data-i18n="main.catalog.txt"><!-- Catalog --></strong>
+								<strong class="menu_tit" data-i18n="main.catalog.tit"><!-- Catalog --></strong>
 								<p class="txt" data-i18n="main.catalog.txt"><!-- 씨드러닝 교재 카탈로그 --></p>
 							</a>
 						</li>

@@ -119,103 +119,165 @@
 		<!--// floating_sns -->
 		<!-- Content -->
 		<div id="content">
-			<div class="join_wrap">
+			<div class="inner">
 				<div class="sub_tit">
-					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
-					<h2 data-i18n="member.join.title"><!-- 회원가입 --></h2>
+					<h2>교재소개</h2>
 				</div>
-				<div class="page_nav">
-					<h3 data-i18n="member.joinform.desc-info"><!-- 회원가입 정보를 입력해주세요. --></h3>
-					<div>
-						<span>1</span>
-						<span class="active">2</span>
+				<div class="sch_type">
+					<div class="type_box">
+						<h3>카테고리</h3>
+						<div class="category_wrap">
+							<!-- -->
+							<span class="inp_category">
+								<input type="checkbox" id="all" />
+								<label for="all">All</label>
+							</span>
+							<!-- -->
+							<span class="inp_category">
+								<input type="checkbox" id="phonics" />
+								<label for="phonics">Phonics</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="coursebook" />
+								<label for="coursebook">Course Book</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="reading" />
+								<label for="reading">Reading</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="readers" />
+								<label for="readers">Readers</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="listening" />
+								<label for="listening">Listening</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="speaking" />
+								<label for="speaking">Speaking</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="writing" />
+								<label for="writing">Writing</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="vocabulary" />
+								<label for="vocabulary">Vocabulary</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="grammar" />
+								<label for="grammar">grammar</label>
+							</span>
+							<span class="inp_category">
+								<input type="checkbox" id="testprep" />
+								<label for="testprep">Test Prep</label>
+							</span>
+						</div>
+					</div>
+					<div class="type_box">
+						<h3>시리즈</h3>
+						<div class="swiper-container series_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/logo.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/logo.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/logo.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/logo.png" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<script>
+							$(function(){
+								let swiper = new Swiper('.series_swiper', {
+									slidesPerView: 4,
+									loop: true,
+									//spaceBetween: 30,
+									//effect: 'fade',
+									navigation: {
+										nextEl: ".swiper-button-next",
+										prevEl: ".swiper-button-prev",
+									},
+								});
+							});
+						</script>
 					</div>
 				</div>
-				<div class="join_form">
-					<form>
-						<fieldset>
-							<legend data-i18n="member.joinform.form-title"><!-- 회원가입 정보 입력 --></legend>
-							<div class="input_field">
-								<label for="" data-i18n="member.joinform.username"><!-- 이름 --><span class="required">*</span></label>
-								<div class="inp_box">
-									<input type="text" id="" data-i18n="[placeholder]member.joinform.username-ph" name="">
+				<div class="book_list_wrap">
+					<p class="txt_result">검색결과 : 24건</p>
+					<ul class="book_list">
+						<!-- -->
+						<li class="item">
+							<a href="#" class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></a>
+							<div class="info">
+								<h3 class="tit">Speaking for Speeches 1(2nd)</h3>
+								<p class="detail">Kindergarten~Grade 1</p>
+								<div class="btns">
+									<a href="#" class="btn_preview">미리보기</a>
+									<a href="#"  class="btn_data">부가자료</a>
 								</div>
 							</div>
-							<div class="input_field">
-								<label for="" data-i18n="member.joinform.email"><!-- 이메일 --><span class="required">*</span></label>
-								<div class="inp_box">
-									<input type="text" id="" data-i18n="[placeholder]member.joinform.email-ph" name="">
-									<a href="#" data-i18n="member.joinform.email-auth"><!-- 인증하기 --></a>
+						</li>
+						<!-- -->
+						<li class="item">
+							<a href="#" class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></a>
+							<div class="info">
+								<h3 class="tit">Speaking for Speeches 1(2nd)</h3>
+								<p class="detail">Kindergarten~Grade 1</p>
+								<div class="btns">
+									<a href="#" class="btn_preview">미리보기</a>
+									<a href="#"  class="btn_data">부가자료</a>
 								</div>
 							</div>
-							<div class="input_field">
-								<label for="" data-i18n="member.joinform.pwd"><!-- 비밀번호 --><span class="required">*</span></label>
-								<div class="inp_box">
-									<input type="password" id="" data-i18n="[placeholder]member.joinform.pwd-ph" name="">
-								</div>
-								<div class="inp_box">
-									<input type="password" id="" data-i18n="[placeholder]member.joinform.pwd-ph2" name="">
-								</div>
-							</div>
-							<div class="input_field">
-								<label for="" data-i18n="[placeholder]member.joinform.phone"><!-- 휴대폰 번호 --><span class="required">*</span></label>
-								<div class="inp_box">
-									<select class="sel_box">
-										<option value="" selected data-i18n="member.joinform.phone-opt"><!-- 대한민국 +82 --></option>
-										<option>010</option>
-									</select>
-								</div>
-								<div class="inp_box">
-									<input type="password" id="" ata-i18n="[placeholder]member.joinform.phone-ph" name="">
+						</li>
+						<li class="item">
+							<a href="#" class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></a>
+							<div class="info">
+								<h3 class="tit">Speaking for Speeches 1(2nd)</h3>
+								<p class="detail">Kindergarten~Grade 1</p>
+								<div class="btns">
+									<a href="#" class="btn_preview">미리보기</a>
+									<a href="#"  class="btn_data">부가자료</a>
 								</div>
 							</div>
-							<div class="input_field">
-								<label for="" data-i18n="member.joinform.target"><!-- 학습대상연령 <span class='txt_option'>(선택)</span> --></label>
-								<div class="inp_box">
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk1"><!-- 유아 --></label>
-									</span>
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk2"><!-- 예비초 --></label>
-									</span>
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk3"><!-- 초등 저학년 --></label>
-									</span>
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk4"><!-- 초등 고학년 --></label>
-									</span>
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk5"><!-- 중등 --></label>
-									</span>
-									<span class="inp_radio">
-										<input type="checkbox" id="">
-										<label for="" data-i18n="member.joinform.target-chk6"><!-- 고등 이상 --></label>
-									</span>
+						</li>
+						<li class="item">
+							<a href="#" class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></a>
+							<div class="info">
+								<h3 class="tit">Speaking for Speeches 1(2nd)</h3>
+								<p class="detail">Kindergarten~Grade 1</p>
+								<div class="btns">
+									<a href="#" class="btn_preview">미리보기</a>
+									<a href="#"  class="btn_data">부가자료</a>
 								</div>
 							</div>
-							<div class="input_field">
-								<label for="" data-i18n="member.joinform.area"><!-- 지역명 <span class="txt_option">(선택)</span> --></label>
-								<div class="inp_box">
-									<select class="sel_box">
-										<option value="" selected data-i18n="member.joinform.area-ph"><!-- 지역명을 선택하세요. --></option>
-										<option>test</option>
-										<option>test</option>
-									</select>
-								</div>
-							</div>
-						</fieldset>
-					</form>
+						</li>
+					</ul>
 				</div>
-				<div class="btn_confirm">
-					<a href="#" class="btn btn_disabled" data-i18n="member.joinform.cancel"></a>><!-- 취소 --></a>
-					<a href="#" class="btn btn_fill" data-i18n="member.joinform.ok"></a>><!-- 확인 --></a>
+				<!-- pagination -->
+				<div class="pagination">
+					<ul>
+						<li><a class="page_first" href="javascript://">처음</a></li>
+						<li><a class="page_prev" href="javascript://">이전</a></li>
+						<li><a class="page_no active" href="javascript://">1</a></li>
+						<li><a class="page_no" href="javascript://">2</a></li>
+						<li><a class="page_no" href="javascript://">3</a></li>
+						<li><a class="page_no" href="javascript://">4</a></li>
+						<li><a class="page_no" href="javascript://">5</a></li>
+						<li><a class="page_next" href="javascript://">다음</a></li>
+						<li><a class="page_last" href="javascript://">마지막</a></li>
+					</ul>
 				</div>
-			</div>
+				<!--// pagination -->
+			</div>	
 		</div>
 		<!--// Content -->
 		<!-- Footer -->
@@ -236,7 +298,7 @@
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div class="txt_box">
 					<!--<p>씨드러닝  (주)대표이사 : 강기철,이재영
 	(13616) 경기도 성남시 분당구 정자일로 1, C동 1813호
 	(금곡동, 코오롱트리폴리스1)

@@ -122,38 +122,94 @@
 			<div class="join_wrap">
 				<div class="sub_tit">
 					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
-					<h2 data-i18n="member.join.title"><!-- 회원가입 --></h2>
+					<h2 data-i18n="member.joinstpe2.title"><!-- 회원가입 --></h2>
 				</div>
 				<div class="page_nav">
-					<h3 data-i18n="member.join.desc-agree"><!-- 서비스 약관에 동의해 주세요. --></h3>
+					<h3 data-i18n="member.joinstpe2.desc-info"><!-- 회원가입 정보를 입력해주세요. --></h3>
 					<div>
-						<span class="active">1</span>
-						<span>2</span>
+						<span class="num">1</span>
+						<span class="num active">2</span>
 					</div>
 				</div>
-				<div class="all_chk">
-					<span class="agree">
-						<input type="checkbox" id="all_agree" name="">
-						<label for="all_agree" data-i18n="member.join.all-agree"><!-- 모두동의 --></label>
-					</span>
-				</div>
-				<div class="chk">
-					<span class="agree">
-						<input type="checkbox" id="terms_agree" name="">
-						<label for="terms_agree" data-i18n="member.join.terms-agree"><!-- [필수] 서비스 이용약관 동의 --></label>
-					</span>
-					<span class="agree">
-						<input type="checkbox" id="privacy_agree" name="">
-						<label for="privacy_agree" data-i18n="member.join.privacy-agree"><!-- [필수] 개인정보처리방침 동의 --></label>
-					</span>
-					<span class="agree">
-						<input type="checkbox" id="marketing_agree" name="">
-						<label for="marketing_agree" data-i18n="member.join.marketing-agree"><!-- [선택] 마케팅 활용 동의 --></label>
-					</span>
+				<div class="join_form">
+					<form>
+						<fieldset>
+							<legend data-i18n="member.joinstpe2.form-title"><!-- 회원가입 정보 입력 --></legend>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.username"><!-- 이름 --><span data-i18n="member.joinstpe2.required"></span></label>								
+								<div class="inp_box">
+									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.username-ph" name="">
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.email"><!-- 이메일 --><span class="required">*</span></label>
+								<div class="inp_box email">
+									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.email-ph" name="">
+									<a href="#" data-i18n="member.joinstpe2.email-auth" class="btn_auth"><!-- 인증하기 --></a>
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.pwd"><!-- 비밀번호 --><span class="required">*</span></label>
+								<div class="inp_box flex_column">
+									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph" name="">
+									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph2" name="">
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.phone"><!-- 휴대폰 번호 --><span class="required">*</span></label>
+								<div class="inp_box col_gap">
+									<select class="sel_box">
+										<option value="" selected data-i18n="member.joinstpe2.phone-opt"><!-- 대한민국 +82 --></option>
+										<option>010</option>
+									</select>
+									<input type="password" id="" ata-i18n="[placeholder]member.joinstpe2.phone-ph" name="">
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.target"><!-- 학습대상연령--><span class="txt_option">(선택)</span></label>
+								<div class="inp_box flex_warp">
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk1"><!-- 유아 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk2"><!-- 예비초 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk3"><!-- 초등 저학년 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk4"><!-- 초등 고학년 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk5"><!-- 중등 --></label>
+									</span>
+									<span class="inp_radio">
+										<input type="checkbox" id="">
+										<label for="" data-i18n="member.joinstpe2.target-chk6"><!-- 고등 이상 --></label>
+									</span>
+								</div>
+							</div>
+							<div class="input_field">
+								<label for="" data-i18n="member.joinstpe2.area"><!-- 지역명 --></label>
+								<div class="inp_box">
+									<select class="sel_box">
+										<option value="" selected data-i18n="member.joinstpe2.area-ph"><!-- 지역명을 선택하세요. --></option>
+										<option>test</option>
+										<option>test</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+					</form>
 				</div>
 				<div class="btn_confirm">
-					<a href="#" class="btn btn_disabled" data-i18n="member.join.cancel"></a>><!-- 취소 --></a>
-					<a href="#" class="btn btn_fill" data-i18n="member.join.ok"></a>><!-- 확인 --></a>
+					<a href="#" class="btn btn_disabled" data-i18n="member.joinstpe2.cancel"></a><!-- 취소 --></a>
+					<a href="#" class="btn btn_fill" data-i18n="member.joinstpe2.ok"></a><!-- 확인 --></a>
 				</div>
 			</div>
 		</div>
@@ -176,7 +232,7 @@
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div class="txt_box">
 					<!--<p>씨드러닝  (주)대표이사 : 강기철,이재영
 	(13616) 경기도 성남시 분당구 정자일로 1, C동 1813호
 	(금곡동, 코오롱트리폴리스1)

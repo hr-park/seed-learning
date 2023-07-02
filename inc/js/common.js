@@ -36,8 +36,8 @@ $(function(){
   	$.i18n.init({
     	load : 'unspecific',
       	lng : lang,
-      	fallbackLng : 'en',
-      	resGetPath : 'messages-ko.json',
+      	fallbackLng : 'en', // ������ ��� ���
+      	resGetPath : '/inc/js/messages-ko.json', // ������ ������ lng
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);

@@ -91,10 +91,10 @@
             "join"              : "회원가입",
             "forget"   : "아이디/비밀번호 찾기"
         },
-        "join" : {
+        "joinstpe1" : {
             "title"              : "회원가입",
             "desc-agree"              : "서비스 약관에 동의해 주세요.",
-            "all-agree"         : "모두 동의",
+            "all-agree"         : "모두 동의합니다.",
             "terms-agree"         : "[필수] 서비스 이용약관 동의",
             "privacy-agree"         : "[필수] 개인정보처리방침 동의",
             "marketing-agree"   : " [선택] 마케팅 활용 동의",
@@ -107,11 +107,12 @@
             "confirm-privacy"   : "개인정보 보호정책에 동의해 주세요.",
             "confirm-marketing" : "마케팅 정보수집 및 이용에 동의해주세요."
         },
-        "joinform" : {
+        "joinstpe2" : {
             "title"              : "회원가입",
             "desc-info"              : "회원가입 정보를 입력해주세요.",
             "form-title"              : "회원가입 정보 입력",
-            "username"          : "이름",
+            "username"             : "이름",
+            "required"          : "<span class='required'>*</span>",
             "username-ph"       : "이름을 입력하세요.",
             "email"             : "이메일",
             "email-ph"          : "아이디로 쓰일 이메일을 입력하세요. 본인 확인 메일을 발송합니다.",
@@ -124,14 +125,14 @@
             "phone"             : "휴대폰 번호",
             "phone-ph"          : "휴대폰 번호를 입력하세요.",
             "phone-opt"          : "대한민국 +82",
-            "target"          : "학습대상연령 <span class='txt_option'>(선택)</span>",
+            "target"          : "학습대상연령",
             "target-chk1"          : "유아",
             "target-chk2"          : "예비초",
             "target-chk3"          : "초등 저학년",
             "target-chk4"          : "초등 고학년",
             "target-chk5"          : "중등",
             "target-chk6"          : "고등 이상",
-            "area"          : "지역명 <span class='txt_option'>(선택)</span>",
+            "area"          : "지역명",
             "area-ph"          : "지역명을 선택하세요.",
 
 
