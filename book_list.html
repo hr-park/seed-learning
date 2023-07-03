@@ -15,7 +15,6 @@
 	<meta property="og:image" content="" />
 	<meta property="og:url" content="" />
 	<!--link rel="shortcut icon" href="favicon.ico">-->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/Jalnan.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
@@ -37,7 +36,7 @@
 					<a href="javascript://" class="btn_search">검색</a>
 				</div>
 				<div class="lang" data-device="pc">
-					<a href="#">KOR</a>
+					<a href="#" class="active">KOR</a>
 					<a href="#">ENG</a>
 				</div>
 				<button type="button" onclick="javascript:gnbOpenMo();" class="btn_gnb" data-device="mo">GNB여닫기</button>
@@ -80,40 +79,42 @@
 			</nav>
 			<nav class="nav_mo" data-device="mo">
 				<div class="lang">
-					<a href="#">KOR</a>
-					<a href="#">ENG</a>
+					<a href="#" data-i18n="header.lang-kor">KOR</a>
+					<a href="#" data-i18n="header.lang-eng">ENG</a>
 				</div>
 				<div class="util">
-					<a href="#">로그인</a>
-					<a href="#">회원가입</a>
+					<a href="#" class="btn_login" data-i18n="header.login">로그인</a>
+					<a href="#" class="btn_join" data-i18n="header.join">회원가입</a>
 				</div>
 				<ul class="link_list">
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
+					<li class="active"><a href="#" data-i18n="header.book-intro.coursebook">Course Book</a></li>
+					<li><a href="#" data-i18n="header.book-intro.reading">Reading</a></li>
+					<li><a href="#" data-i18n="header.book-intro.readers">Readers</a></li>
+					<li><a href="#" data-i18n="header.book-intro.listening">Listening</a></li>
+					<li><a href="#" data-i18n="header.book-intro.writing">Writing</a></li>
+					<li><a href="#" data-i18n="header.book-intro.vocabulary">Vocabulary</a></li>
+					<li><a href="#" data-i18n="header.book-intro.grammar">Grammar</a></li>
+					<li><a href="#" data-i18n="header.book-intro.testprep">Test Prep</a></li>
 				</ul>
-				<ul class="quick">
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
-					<li><a href="#">test</a></li>
+				<ul class="sns_list">
+					<li><a href="#" class="insta" target="_blank" data-i18n="sns.instagram">인스타그램</a></li>
+					<li><a href="#" class="naver" target="_blank" data-i18n="sns.naver">네이버블로그</a></li>
+					<li><a href="#" class="youtube" target="_blank" data-i18n="sns.youtube">유튜브</a></li>
+					<li><a href="#" class="kakao" target="_blank" data-i18n="sns.kakao">카카오채널</a></li>
+					<li><a href="#" class="call" target="_blank" data-i18n="sns.call">전화</a></li>
 				</ul>
-				<button type="button" onclick="gnbCloseMo();" class="btn_close">GNB닫기</button>
+				<button type="button" onclick="gnbCloseMo();" class="btn_close" data-i18n="header.gnb-close">GNB닫기</button>
 			</nav>
 		</header>
 		<!--// Header -->
 		<!-- floating_sns -->
 		<aside class="floating_sns">
 			<ul class="sns">
-                <li><a href="#" target="_blank">인스타그램</a></li>
-				<li><a href="#" target="_blank">네이버블로그</a></li>
-				<li><a href="#" target="_blank">유튜브</a></li>
-				<li><a href="#" target="_blank">카카오채널</a></li>
-				<li><a href="#" target="_blank">전화</a></li>
+                <li><a href="#" class="insta" target="_blank">인스타그램</a></li>
+				<li><a href="#" class="naver" target="_blank">네이버블로그</a></li>
+				<li><a href="#" class="youtube" target="_blank">유튜브</a></li>
+				<li><a href="#" class="kakao" target="_blank">카카오채널</a></li>
+				<li><a href="#" class="call" target="_blank">전화</a></li>
             </ul>
 		</aside>
 		<!--// floating_sns -->

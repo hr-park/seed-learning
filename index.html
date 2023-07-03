@@ -15,7 +15,6 @@
 	<meta property="og:image" content="" />
 	<meta property="og:url" content="" />
 	<!--link rel="shortcut icon" href="favicon.ico">-->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/Jalnan.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
@@ -87,7 +86,7 @@
 			<nav class="nav_mo" data-device="mo">
 				<div class="lang">
 					<a href="#" data-i18n="header.lang-kor"><!--KOR--></a>
-					<a href="#" data-i18n="header.lang-eng"><!--ENG--></a>
+					<a href="#" class="active" data-i18n="header.lang-eng"><!--ENG--></a>
 				</div>
 				<div class="util">
 					<a href="#" data-i18n="header.login"><!--로그인--></a>
@@ -116,7 +115,7 @@
 		<!--// Header -->
 		<!-- floating_sns -->
 		<aside class="floating_sns">
-			<ul class="sns_list">
+			<ul class="sns">
                 <li><a href="#" target="_blank" data-i18n="sns.instagram"><!--인스타그램--></a></li>
 				<li><a href="#" target="_blank" data-i18n="sns.naver"><!--네이버블로그--></a></li>
 				<li><a href="#" target="_blank" data-i18n="sns.youtube"><!--유튜브--></a></li>
@@ -147,16 +146,16 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<picture>
-							<source media="(max-width:768px)" srcset="inc/images/main_slide_m.jpg">
-							<source media="(min-width:769px)" srcset="inc/images/main_slide.jpg">
-							<img src="inc/images/main_slide.jpg" alt="">
+							<source media="(max-width:768px)" srcset="inc/images/main/main_slide_m.jpg">
+							<source media="(min-width:769px)" srcset="inc/images/main/main_slide.jpg">
+							<img src="inc/images/main/main_slide.jpg" alt="">
 						</picture>
 					</div>
 					<div class="swiper-slide">
 						<picture>
-							<source media="(max-width:768px)" srcset="inc/images/main_slide_m.jpg">
-							<source media="(min-width:769px)" srcset="inc/images/main_slide.jpg">
-							<img src="inc/images/main_slide.jpg" alt="">
+							<source media="(max-width:768px)" srcset="inc/images/main/main_slide_m.jpg">
+							<source media="(min-width:769px)" srcset="inc/images/main/main_slide.jpg">
+							<img src="inc/images/main/main_slide.jpg" alt="">
 						</picture>
 					</div>
 				</div>
@@ -166,31 +165,31 @@
 			<div class="inner">
 				<section>
 					<ul class="menu_list">
-						<li>
+						<li class="lv_chart">
 							<a href="#">
 								<strong class="menu_tit" data-i18n="main.levelchart.tit"><!-- Level Chart --></strong>
 								<p class="txt" data-i18n="main.levelchart.txt"><!-- 영역별/레벨별 교재 리스트 --></p>
 							</a>
 						</li>
-						<li>
+						<li class="lv_test">
 							<a href="#">
 								<strong class="menu_tit" data-i18n="main.leveltest.tit"><!-- Level Test --></strong>
 								<p class="txt" data-i18n="main.leveltest.txt"><!-- 무료 레벨 테스트 --></p>
 							</a>
 						</li>
-						<li>
+						<li class="download">
 							<a href="#">
 								<strong class="menu_tit" data-i18n="main.download.tit"><!-- Download --></strong>
 								<p class="txt" data-i18n="main.download.txt"><!-- 교재별 부가자료 --></p>
 							</a>
 						</li>
-						<li>
+						<li class="catalog">
 							<a href="#">
 								<strong class="menu_tit" data-i18n="main.catalog.tit"><!-- Catalog --></strong>
 								<p class="txt" data-i18n="main.catalog.txt"><!-- 씨드러닝 교재 카탈로그 --></p>
 							</a>
 						</li>
-						<li>
+						<li class="offline">
 							<a href="#">
 								<strong class="menu_tit" data-i18n="main.offline.tit"><!-- Offline --></strong>
 								<p class="txt" data-i18n="main.offline.txt"><!-- 지역별 구매처 안내 --></p>
