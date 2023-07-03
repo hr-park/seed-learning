@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OneMobileTitle';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/OneMobileTitle/OneMobileTitleRegular.woff2') format('woff2'),
+        url('../font/OneMobileTitle/OneMobileTitleRegular.woff') format('woff'),
+        url('../font/OneMobileTitle/OneMobileTitleRegular.ttf') format("truetype");
+    font-display: swap;
+}

@@ -16,9 +16,11 @@ function gnbCloseMo(){
 function gnbOverPc(){
 	if($('.gnb.active').length==0){
 		$('.gnb .dep1_list > li').mouseover(function(){
+			$(this).addClass('active');
 			$(this).find('.dep2_list').addClass('active');
 		});
 		$('.gnb .dep1_list > li').mouseleave(function(){
+			$(this).removeClass('active');
 			$('.gnb .dep2_list').removeClass('active');
 		});
 	}
@@ -36,8 +38,8 @@ $(function(){
   	$.i18n.init({
     	load : 'unspecific',
       	lng : lang,
-      	fallbackLng : 'en', // ������ ��� ���
-      	resGetPath : '/inc/js/messages-ko.json', // ������ ������ lng
+      	fallbackLng : 'en',
+      	resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
