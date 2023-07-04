@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<title></title>
+	<link rel="canonical" href="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<!--link rel="shortcut icon" href="favicon.ico">-->
+	<link rel="stylesheet" type="text/css" href="inc/css/Jalnan.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/style.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/responsive.css">
+	<script src="inc/js/jquery-3.7.0.min.js"></script>
+	<script src="inc/js/i18next-1.11.2.min.js"></script>
+	<script src="inc/js/swiper-bundle.min.js"></script>
+	<script src="inc/js/common.js"></script>
+	<script>
+		function includeHTML() {
+		  var z, i, elmnt, file, xhttp;
+		  /* Loop through a collection of all HTML elements: */
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+			elmnt = z[i];
+			/*search for elements with a certain atrribute:*/
+			file = elmnt.getAttribute("w3-include-html");
+			if (file) {
+			  /* Make an HTTP request using the attribute value as the file name: */
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4) {
+				  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				  /* Remove the attribute, and call this function once more: */
+				  elmnt.removeAttribute("w3-include-html");
+				  includeHTML();
+				}
+			  }
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /* Exit the function: */
+			  return;
+			}
+		  }
+		}
+		includeHTML();
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+		<!-- Header -->
+		<div w3-include-html="layout/header.html"></div>
+		<!--// Header -->
+		<!-- floating_sns -->
+		<aside class="floating_sns">
+			<ul class="sns">
+				<li><a href="#" class="insta" target="_blank">인스타그램</a></li>
+				<li><a href="#" class="naver" target="_blank">네이버블로그</a></li>
+				<li><a href="#" class="youtube" target="_blank">유튜브</a></li>
+				<li><a href="#" class="kakao" target="_blank">카카오채널</a></li>
+				<li><a href="#" class="call" target="_blank">전화</a></li>
+			</ul>
+		</aside>
+		<!--// floating_sns -->
+		<!-- Content -->
+		<section id="content" style="height:500px">
+			
+		</section>
+		<!--// Content -->
+		<!-- Footer -->
+		<footer>
+			<div class="inner">
+				<div class="top_area">
+					<ul class="nav">
+						<li><a href="#" data-i18n="footer.about"><!--회사소개--></a></li>
+						<li><a href="#" data-i18n="footer.privacy"><!--개인정보처리방침--></a></li>
+						<li><a href="#" data-i18n="footer.terms"><!--이용약관--></a></li>
+						<li><a href="#" data-i18n="footer.ocation"><!--오시는길--></a></li>
+					</ul>
+					<div class="family_site">
+						<a href="javascript://" class="btn_family" data-i18n="footer.family-site"><!--FAMILY SITE--></a>
+						<ul class="family_list">
+							<li><a href="#" data-i18n="footer.site-ssoclass"><!--SSOCLASs--></a></li>
+							<li><a href="#" data-i18n="footer.site-see"><!--SEE--></a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p></p>
+					<p class="copy" data-i18n="footer.copyright"><!--&copy; Seed-Learning, Inc. All Rights Reserved--></p>
+				</div>
+			</div>
+		</footer>
+		<!--// Footer -->
+	</div>
+	<!--// wrap -->
+</body>
+</html>
