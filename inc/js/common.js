@@ -1,9 +1,16 @@
+/*퍼블용*/
+$(document).ready( function() {
+	$("#header_wrap").load("./inc/layout/header.html");
+	$("#floating_wrap").load("./inc/layout/floating_sns.html");
+	$("#footer_wrap").load("./inc/layout/footer.html");
+});
+/*퍼블용*/
+
 function gnbTogglePc(){
 	$('.gnb').toggleClass('active');
 	$('.gnb .dep2_list').toggle();
 	$('.gnb .btn_gnb').toggleClass('active');
 }
-
 
 function gnbOpenMo(){
 	$('.nav_mo').addClass('active');

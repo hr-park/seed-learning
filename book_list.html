@@ -27,97 +27,12 @@
 <body>
 	<!-- wrap -->
 	<div class="wrap">
-		<!-- Header -->
-		<header class="header">
-			<div class="top_sch">
-				<h1><a href="#">Seed Learning</a></h1>
-				<div class="search_box">
-					<input type="text" name="schKeyword" id="schKeyword" placeholder="교재/자료명을 입력해주세요." onfocus="">
-					<a href="javascript://" class="btn_search">검색</a>
-				</div>
-				<div class="lang" data-device="pc">
-					<a href="#" class="active">KOR</a>
-					<a href="#">ENG</a>
-				</div>
-				<button type="button" onclick="javascript:gnbOpenMo();" class="btn_gnb" data-device="mo">GNB여닫기</button>
-			</div>
-			<nav class="gnb">
-				<div class="gnb_inner">
-					<button type="button" onclick="javascript:gnbTogglePc();" class="btn_gnb" data-device="pc">GNB여닫기</button>
-					<ul class="dep1_list">
-						<li><a href="javascript://">교재 소개</a>
-							<div class="dep2_list">
-								<ul>
-									<li><a href="#">test2</a></li>
-									<li><a href="#">test2</a></li>
-									<li><a href="#">test2</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#">학습/수업 자료</a></li>
-						<li><a href="javascript://">온라인 서비스</a>
-							<div class="dep2_list">
-								<ul><li><a href="#">선샤인리딩클럽</a></li></ul>
-							</div>
-						</li>
-						<li><a href="javascript://">고객센터</a>
-							<div class="dep2_list">
-								<ul>
-									<li><a href="#">공지사항</a></li>
-									<li><a href="#">자주하는 질문</a></li>
-									<li><a href="#">1:1문의</a></li>
-									<li><a href="#">구매안내</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-					<div class="util" data-device="pc">
-						<a href="#">로그인</a>
-						<a href="#">회원가입</a>
-					</div>
-				</div>
-			</nav>
-			<nav class="nav_mo" data-device="mo">
-				<div class="lang">
-					<a href="#" data-i18n="header.lang-kor">KOR</a>
-					<a href="#" data-i18n="header.lang-eng">ENG</a>
-				</div>
-				<div class="util">
-					<a href="#" class="btn_login" data-i18n="header.login">로그인</a>
-					<a href="#" class="btn_join" data-i18n="header.join">회원가입</a>
-				</div>
-				<ul class="link_list">
-					<li class="active"><a href="#" data-i18n="header.book-intro.coursebook">Course Book</a></li>
-					<li><a href="#" data-i18n="header.book-intro.reading">Reading</a></li>
-					<li><a href="#" data-i18n="header.book-intro.readers">Readers</a></li>
-					<li><a href="#" data-i18n="header.book-intro.listening">Listening</a></li>
-					<li><a href="#" data-i18n="header.book-intro.writing">Writing</a></li>
-					<li><a href="#" data-i18n="header.book-intro.vocabulary">Vocabulary</a></li>
-					<li><a href="#" data-i18n="header.book-intro.grammar">Grammar</a></li>
-					<li><a href="#" data-i18n="header.book-intro.testprep">Test Prep</a></li>
-				</ul>
-				<ul class="sns_list">
-					<li><a href="#" class="insta" target="_blank" data-i18n="sns.instagram">인스타그램</a></li>
-					<li><a href="#" class="naver" target="_blank" data-i18n="sns.naver">네이버블로그</a></li>
-					<li><a href="#" class="youtube" target="_blank" data-i18n="sns.youtube">유튜브</a></li>
-					<li><a href="#" class="kakao" target="_blank" data-i18n="sns.kakao">카카오채널</a></li>
-					<li><a href="#" class="call" target="_blank" data-i18n="sns.call">전화</a></li>
-				</ul>
-				<button type="button" onclick="gnbCloseMo();" class="btn_close" data-i18n="header.gnb-close">GNB닫기</button>
-			</nav>
-		</header>
-		<!--// Header -->
-		<!-- floating_sns -->
-		<aside class="floating_sns">
-			<ul class="sns">
-                <li><a href="#" class="insta" target="_blank">인스타그램</a></li>
-				<li><a href="#" class="naver" target="_blank">네이버블로그</a></li>
-				<li><a href="#" class="youtube" target="_blank">유튜브</a></li>
-				<li><a href="#" class="kakao" target="_blank">카카오채널</a></li>
-				<li><a href="#" class="call" target="_blank">전화</a></li>
-            </ul>
-		</aside>
-		<!--// floating_sns -->
+		<!-- [include] header -->
+		<div id="header_wrap"></div>
+		<!-- //[include] header -->
+		<!-- [include] floating_sns -->
+		<div id="floating_wrap"></div>
+		<!-- //[include] floating_sns -->
 		<!-- Content -->
 		<div id="content">
 			<div class="inner">
@@ -281,37 +196,9 @@
 			</div>	
 		</div>
 		<!--// Content -->
-		<!-- Footer -->
-		<footer>
-			<div class="inner">
-				<div class="top_area">
-					<ul class="nav">
-						<li><a href="#">회사소개</a></li>
-						<li><a href="#">개인정보처리방침</a></li>
-						<li><a href="#">이용약관</a></li>
-						<li><a href="#">오시는길</a></li>
-					</ul>
-					<div class="family_site">
-						<a href="javascript://" class="btn_family">FAMILY SITE</a>
-						<ul class="family_list">
-							<li><a href="#">SSOCLASs</a></li>
-							<li><a href="#">SEE</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="txt_box">
-					<!--<p>씨드러닝  (주)대표이사 : 강기철,이재영
-	(13616) 경기도 성남시 분당구 정자일로 1, C동 1813호
-	(금곡동, 코오롱트리폴리스1)
-	Tel : 070-7522-7404 | Fax : 070-8289-7404
-	E-mail : manager@seed-learning.com
-	사업자 등록번호 : 220-87-33426
-	통신판매업신고 : 제2015-경기성남-1064호</p>-->
-	<p class="copy">&copy; Seed-Learning, Inc. All Rights Reserved</p>
-				</div>
-			</div>
-		</footer>
-		<!--// Footer -->
+		<!-- [include] footer -->
+		<div id="footer_wrap"></div>
+		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
 </body>
