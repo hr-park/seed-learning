@@ -41,12 +41,13 @@ function gnbMo(){
 }
 
 $(function(){
-	const lang = "en";
+	var lang = "ko";
   	$.i18n.init({
     	load : 'unspecific',
       	lng : lang,
-      	fallbackLng : 'en',
-      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+      	fallbackLng : 'ko',
+      	//resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+		resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);

@@ -206,6 +206,54 @@
         }
     },
 
+    "bookintro": {
+        "tit"     : "교재소개",
+        "category": {
+            "title"             : "카테고리",
+            "all"             : "All",
+            "phonics"             : "Phonics",
+            "coursebook"     : "Course Book",
+            "reading"     : "Reading",
+            "readers"     : "Readers",
+            "listening"     : "Listening",
+            "speaking"     : "Speaking",
+            "writing"     : "Writing",
+            "vocabulary"     : "Vocabulary",
+            "grammar"     : "Grammar",
+            "testprep"     : "Test Prep" 
+        },
+        "series-tit"        : "시리즈",
+        "search-result"        : "검색결과 :  <strong>24</strong>건",
+        "btn-preview"        : "미리보기",
+        "btn-data"        : "부가자료"
+    },
+
+    "bookdetail": {
+        "tit"     : "교재소개",
+        "btn-preview"        : "미리보기",
+        "btn_data"        : "부가자료",
+
+        "target"        : "학습대상",
+        "deft"        : "CEFR",
+        "isbn"        : "ISBN",
+        "spec"        : "사양",
+        "setup"        : "구성",
+        "price"        : "정가",
+        "purchase"        : "구매하기",
+        "series-tit"        : "시리즈",
+        "related-tit"        : "관련 도서",
+        "book-detail"        : "도서상세",
+        "data"        : "부가자료",
+        "data-download"        : "학습 부가자료 다운로드"
+    },
+
+    "pagination": {
+        "first"        : "처음",
+        "prev"        : "이전",
+        "next"        : "다음",
+        "last"        : "마지막"
+    },
+
     "findpwd": {
         "title"                 : "비밀번호 찾기",
         "message"               : "가입시 등록한 이메일 주소를 입력하시면, 이메일로 비밀번호 변경 링크를 보내드립니다.<br />비밀번호 변경 링크를 통해 비밀번호를 변경하시고 로그인해주세요.",
