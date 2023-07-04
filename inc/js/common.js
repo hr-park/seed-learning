@@ -39,7 +39,7 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'en',
-      	resGetPath : '/inc/js/messages-ko.json',
+      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
