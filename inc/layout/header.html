@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header">
 	<div class="top_sch">
-		<h1><a href="#" data-i18n="header.logo"><!-- Seed Learning --></a></h1>
+		<h1><a href="#"><img src="inc/images/logo.png" data-i18n="[alt]header.logo"></a></h1>
 		<div class="search_box">
 			<input type="text" name="schKeyword" id="schKeyword" data-i18n="[placeholder]header.search-ph"><!-- 교재/자료명을 입력해주세요. -->
 			<a href="javascript://" class="btn_search" data-i18n="header.search"><!--검색--></a>
@@ -19,6 +19,7 @@
 				<li><a href="javascript://" data-i18n="header.book-intro.tit"><!--교재 소개--></a>
 					<div class="dep2_list">
 						<ul>
+							<li><a href="#" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
 							<li><a href="#" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
 							<li><a href="#" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
 							<li><a href="#" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
@@ -63,6 +64,7 @@
 			<a href="#" data-i18n="header.join"><!--회원가입--></a>
 		</div>
 		<ul class="link_list">
+			<li class="active"><a href="#" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
 			<li><a href="#" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
 			<li><a href="#" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
 			<li><a href="#" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
@@ -73,11 +75,11 @@
 			<li><a href="#" data-i18n="header.book-intro.testprep"><!--Test Prep--></a></li>
 		</ul>
 		<ul class="sns_list">
-			<li><a href="#" target="_blank" data-i18n="sns.instagram"><!--인스타그램--></a></li>
-			<li><a href="#" target="_blank" data-i18n="sns.naver"><!--네이버블로그--></a></li>
-			<li><a href="#" target="_blank" data-i18n="sns.youtube"><!--유튜브--></a></li>
-			<li><a href="#" target="_blank" data-i18n="sns.kakao"><!--카카오채널--></a></li>
-			<li><a href="#" target="_blank" data-i18n="sns.call"><!--전화--></a></li>
+			<li><a href="#" class="insta" target="_blank" data-i18n="sns.instagram"><!--인스타그램--></a></li>
+			<li><a href="#" class="naver" target="_blank" data-i18n="sns.naver"><!--네이버블로그--></a></li>
+			<li><a href="#" class="youtube" target="_blank" data-i18n="sns.youtube"><!--유튜브--></a></li>
+			<li><a href="#" class="kakao" target="_blank" data-i18n="sns.kakao"><!--카카오채널--></a></li>
+			<li><a href="#" class="call" target="_blank" data-i18n="sns.call"><!--전화--></a></li>
 		</ul>
 		<button type="button" onclick="gnbCloseMo();" class="btn_close" data-i18n="header.gnb-close"><!--GNB닫기--></button>
 	</nav>
@@ -125,7 +127,7 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'en',
-      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+      	resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);

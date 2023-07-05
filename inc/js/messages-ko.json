@@ -9,6 +9,7 @@
         "gnb-close"       : "GNB닫기",
         "book-intro": {
             "tit"     : "교재 소개",
+            "phonics"     : "Phonics",
             "coursebook"     : "Course Book",
             "reading"     : "Reading",
             "readers"     : "Readers",
