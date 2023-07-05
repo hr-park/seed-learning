@@ -21,9 +21,9 @@
 /* reset css */
 html,body{/*min-width:320px;*/margin:0;padding:0;height:100%}
 html{-webkit-text-size-adjust:none;/*Chrome, Safari, newer versions of Opera*/-moz-text-size-adjust:none;/*Firefox*/-ms-text-size-adjust:none;/*Ie*/-o-text-size-adjust:none; /*old versions of Opera*/}
-body{overflow-y:auto;font-size:14px;font-family:Pretendard, '?��???', Dotum, 'Apple Gothic', sans-serif;color:#333;letter-spacing:-.02em;}
+body{overflow-y:auto;font-size:14px;font-family:Pretendard, '돋움', Dotum, 'Apple Gothic', sans-serif;color:#333;letter-spacing:-.02em;}
 dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,tbody,tfoot,thead,th,td{margin:0;padding:0;}
-input,textarea,select,td,th,button{font:14px/1 Pretendard, '?��???', Dotum, 'Apple Gothic', sans-serif;color:#333;vertical-align:middle;font-weight:400;}
+input,textarea,select,td,th,button{font:14px/1 Pretendard, '돋움', Dotum, 'Apple Gothic', sans-serif;color:#333;vertical-align:middle;font-weight:400;}
 input,textarea,select{color:#000}
 h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
 table{width:100%;border-spacing:0;border-collapse:collapse;table-layout:fixed;}
