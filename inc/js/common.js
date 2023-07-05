@@ -1,10 +1,10 @@
-/*ÆÛºí¿ë*/
+/*ï¿½Ûºï¿½ï¿½ï¿½*/
 $(document).ready( function() {
 	$("#header_wrap").load("./inc/layout/header.html");
 	$("#floating_wrap").load("./inc/layout/floating_sns.html");
 	$("#footer_wrap").load("./inc/layout/footer.html");
 });
-/*ÆÛºí¿ë*/
+/*ï¿½Ûºï¿½ï¿½ï¿½*/
 
 function gnbTogglePc(){
 	$('.gnb').toggleClass('active');
@@ -46,8 +46,8 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'ko',
-      	//resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
-		resGetPath : '/inc/js/messages-ko.json',
+      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+		//resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
