@@ -6,10 +6,10 @@
 			<input type="text" name="schKeyword" id="schKeyword" data-i18n="[placeholder]header.search-ph"><!-- 교재/자료명을 입력해주세요. -->
 			<a href="javascript://" class="btn_search" data-i18n="header.search"><!--검색--></a>
 		</div>
-		<div class="lang" data-device="pc">
-			<a href="#" class="active" data-i18n="header.lang-kor"><!--KOR--></a>
-			<a href="#" data-i18n="header.lang-eng"><!--ENG--></a>
-		</div>
+		<ul class="lang" data-device="pc">
+			<li><a href="#" class="active" data-i18n="header.lang-kor"><!--KOR--></a></li>
+			<li><a href="#" data-i18n="header.lang-eng"><!--ENG--></a></li>
+		</ul>
 		<button type="button" onclick="javascript:gnbOpenMo();" class="btn_gnb" data-device="mo" data-i18n="header.gnb-toggle"><!--GNB여닫기--></button>
 	</div>
 	<nav class="gnb">
@@ -55,10 +55,10 @@
 		</div>
 	</nav>
 	<nav class="nav_mo" data-device="mo">
-		<div class="lang">
-			<a href="#" data-i18n="header.lang-kor"><!--KOR--></a>
-			<a href="#" class="active" data-i18n="header.lang-eng"><!--ENG--></a>
-		</div>
+		<ul class="lang">
+			<li><a href="#" data-i18n="header.lang-kor"><!--KOR--></a></li>
+			<li><a href="#" class="active" data-i18n="header.lang-eng"><!--ENG--></a></li>
+		</ul>
 		<div class="util">
 			<a href="#" data-i18n="header.login"><!--로그인--></a>
 			<a href="#" data-i18n="header.join"><!--회원가입--></a>
