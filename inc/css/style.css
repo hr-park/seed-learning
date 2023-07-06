@@ -310,6 +310,7 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 @media screen and (max-width:768px){
 	body{font-size:12px}
 	#content{padding:40px 0 60px 0;}
+	#content.main{padding:0 0 50px 0}
 
 	.inner{max-width:100%;padding:0 10px;}
 	[data-device="pc"]{display:none !important}
