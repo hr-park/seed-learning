@@ -1,6 +1,6 @@
 {
     "header": {
-        "logo"               : "test",
+        "logo"               : "Seed-Learning",
         "search"               : "검색",
         "search-ph"               : "교재/자료명을 입력해주세요.",
         "lang-kor"               : "KOR",
@@ -98,7 +98,7 @@
             "all-agree"         : "모두 동의합니다.",
             "terms-agree"         : "[필수] 서비스 이용약관 동의",
             "privacy-agree"         : "[필수] 개인정보처리방침 동의",
-            "marketing-agree"   : " [선택] 마케팅 활용 동의",
+            "marketing-agree"   : "[선택] 마케팅 활용 동의",
             "cancel"            : "취소",
             "ok"                : "확인",
 
