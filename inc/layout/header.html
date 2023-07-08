@@ -116,23 +116,6 @@ const nav = {
 	//init
 	init: function () {
 		var windowWidth = window.innerWidth;
-		//pc 전체메뉴 여닫기
-		$(document).on('click', '.gnb .btn_all_menu', function () {
-			if(!$(this).hasClass('active')){
-				nav.openNavPc();
-			}else{
-				nav.closeNavPc();
-			}
-		});
-		//mo 전체메뉴 열기
-		$(document).on('click', '.top_sch .btn_gnb', function () {
-			nav.openNavMo();
-		});
-		//mo 전체메뉴 닫기
-		$(document).on('click', '.nav_mo .btn_close, .dim', function () {
-			nav.closeNavMo();
-		});
-
 		//pc mouse over
 		if (windowWidth > 767) {
 			$('body').on('mouseenter focusin', '.gnb .dep1_list > li', function (e) {
@@ -145,7 +128,8 @@ const nav = {
 					$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
 					$('.gnb').addClass('nav_hover');
 					$(this).addClass('active');
-					$(this).find('.dep2_list').stop().slideDown('fast');
+					//$(this).find('.dep2_list').stop().slideDown('fast');
+					$(this).find('.dep2_list').show();
 				}
 			});
 
@@ -153,15 +137,19 @@ const nav = {
 				if(!$('.gnb').hasClass('nav_all_opened')){
 					$('.gnb').removeClass('nav_hover');
 					$(this).removeClass('active');
-					$(this).find('.dep2_list').stop().slideUp('fast');
+					//$(this).find('.dep2_list').stop().slideUp('fast');
+					$(this).find('.dep2_list').hide();
 				}
 			});
 		//mo
 		} else {
 			$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
-
+			//활성화 해제
 			$('.gnb.nav_all_opened').removeClass('nav_all_opened');
 			$('.gnb.nav_hover').removeClass('nav_hover');
+			$('.dep2_list').hide();
+			$('.btn_all_menu.active').removeClass('active');
+			//활성화 해제
 
 			$('body').on('click', '.gnb .dep1_list > li > a.has_depth', function (e) {
 				e.stopImmediatePropagation();
@@ -179,6 +167,23 @@ const nav = {
 $(function(){
 	nav.init();
 
+	//pc 전체메뉴 여닫기
+	$(document).on('click', '.gnb .btn_all_menu', function () {
+		if(!$(this).hasClass('active')){
+			nav.openNavPc();
+		}else{
+			nav.closeNavPc();
+		}
+	});
+	//mo 전체메뉴 열기
+	$(document).on('click', '.top_sch .btn_gnb', function () {
+		nav.openNavMo();
+	});
+	//mo 전체메뉴 닫기
+	$(document).on('click', '.nav_mo .btn_close, .dim', function () {
+		nav.closeNavMo();
+	});
+
 	$(window).on("resize", function() {
 		nav.init();
 	});
@@ -188,8 +193,8 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'ko',
-      	//resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
-		resGetPath : '/inc/js/messages-ko.json',
+      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+		//resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
