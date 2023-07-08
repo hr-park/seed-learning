@@ -6,6 +6,7 @@
         "lang-kor"               : "KOR",
         "lang-eng"               : "ENG",
         "gnb-toggle"       : "GNB여닫기",
+        "gnb-open"       : "GNB열기",
         "gnb-close"       : "GNB닫기",
         "book-intro": {
             "tit"     : "교재 소개",
