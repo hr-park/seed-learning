@@ -44,14 +44,22 @@
 				</div>
 				<div class="book_datail">
 					<div class="detail_top">
-						<div>
+						<div class="img_area">
 							<span class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></span>
-							<a href="" class="btn_preview">미리보기</a>
-							<a href="" class="btn_data">부가자료</a>
+							<div class="btns" data-device="pc">
+								<a href="#" class="btn_preview">미리보기</a>
+								<a href="#" class="btn_data">부가자료</a>
+							</div>
 						</div>
-						<div>
-							<strong>Speaking</strong>
-							<h3 class="book_name">Speaking for Speeches 1</h3>
+						<div class="info_area">
+							<div class="tit_box">
+								<strong class="type">Speaking</strong>
+								<h3 class="book_name">Speaking for Speeches 1</h3>
+								<div class="btns" data-device="mo">
+									<a href="#" class="btn_preview">미리보기</a>
+									<a href="#" class="btn_data">부가자료</a>
+								</div>
+							</div>
 							<dl>
 								<dt>학습대상</dt>
 								<dd>초등 고학년 (영어학습 3~4년차)</dd>
@@ -64,84 +72,148 @@
 								<dt>구성</dt>
 								<dd>-</dd>
 								<dt>정가</dt>
-								<dd><em>16,000</em>원</dd>
+								<dd><em class="price">16,000</em>원</dd>
 							</dl>
-							<a href="" class="btn_buy">구매하기</a>
 						</div>
 					</div>
-				</div>
-				<div class="related_wrap">					
-					<div class="swiper-container series_swiper">
-						<strong>시리즈</strong>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+					<div class="related_wrap">
+						<div class="swiper-container series_swiper" data-device="pc">
+							<strong class="tit">시리즈</strong>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
 							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-					<script>
-						$(function(){
-							let swiper1 = new Swiper('.series_swiper', {
-								slidesPerView: 2,
-								navigation: {
-									nextEl: ".series_swiper .swiper-button-next",
-									prevEl: ".series_swiper .swiper-button-prev",
-								},
+						<script>
+							$(function(){
+								let swiper1 = new Swiper('.series_swiper', {
+									slidesPerView: 2,
+									navigation: {
+										nextEl: ".series_swiper .swiper-button-next",
+										prevEl: ".series_swiper .swiper-button-prev",
+									},
+								});
+								let swiper2 = new Swiper('.book_swiper', {
+									slidesPerView: 2,
+									navigation: {
+										nextEl: ".book_swiper .swiper-button-next",
+										prevEl: ".book_swiper .swiper-button-prev",
+									},
+								});
 							});
-							let swiper2 = new Swiper('.book_swiper', {
-								slidesPerView: 2,
-								navigation: {
-									nextEl: ".book_swiper .swiper-button-next",
-									prevEl: ".book_swiper .swiper-button-prev",
-								},
-							});
-						});
-					</script>
-					<div class="swiper-container book_swiper">
-						<strong>관련 도서</strong>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
-							</div>
+						</script>
+						<strong class="tit" data-device="mo">시리즈</strong>
+						<div class="search_sel" data-device="mo">
+							<select>
+								<option>Speaking for Speeches 2</option>
+								<option>Speaking for Speeches 2</option>
+								<option>Speaking for Speeches 2</option>
+							</select>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="swiper-container book_swiper" data-device="pc">
+							<strong class="tit">관련 도서</strong>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<strong class="tit" data-device="mo">관련 도서</strong>
+						<div class="search_sel" data-device="mo">
+							<select>
+								<option>Easy Speaking for Speeches 1</option>
+								<option>Easy Speaking for Speeches 1</option>
+							</select>
+						</div>
+					</div>
+					<div class="tab_wrap">
+						<ul class="tabs">
+							<li class="active"><a href="javascript://">도서상세</a></li>
+							<li><a href="javascript://">부가자료</a></li>
+						</ul>
+						<div class="tab_box" data-tab="1">
+							<img src="https://www.ssoclass.com/img/introduce/01_img02.jpg" alt="">
+							<a href="javascript://" class="btn btn_fill" data-i18n="">목록으로</a>
+						</div>
+						<div class="tab_box" data-tab="2" style="display:none">
+							<p class="tit">학습 부가자료 다운로드</p>
+							<div class="tb_wrap">
+								<ul class="ul_head">
+									<li class="w200"><input type="checkbox" value=""></li>
+									<li class="w230">자료유형</li>
+									<li class="w_auto">자료명</li>
+									<li class="w200">파일</li>
+								</ul>
+								<ul class="ul_body"> 
+									<li>
+										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w230" data-device="pc">MP3</span>
+										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
+										<div class="mo_view" data-device="mo">
+											<span><input type="checkbox" value=""></span>
+											<div>
+												<strong class="txt_underline">MP3</strong>
+												<p><em>Top Phonics 1-1.mp3</em></p>
+											</div>
+										</div>
+										<span class="w200"><button type="button" class="btn_download">파일 다운로드</button></span>
+									</li>
+									<li>
+										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w230" data-device="pc">MP3</span>
+										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
+										<div class="mo_view" data-device="mo">
+											<span><input type="checkbox" value=""></span>
+											<div>
+												<strong class="txt_underline">MP3</strong>
+												<p><em>Top Phonics 1-1.mp3</em></p>
+											</div>
+										</div>
+										<span class="w200"><button type="button" class="btn_download">파일 다운로드</button></span>
+									</li>
+									<li>
+										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w230" data-device="pc">MP3</span>
+										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
+										<div class="mo_view" data-device="mo">
+											<span><input type="checkbox" value=""></span>
+											<div>
+												<strong class="txt_underline">MP3</strong>
+												<p><em>Top Phonics 1-1.mp3</em></p>
+											</div>
+										</div>
+										<span class="w200"><button type="button" class="btn_download">파일 다운로드</button></span>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript://" class="btn btn_fill" data-i18n="">목록으로</a>
+						</div>
 					</div>
 				</div>
-				<div class="tab_wrap">
-					<ul class="tabs">
-						<li><a href="#">도서상세</a></li>
-						<li><a href="#">부가자료</a></li>
-					</ul>
-					<div class="tab_box" data-tab="1">
-						<img src="https://www.ssoclass.com/img/introduce/01_img02.jpg" alt="">
-					</div>
-					<div class="tab_box" data-tab="2">
-						<p class="tit">학습 부가자료 다운로드</p>
-					</div>
-					
-				</div>
-			</div>	
+			</div>
 		</div>
 		<!--// Content -->
 		<!-- [include] footer -->

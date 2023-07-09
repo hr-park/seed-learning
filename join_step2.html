@@ -67,7 +67,7 @@
 									<a href="#" data-i18n="member.joinstpe2.email-auth" class="btn_auth"><!-- 인증하기 --></a>
 								</div>
 							</div>
-							<div class="input_field">
+							<div class="input_field align_top">
 								<label for="" data-i18n="member.joinstpe2.pwd"><!-- 비밀번호 --><span class="required">*</span></label>
 								<div class="inp_box flex_column">
 									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph" name="">
@@ -76,12 +76,14 @@
 							</div>
 							<div class="input_field">
 								<label for="" data-i18n="member.joinstpe2.phone"><!-- 휴대폰 번호 --><span class="required">*</span></label>
-								<div class="inp_box col_gap">
-									<select class="sel_box">
-										<option value="" selected data-i18n="member.joinstpe2.phone-opt"><!-- 대한민국 +82 --></option>
-										<option>010</option>
-									</select>
-									<input type="password" id="" ata-i18n="[placeholder]member.joinstpe2.phone-ph" name="">
+								<div class="inp_box phone">
+									<div class="sel_box">
+										<select>
+											<option value="" selected data-i18n="member.joinstpe2.phone-opt"><!-- 대한민국 +82 --></option>
+											<option>010</option>
+										</select>
+									</div>
+									<input type="number" id="" ata-i18n="[placeholder]member.joinstpe2.phone-ph" name="">
 								</div>
 							</div>
 							<div class="input_field">
@@ -116,11 +118,13 @@
 							<div class="input_field">
 								<label for="" data-i18n="member.joinstpe2.area"><!-- 지역명 --></label>
 								<div class="inp_box">
-									<select class="sel_box">
-										<option value="" selected data-i18n="member.joinstpe2.area-ph"><!-- 지역명을 선택하세요. --></option>
-										<option>test</option>
-										<option>test</option>
-									</select>
+									<div class="sel_box">
+										<select>
+											<option data-i18n="member.joinstpe2.area-ph"><!-- 지역명을 선택하세요. --></option>
+											<option>test</option>
+											<option>test</option>
+										</select>
+									</div>
 								</div>
 							</div>
 						</fieldset>
