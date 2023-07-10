@@ -277,6 +277,7 @@ body *{box-sizing:border-box}
 .info_qna a{font-weight:500}
 
 /* .book_list_wrap{padding-top:80px} */
+.no_data{width:100%;padding:50px 0;text-align:center}
 .book_list_wrap .txt_result{margin-bottom:10px;font-size:18px;letter-spacing:-.04em}
 .book_list_wrap .book_list{display:flex;flex-wrap:wrap;gap:32px 50px;}
 .book_list_wrap .item{width:calc(33.3% - 33px);padding:20px 0 30px;border:1px solid #c7c7c7;border-radius:35px;text-align:center;}

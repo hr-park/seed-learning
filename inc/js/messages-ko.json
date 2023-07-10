@@ -89,11 +89,11 @@
         "notice-tit"               : "NOTICE +",
         "ssoclass": {
             "tit"            : "SSOCLASS",
-            "desc"            : "온라인 리딩 프로그램 SRC\n(Sunshine Reading Club)"
+            "desc"            : "온라인 리딩 프로그램 SRC<br>(Sunshine Reading Club)"
         },
         "see": {
             "tit"            : "SEE",
-            "desc"            : "영어 공부방/교습소/방과후\n수업자료 및 운영 정보 까페"
+            "desc"            : "영어 공부방/교습소/방과후<br>수업자료 및 운영 정보 까페"
         }
     },
 
