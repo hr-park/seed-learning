@@ -26,7 +26,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content">본문 바로가기</a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -40,85 +40,83 @@
 		<div id="content">
 			<div class="inner">
 				<div class="sub_tit">
-					<h2>고객센터</h2>
+					<h2 data-i18n="customer.title"><!-- 고객센터 --></h2>
 				</div>
 				<nav class="sub_nav">
 					<ul>
-						<li><a href="notice_list.html">공지사항</a></li>
-						<li><a href="faq.html">자주하는 질문</a></li>
-						<li class="active"><a href="qna_form.html">1:1문의</a></li>
-						<li><a href="purchase_guide.html">구매안내</a></li>
+						<li><a href="notice_list.html" data-i18n="customer.nav.notice"><!-- 공지사항 --></a></li>
+						<li><a href="faq.html" data-i18n="customer.nav.faq"><!-- 자주하는 질문 --></a></li>
+						<li class="active"><a href="qna_form.html" data-i18n="customer.nav.qna"><!-- 1:1문의 --></a></li>
+						<li><a href="purchase_guide.html" data-i18n="customer.nav.purchase-guide"><!-- 구매안내 --></a></li>
 					</ul>
 				</nav>
 				<div class="qna_form">
 					<form>
 						<fieldset>
-							<legend>1:1문의 작성</legend>
+							<legend data-i18n="customer.qna.form-title"><!-- 1:1문의 작성 --></legend>
 							<div class="input_field">
-								<label for="">작성자</label>								
-								<div class="inp_box">
-									김씨드
-								</div>
+								<label for="" data-i18n="customer.qna.name"><!-- 작성자 --></label>								
+								<div class="inp_box">김씨드</div>
 							</div>
 							<div class="input_field">
-								<label for="">문의 유형</label>
+								<label for="" data-i18n="customer.qna.type"><!-- 문의 유형 --></label>
 								<div class="inp_box col_3">
 									<div class="sel_box">
 										<select>
-											<option value="">교재관련</option>
-											<option>010</option>
+											<option value="" data-i18n="customer.qna.sel-book"><!-- 교재관련 --></option>
+											<option>option</option>
 										</select>
 									</div>
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">문의 도서</label>	
+								<label for="" data-i18n="customer.qna.book"><!-- 문의 도서 --></label>	
 								<div class="inp_box col_3">
 									<div class="sel_box">
 										<select>
-											<option value="">교재관련</option>
-											<option></option>
+											<option value="" data-i18n="customer.qna.sel-book"><!-- 교재관련 --></option>
+											<option>option</option>
 										</select>
 									</div>
 									<div class="sel_box">
 										<select disabled="disabled">
-											<option value="">시리즈 선택</option>
-											<option></option>
+											<option value="" data-i18n="customer.qna.sel-series"><!-- 시리즈 선택 --></option>
+											<option>option</option>
 										</select>
 									</div>
 									<div class="sel_box">
 										<select>
-											<option value="">권 선택</option>
-											<option></option>
+											<option value="" data-i18n="customer.qna.sel-volume"><!-- 권 선택 --></option>
+											<option>option</option>
 										</select>
 									</div>
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">제목</label>								
+								<label for="" data-i18n="customer.qna.tit"><!-- 제목 --></label>								
 								<div class="inp_box">
-									<input type="text" id="" name="" placeholder="제목을 입력하세요.">
+									<input type="text" id="" name="" placeholder="제목을 입력하세요." data-i18n="[placeholder]customer.qna.tit-ph">
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">문의 내용</label>								
+								<label for="" data-i18n="customer.qna.question"><!-- 문의 내용 --></label>								
 								<div class="inp_box">
-									<textarea placeholder="내용을 입력하세요." rows="5"></textarea>
+									<textarea placeholder="내용을 입력하세요." rows="5" data-i18n="[placeholder]customer.qna.question-ph"></textarea>
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="">첨부파일</label>								
+								<label for="" data-i18n="customer.qna.file"><!-- 첨부파일 --></label>								
 								<div class="inp_box">
-									<input type="file" id="" name="" placeholder="파일 선택">
+									<input type="file" id="" name="" placeholder="파일 선택" data-i18n="[placeholder]customer.qna.input-file">
 								</div>
 							</div>
 						</fieldset>
 					</form>
 				</div>
-				<p class="info_qna">답변은 <a href="#">마이 페이지 > 나의 문의 내역</a>에서 확인하실 수 있습니다.</p>
+				<p class="info_qna" data-i18n="[placeholder]customer.qna.txt-history"><!-- 답변은 <a href="javascript://">마이 페이지 > 나의 문의 내역</a>에서 확인하실 수 있습니다. --></p>
 				<div class="btn_confirm">
-					<a href="#" class="btn btn_disabled" data-i18n="member.joinstpe2.cancel">취소</a><!-- 취소 -->
-					<a href="#" class="btn btn_fill" data-i18n="member.joinstpe2.ok">확인</a><!-- 확인 -->
+					<a href="javascript://" class="btn btn_disabled" data-i18n="customer.qna.cancel"><!-- 취소 --></a>
+					<a href="javascript://" class="btn btn_fill" data-i18n="customer.qna.ok"><!-- 확인 --></a>
 				</div>
 			</div>
 		</div>

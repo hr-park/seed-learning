@@ -29,7 +29,8 @@
         "qna"               : "1:1문의",
         "guide"               : "구매안내",
         "login"               : "로그인",
-        "join"               : "회원가입"
+        "join"               : "회원가입",
+        "skip-nav" : "본문 바로가기"
     },
 
     "footer": {
@@ -38,7 +39,12 @@
         "terms"                 : "이용약관",
         "location"                 : "오시는길",
         "family-site"                 : "FAMILY SITE",
-        "address"               : [""],
+        "address"               : [
+            "<p><strong class='main_tit bar'>씨드러닝</strong><span>(주)대표이사 : 강기철,이재영</span></p>",
+            "<p><span>(13616) 경기도 성남시 분당구 정자일로 1, C동 1813호</span><span>(금곡동, 코오롱트리폴리스1)</span></p>",
+            "<p><span class='bar mo_bar'>Tel : 070-7522-7404</span><span class='bar'>Fax : 070-8289-7404</span><span>E-mail : manager@seed-learning.com</span></p>",
+            "<p><span class='bar'>사업자 등록번호 : 220-87-33426</span><span>통신판매업신고 : 제2015-경기성남-1064호</span></p>"
+        ],
         "site-ssoclass"                 : "SSOCLASS",
         "site-see"                 : "SEE",
         "copyright"                 : "&copy; Seed-Learning, Inc. All Rights Reserved"
@@ -50,6 +56,13 @@
         "youtube"               : "유튜브 바로가기",
         "kakao"               : "카카오 채널 바로가기",
         "call"               : "전화연결"
+    },
+
+    "pagination": {
+        "first"        : "처음",
+        "prev"        : "이전",
+        "next"        : "다음",
+        "last"        : "마지막"
     },
 
     "main": {
@@ -127,6 +140,7 @@
             "phone"             : "휴대폰 번호",
             "phone-ph"          : "휴대폰 번호를 입력하세요.",
             "phone-opt"          : "대한민국 +82",
+            "choice"          : "(선택)",
             "target"          : "학습대상연령",
             "target-chk1"          : "유아",
             "target-chk2"          : "예비초",
@@ -167,8 +181,6 @@
                 "<li>- 수집항목: 이메일, 휴대전화 번호, 이름</li>",
                 "<li>- 보유기간: 회원 탈퇴 또는 이용 목적 달성 시까지.</li>"                
             ],
-
-
             "join"              : "회원가입",
             "input"             : "정보입력",
             "input01"           : "정보 입력",
@@ -199,13 +211,53 @@
             "cert-error"        : "전화번호 인증 정보가 올바르지 않습니다."
 
         },
-        "join02": {
-            
+        "joincomplete": {
+            "title"              : "회원가입",
+            "sub-title" : "회원가입이 안전하게 완료되었습니다.",
+            "join-date" : "가입일 : ",
+            "terms" : " 이용약관 및 개인정보처리방침 ",
+            "marketing" : "마케팅 활용 ",
+            "info-txt" : [
+                "<li>학생과 선생님을 위한<span class='pc_new_line'><em class='ft_pink'>다양한 학습 자료</em>를 제공합니다!</span><li>",
+                "<li><em class='ft_org'>씨드러닝 리더스와 스킬북</em>에 관한<span class='pc_new_line'>다양한 정보를 확인하세요!</span><li>",
+                "<li>씨드러닝 <em class='ft_mint'>신간 및 다양한 이벤트 정보</em>를<span class='pc_new_line'>가장 빠르게 전달해 드릴게요!</span><li>",
+                "<li><p class='sub_txt'>프로모션 수신 동의 시, 마이페이지 > 정보 수정에서<span class='pc_new_line'>수정 가능합니다.</span></p><li>"
+            ],
+            "login"              : "로그인"
         },
         "terms": {
             "terms"             : "이용약관",
             "privacy"           : "개인정보 처리방침"
         }
+    },
+
+    "booksearch": {
+        "sub-tit-intro"        : "교재 소개",
+        "sub-tit-data"        : "학습/수업 자료",
+        "target"        : "학습대상",
+        "setup"        : "교재구성",
+        "download"        : "다운로드",
+        "category"        : "카테고리",
+        "book-name"        : "교재명",
+        "data-type"        : "교재명",
+        "file"        : "파일",
+        "file-download"        : "파일 다운로드",
+        "no-data"        : "검색결과가 없습니다."
+    },
+
+    "bookservice": {
+        "title"        : "학습/수업 자료",
+        "sub-tit"        : "자료유형",
+        "sort-row-level"        : "높은 레벨순",
+        "sort-high-level"        : "높은 레벨순",
+        "sort-book-name"        : "도서명순",
+        "sort-latest"        : "최신순",
+        "sort-popular"        : "인기순",
+        "category"        : "카테고리",
+        "book-name"        : "교재명",
+        "data-type"        : "자료유형",
+        "file"        : "파일",
+        "file-download"        : "파일 다운로드"
     },
 
     "bookintro": {
@@ -225,18 +277,18 @@
             "testprep"     : "Test Prep" 
         },
         "series-tit"        : "시리즈",
-        "search-result"        : ["검색결과 <em>24</em>건"],
+        "search-result"        : "검색결과 <em>24</em>건",
         "btn-preview"        : "미리보기",
-        "btn-data"        : "부가자료"
+        "btn-data"        : "부가자료",
+        "no-data"        : "리스트가 없습니다."
     },
 
     "bookdetail": {
-        "tit"     : "교재소개",
+        "title"     : "교재소개",
         "btn-preview"        : "미리보기",
         "btn_data"        : "부가자료",
-
         "target"        : "학습대상",
-        "deft"        : "CEFR",
+        "cefr"        : "CEFR",
         "isbn"        : "ISBN",
         "spec"        : "사양",
         "setup"        : "구성",
@@ -246,14 +298,12 @@
         "related-tit"        : "관련 도서",
         "book-detail"        : "도서상세",
         "data"        : "부가자료",
-        "data-download"        : "학습 부가자료 다운로드"
-    },
-
-    "pagination": {
-        "first"        : "처음",
-        "prev"        : "이전",
-        "next"        : "다음",
-        "last"        : "마지막"
+        "data-download"        : "학습 부가자료 다운로드",
+        "list"        : "목록으로",
+        "data-type"        : "자료유형",
+        "data-name"        : "자료명",
+        "data-file"        : "파일",
+        "file-downlad"        : "파일 다운로드"
     },
 
     "findpwd": {
@@ -269,6 +319,16 @@
     },
 
     "mypage": {
+        "title" : "마이페이지",
+        "nav": {
+            "link_pick"            : "관심 교재",
+            "link_lv"            : "레벨테스트 이력",
+            "link_inquery"            : "나의 문의 내역",
+            "link_modify"            : "회원정보 수정"
+        },
+        "my-pick": {
+            "name"            : "<p>안녕하세요, <span>김씨드</span> 님</p>"
+        },
         "myprofile": {
             "mypage"            : "마이페이지",
             "myprofile"         : "나의 프로필",
@@ -398,49 +458,75 @@
     },
 
     "customer": {
-        "title"                 : "이벤트",
-        "service": {
-            "device"            : "빅박스 기기별 이용 안내",
-            "pc"                : "PC 이용"
-        },
-        "top": {
-            "notice"            : "공지 및 이벤트",
-            "study"             : "학습가이드",
-            "faq"               : "자주 묻는 질문",
-            "qna"               : "1:1 문의"
-        },
-        "notice": {
-            "title"             : "공지 및 이벤트",
-            "tit-no"            : "No.",
-            "tit-title"         : "제목",
-            "tit-date"          : "작성일",            
-            "tit-hit"           : "조회수",
-            "tit-date2"         : "등록일 : ",
-            "tit-hit2"          : "조회수 : ",
-            "no-data"           : "게시물이 없습니다.",
-            "list-notice"       : "공지",
-            "list"              : "목록",
-            "files"             : "첨부파일 : "
+        "title"             : "고객센터",
+        "nav": {
+            "notice"             : "공지사항",
+            "faq"             : "자주하는 질문",
+            "qna"             : "1:1문의",
+            "purchase-guide"  : "구매안내"
         },
         "faq": {
-            "title"             : "자주 묻는 질문",
-            "search-ph"         : "검색어를 입력하세요",
+            "search-ph"         : "검색어를 입력해주세요.",
             "search"            : "검색",
             "all"               : "전체",
+            "book"               : "교재",
+            "data"               : "부가자료",
+            "member"               : "회원",
+            "etc"               : "기타",
+            "toggle"               : "FAQ 열고 닫기",
+            "no-data"               : "게시물이 없습니다.",
+           
+
             "login"             : "로그인 / 계정",
             "pay"               : "결제 / 취소",
             "program"           : "프로그램",
             "study"             : "학습",
             "service"           : "서비스",
-            "etc"               : "기타",
+            
             "out"               : "탈퇴",
-            "no-data"           : "게시물이 없습니다.",
             "input-search"      : "검색어를 입력해 주세요"
         },
+        "notice": {
+            "search"             : "검색",
+            "tit-no"            : "번호",
+            "tit-title"         : "제목",
+            "tit-date"          : "작성일",  
+            "no-data"           : "게시물이 없습니다.",
+            "list"              : "목록으로",
+            "file-download"             : "파일 다운로드"
+        },
+        "guide": {
+            "tit-sido"             : "시/도",
+            "tit-gugun"            : "구/군",
+            "tit-store"            : "구입처",
+            "tit-phone-number"            : "전화번호",
+            "tit-address"            : "주소",
+            "btn-map"            : "지도보기",
+            "no-data"            : "리스트가 없습니다."
+        },
+        
         "qna": {
-            "title"             : "1:1문의",
+            "form-title"             : "1:1문의 작성",
+            "name"              : "작성자",
+            "type"                : "문의 유형",
+            "book"                : "문의 도서",
+            "sel-book"         : "교재관련",
+            "sel-series"         : "시리즈 선택",
+            "sel-volume"         : "권 선택",
+            "tit"                : "제목",
+            "tit-ph"     : "제목을 입력하세요.",
+            "question"          : "문의 내용",
+            "question-ph"          : "내용을 입력하세요.",
+            "file"            : "첨부파일",
+            "input-file"            : "파일 선택",
+            "txt-history"            : "답변은 <a href='javascript://'>마이 페이지 > 나의 문의 내역</a>에서 확인하실 수 있습니다.",
+            "cancel"            : "취소",
+            "ok"            : "확인",
+            
+
+
+
             "no"                : "No.",
-            "question"          : "문의내용",
             "regdate"           : "작성일",
             "isanswer"          : "답변상태",
             "no-data"           : "문의내용이 없습니다.",
@@ -448,7 +534,7 @@
             "complete-answer"   : "답변완료",
             "write"             : "문의하기",
             "input-info"        : "정보입력",
-            "name"              : "이름",
+            
             "parents"           : "학부모명",
             "phone"             : "연락처",
             "gubun"             : "분류",
@@ -472,13 +558,13 @@
             "input-parents"     : "학부모명을 입력해 주세요.",
             "input-phone"       : "연락처를 입력해 주세요.",
             "input-gubun"       : "분류를 선택해 주세요.",
-            "input-subject"     : "제목을 입력해 주세요.",
+            
             "input-content"     : "내용을 입력해 주세요.",
             "confirm"           : "문의내용을 등록할까요?",
             "input-ok"          : "문의 내용이 등록되었습니다.",
             "input-error"       : "데이터 처리에 문제가 발생했습니다.",
             "regdate2"          : "등록일 : ",
-            "files2"            : "첨부파일 : ",
+            
             "list"              : "목록"
         },
         "inquiry": {

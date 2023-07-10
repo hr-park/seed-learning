@@ -26,7 +26,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content">본문 바로가기</a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -101,36 +101,21 @@
 								<div class="swiper-container series_swiper">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
-											<img src="http://www.seed-learning.kr/ff/images/logo_m.png" alt="">
+											<img src="inc/images/sample_series.png" alt="">
 										</div>
 										<div class="swiper-slide">
-											<img src="http://www.seed-learning.kr/ff/images/logo_m.png" alt="">
+											<img src="inc/images/sample_series.png" alt="">
 										</div>
 										<div class="swiper-slide">
-											<img src="http://www.seed-learning.kr/ff/images/logo_m.png" alt="">
+											<img src="inc/images/sample_series.png" alt="">
 										</div>
 										<div class="swiper-slide">
-											<img src="http://www.seed-learning.kr/ff/images/logo_m.png" alt="">
+											<img src="inc/images/sample_series.png" alt="">
 										</div>
 									</div>
 								</div>
 								<div class="swiper-button-next"></div>
 								<div class="swiper-button-prev"></div>
-								<script>
-									$(function(){
-										let swiper = new Swiper('.series_swiper', {
-											slidesPerView: 4,
-											loop: true,
-											//spaceBetween: 30,
-											//effect: 'fade',
-											autoHeight:true,
-											navigation: {
-												nextEl: ".series_box .swiper-button-next",
-												prevEl: ".series_box .swiper-button-prev",
-											},
-										});
-									});
-								</script>
 							</div>
 							<div class="search_sel" data-device="mo">
 								<select>
@@ -145,6 +130,7 @@
 				<div class="book_list_wrap">
 					<p class="txt_result" data-i18n="[html]bookintro.search-result"><!-- 검색결과 : <em>24</em>건--></p>
 					<ul class="book_list">
+						<li class="no_data" data-i18n="bookintro.no-data"><!-- 리스트가 없습니다. --></li>
 						<!-- -->
 						<li class="item">
 							<a href="book_view.html" class="thumb"><img src="http://www.seed-learning.kr/efr/images/thum1.jpg" alt=""></a>
@@ -152,8 +138,8 @@
 								<h3 class="tit"><a href="book_view.html">Speaking for Speeches 1(2nd)</a></h3>
 								<p class="detail">Kindergarten~Grade 1</p>
 								<div class="btns">
-									<a href="#" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
-									<a href="#"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
+									<a href="javascript://" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
+									<a href="javascript://"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
 								</div>
 							</div>
 						</li>
@@ -164,8 +150,8 @@
 								<h3 class="tit"><a href="book_view.html">Speaking for Speeches 1(2nd)</a></h3>
 								<p class="detail">Kindergarten~Grade 1</p>
 								<div class="btns">
-									<a href="#" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
-									<a href="#"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
+									<a href="javascript://" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
+									<a href="javascript://"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
 								</div>
 							</div>
 						</li>
@@ -175,8 +161,8 @@
 								<h3 class="tit"><a href="book_view.html">Speaking for Speeches 1(2nd)</a></h3>
 								<p class="detail">Kindergarten~Grade 1 Kindergarten~Grade 1 Kindergarten~Grade 1 Kindergarten~Grade 1 Kindergarten~Grade 1</p>
 								<div class="btns">
-									<a href="#" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
-									<a href="#"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
+									<a href="javascript://" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
+									<a href="javascript://"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
 								</div>
 							</div>
 						</li>
@@ -186,8 +172,8 @@
 								<h3 class="tit"><a href="book_view.html">Speaking for Speeches 1(2nd)</a></h3>
 								<p class="detail">Kindergarten~Grade 1</p>
 								<div class="btns">
-									<a href="#" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
-									<a href="#"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
+									<a href="javascript://" class="btn_preview" data-i18n="bookintro.btn-preview"><!-- 미리보기 --></a>
+									<a href="javascript://"  class="btn_data" data-i18n="bookintro.btn-data"><!-- 부가자료 --></a>
 								</div>
 							</div>
 						</li>
@@ -216,5 +202,20 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+		$(function(){
+			let swiper = new Swiper('.series_swiper', {
+				slidesPerView: 4,
+				loop: true,
+				//spaceBetween: 30,
+				//effect: 'fade',
+				autoHeight:true,
+				navigation: {
+					nextEl: ".series_box .swiper-button-next",
+					prevEl: ".series_box .swiper-button-prev",
+				},
+			});
+		});
+	</script>
 </body>
 </html>

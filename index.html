@@ -26,7 +26,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content">본문 바로가기</a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -38,22 +38,6 @@
 		<!-- //[include] floating_sns -->
 		<!-- Content -->
 		<div id="content" class="main">
-			<script>
-				$(function(){
-					let swiper = new Swiper('.main_visual', {
-						slidesPerView: 4,
-						loop: false,
-						effect: 'fade',
-						navigation: {
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev",
-						},
-						autoplay: {
-							delay:3000,
-						},
-					});
-				});
-			</script>
 			<div class="swiper-container main_visual">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -77,31 +61,31 @@
 			<div class="main inner">
 				<ul class="menu_list">
 					<li class="lv_chart">
-						<a href="#">
+						<a href="javascript://">
 							<strong class="menu_tit" data-i18n="main.levelchart.tit"><!-- Level Chart --></strong>
 							<p class="txt" data-i18n="main.levelchart.txt"><!-- 영역별/레벨별 교재 리스트 --></p>
 						</a>
 					</li>
 					<li class="lv_test">
-						<a href="#">
+						<a href="javascript://">
 							<strong class="menu_tit" data-i18n="main.leveltest.tit"><!-- Level Test --></strong>
 							<p class="txt" data-i18n="main.leveltest.txt"><!-- 무료 레벨 테스트 --></p>
 						</a>
 					</li>
 					<li class="download">
-						<a href="#">
+						<a href="javascript://">
 							<strong class="menu_tit" data-i18n="main.download.tit"><!-- Download --></strong>
 							<p class="txt" data-i18n="main.download.txt"><!-- 교재별 부가자료 --></p>
 						</a>
 					</li>
 					<li class="catalog">
-						<a href="#">
+						<a href="javascript://">
 							<strong class="menu_tit" data-i18n="main.catalog.tit"><!-- Catalog --></strong>
 							<p class="txt" data-i18n="main.catalog.txt"><!-- 씨드러닝 교재 카탈로그 --></p>
 						</a>
 					</li>
 					<li class="offline">
-						<a href="#">
+						<a href="javascript://">
 							<strong class="menu_tit" data-i18n="main.offline.tit"><!-- Offline --></strong>
 							<p class="txt" data-i18n="main.offline.txt"><!-- 지역별 구매처 안내 --></p>
 						</a>
@@ -115,15 +99,15 @@
 					</div>
 				</div>
 				<div class="service_area">
-					<a href="#" class="seed_learning">
-						<span class="img_box"><img src="inc/images/main/logo_ssoclass.png" alt="data-i18n="[alt]main.ssoclass.tit"></span>
+					<a href="javascript://" class="seed_learning">
+						<span class="img_box"><img src="inc/images/main/logo_ssoclass.png" data-i18n="[alt]main.ssoclass.tit"></span>
 						<span class="txt_box">
 							<p class="tit" data-device="pc" data-i18n="main.ssoclass.tit"><!-- SSOCLASS --></p>
 							<p class="desc" data-i18n="main.ssoclass.desc"><!-- 온라인 리딩 프로그램 SRC<br>(Sunshine Reading Club) --></p>
 						</span>
 					</a>
-					<a href="#" class="see">
-						<span class="img_box"><img src="inc/images/main/logo_see.png" alt="data-i18n="[alt]main.see.tit"></span>
+					<a href="javascript://" class="see">
+						<span class="img_box"><img src="inc/images/main/logo_see.png" data-i18n="[alt]main.see.tit"></span>
 						<span class="txt_box">
 							<p class="tit" data-device="pc" data-i18n="main.see.tit">SEE</p>
 							<p class="desc" data-i18n="main.see.desc"><!-- 영어 공부방/교습소/방과후<br>수업자료 및 운영 정보 까페 --></p>
@@ -138,5 +122,21 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+		$(function(){
+			let swiper = new Swiper('.main_visual', {
+				slidesPerView: 4,
+				loop: false,
+				effect: 'fade',
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				autoplay: {
+					delay:3000,
+				},
+			});
+		});
+	</script>
 </body>
 </html>
