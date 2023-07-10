@@ -48,3 +48,24 @@ http://scripts.sil.org/OFL
     font-weight: 800;
     font-display: swap;
 }
+/* Jalnan */
+@font-face {
+    font-family: 'Jalnan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/Jalnan/Jalnan.woff2') format('woff2'),
+        url('../font/Jalnan/Jalnan.woff') format('woff'),
+        url('../font/Jalnan/Jalnan.ttf') format("truetype");
+    font-display: swap;
+}
+
+/* OneMobileTitle */
+@font-face {
+    font-family: 'OneMobileTitle';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/OneMobileTitle/OneMobileTitleRegular.woff2') format('woff2'),
+        url('../font/OneMobileTitle/OneMobileTitleRegular.woff') format('woff'),
+        url('../font/OneMobileTitle/OneMobileTitle.ttf') format("truetype");
+    font-display: swap;
+}

@@ -6,6 +6,7 @@
         "lang-kor"               : "KOR",
         "lang-eng"               : "ENG",
         "gnb-toggle"       : "GNB여닫기",
+        "gnb-open"       : "GNB열기",
         "gnb-close"       : "GNB닫기",
         "book-intro": {
             "tit"     : "교재 소개",
@@ -224,7 +225,7 @@
             "testprep"     : "Test Prep" 
         },
         "series-tit"        : "시리즈",
-        "search-result"        : "검색결과 :  <strong>24</strong>건",
+        "search-result"        : ["검색결과 <em>24</em>건"],
         "btn-preview"        : "미리보기",
         "btn-data"        : "부가자료"
     },

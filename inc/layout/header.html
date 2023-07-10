@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header">
 	<div class="top_sch">
-		<h1><a href="#"><img src="inc/images/logo.png" data-i18n="[alt]header.logo"></a></h1>
+		<h1><a href="/"><img src="inc/images/logo.png" data-i18n="[alt]header.logo"></a></h1>
 		<div class="search_box">
 			<input type="text" name="schKeyword" id="schKeyword" data-i18n="[placeholder]header.search-ph"><!-- 교재/자료명을 입력해주세요. -->
 			<a href="javascript://" class="btn_search" data-i18n="header.search"><!--검색--></a>
@@ -10,47 +10,47 @@
 			<li><a href="#" class="active" data-i18n="header.lang-kor"><!--KOR--></a></li>
 			<li><a href="#" data-i18n="header.lang-eng"><!--ENG--></a></li>
 		</ul>
-		<button type="button" onclick="javascript:gnbOpenMo();" class="btn_gnb" data-device="mo" data-i18n="header.gnb-toggle"><!--GNB여닫기--></button>
+		<button type="button" class="btn_gnb" data-device="mo" data-i18n="header.gnb-toggle"><!--GNB여닫기--></button>
 	</div>
 	<nav class="gnb">
 		<div class="gnb_inner">
-			<button type="button" onclick="javascript:gnbTogglePc();" class="btn_gnb" data-device="pc" data-i18n="header.gnb-toggle"><!--GNB여닫기--></button>
+			<button type="button" class="btn_all_menu" data-device="pc" data-i18n="header.gnb-toggle"><!--GNB열기--></button>
 			<ul class="dep1_list">
-				<li><a href="javascript://" data-i18n="header.book-intro.tit"><!--교재 소개--></a>
+				<li><a href="javascript://" class="has_depth" data-i18n="header.book-intro.tit"><!--교재 소개--></a>
 					<div class="dep2_list">
 						<ul>
-							<li><a href="#" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.listening"><!--Listening--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.writing"><!--Writing--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.vocabulary"><!--Vocabulary--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.grammar"><!--Grammar--></a></li>
-							<li><a href="#" data-i18n="header.book-intro.testprep"><!--Test Prep--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.listening"><!--Listening--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.writing"><!--Writing--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.vocabulary"><!--Vocabulary--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.grammar"><!--Grammar--></a></li>
+							<li><a href="book_list.html" data-i18n="header.book-intro.testprep"><!--Test Prep--></a></li>
 						</ul>
 					</div>
 				</li>
-				<li><a href="#" data-i18n="header.book-data"><!--학습/수업 자료--></a></li>
-				<li><a href="javascript://" data-i18n="header.online-service"><!--온라인 서비스--></a>
+				<li><a href="book_service.html" data-i18n="header.book-data"><!--학습/수업 자료--></a></li>
+				<li><a href="online_service.html" class="has_depth" data-i18n="header.online-service"><!--온라인 서비스--></a>
 					<div class="dep2_list">
 						<ul><li><a href="#" data-i18n="header.sunshine-reading"><!--선샤인리딩클럽--></a></li></ul>
 					</div>
 				</li>
-				<li><a href="javascript://" data-i18n="header.customer"><!--고객센터--></a>
+				<li><a href="javascript://" class="has_depth" data-i18n="header.customer"><!--고객센터--></a>
 					<div class="dep2_list">
 						<ul>
-							<li><a href="#" data-i18n="header.notice"><!--공지사항--></a></li>
-							<li><a href="#" data-i18n="header.faq"><!--자주하는 질문--></a></li>
-							<li><a href="#" data-i18n="header.qna"><!--1:1문의--></a></li>
-							<li><a href="#" data-i18n="header.guide"><!--구매안내--></a></li>
+							<li><a href="notice_list.html" data-i18n="header.notice"><!--공지사항--></a></li>
+							<li><a href="faq.html" data-i18n="header.faq"><!--자주하는 질문--></a></li>
+							<li><a href="qna_form.html" data-i18n="header.qna"><!--1:1문의--></a></li>
+							<li><a href="purchase_guide.html" data-i18n="header.guide"><!--구매안내--></a></li>
 						</ul>
 					</div>
 				</li>
 			</ul>
 			<div class="util" data-device="pc">
-				<a href="#" data-i18n="header.login"><!--로그인--></a>
-				<a href="#" data-i18n="header.join"><!--회원가입--></a>
+				<a href="login.html" data-i18n="header.login"><!--로그인--></a>
+				<a href="join_step1.html" data-i18n="header.join"><!--회원가입--></a>
 			</div>
 		</div>
 	</nav>
@@ -60,19 +60,19 @@
 			<li><a href="#" data-i18n="header.lang-eng"><!--ENG--></a></li>
 		</ul>
 		<div class="util">
-			<a href="#" class="btn_login" data-i18n="header.login"><!--로그인--></a>
-			<a href="#" class="btn_join" data-i18n="header.join"><!--회원가입--></a>
+			<a href="login.html" class="btn_login" data-i18n="header.login"><!--로그인--></a>
+			<a href="join_step1.html" class="btn_join" data-i18n="header.join"><!--회원가입--></a>
 		</div>
 		<ul class="link_list">
-			<li class="active"><a href="#" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.listening"><!--Listening--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.writing"><!--Writing--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.vocabulary"><!--Vocabulary--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.grammar"><!--Grammar--></a></li>
-			<li><a href="#" data-i18n="header.book-intro.testprep"><!--Test Prep--></a></li>
+			<li class="active"><a href="book_list.html" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.coursebook"><!--Course Book--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.reading"><!--Reading--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.readers"><!--Readers--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.listening"><!--Listening--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.writing"><!--Writing--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.vocabulary"><!--Vocabulary--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.grammar"><!--Grammar--></a></li>
+			<li><a href="book_list.html" data-i18n="header.book-intro.testprep"><!--Test Prep--></a></li>
 		</ul>
 		<ul class="sns_list">
 			<li><a href="#" class="insta" target="_blank" data-i18n="sns.instagram"><!--인스타그램--></a></li>
@@ -81,53 +81,120 @@
 			<li><a href="#" class="kakao" target="_blank" data-i18n="sns.kakao"><!--카카오채널--></a></li>
 			<li><a href="#" class="call" target="_blank" data-i18n="sns.call"><!--전화--></a></li>
 		</ul>
-		<button type="button" onclick="gnbCloseMo();" class="btn_close" data-i18n="header.gnb-close"><!--GNB닫기--></button>
+		<button type="button"  class="btn_close" data-i18n="header.gnb-close"><!--GNB닫기--></button>
 	</nav>
+	<div class="dim"></div>
 </header>
 <!--// Header -->
 <!-- 퍼블용 -->
 <script>
-function gnbTogglePc(){
-	$('.gnb').toggleClass('active');
-	$('.gnb .dep2_list').toggle();
-	$('.gnb .btn_gnb').toggleClass('active');
-}
+	
+//nav
+const nav = {
+	gnbScrollTop: 0,
+	delta: 80,
+	openNavPc: function () {
+		$('.gnb').addClass('nav_all_opened');
+		$('.gnb .btn_all_menu').addClass('active');
+		$('.dep2_list').show();
+	},
+	openNavMo: function () {
+		$('.gnb').addClass('nav_mo_opened');
+		$('.nav_mo').addClass('active');
+		$('.dim').show();
+	},
+	closeNavPc: function () {
+		$('.gnb').removeClass('nav_all_opened');
+		$('.gnb .btn_all_menu').removeClass('active');
+		$('.dep2_list').hide();
+	},
+	closeNavMo: function () {
+		$('.gnb').removeClass('nav_mo_opened');
+		$('.nav_mo').removeClass('active');
+		$('.dim').hide();
+	},
+	//init
+	init: function () {
+		var windowWidth = window.innerWidth;
+		//pc mouse over
+		if (windowWidth > 767) {
+			$('body').on('mouseenter focusin', '.gnb .dep1_list > li', function (e) {
+				if($('.gnb').hasClass('nav_all_opened')){
+					//전체메뉴 열려있으면...
+					$('.gnb .dep1_list > li').unbind('hover mouseenter focusin');
+					$('.gnb').removeClass('nav_hover');
+				}else{
+					//전체메뉴 안열려있으면...
+					$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
+					$('.gnb').addClass('nav_hover');
+					$(this).addClass('active');
+					//$(this).find('.dep2_list').stop().slideDown('fast');
+					$(this).find('.dep2_list').show();
+				}
+			});
 
-function gnbOpenMo(){
-	$('.nav_mo').addClass('active');
-}
+			$('body').on('mouseleave', '.gnb .dep1_list > li', function (e) {
+				if(!$('.gnb').hasClass('nav_all_opened')){
+					$('.gnb').removeClass('nav_hover');
+					$(this).removeClass('active');
+					//$(this).find('.dep2_list').stop().slideUp('fast');
+					$(this).find('.dep2_list').hide();
+				}
+			});
+		//mo
+		} else {
+			$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
+			//활성화 해제
+			$('.gnb.nav_all_opened').removeClass('nav_all_opened');
+			$('.gnb.nav_hover').removeClass('nav_hover');
+			$('.dep2_list').hide();
+			$('.btn_all_menu.active').removeClass('active');
+			//활성화 해제
 
-function gnbCloseMo(){
-	$('.nav_mo').removeClass('active');
-}
+			$('body').on('click', '.gnb .dep1_list > li > a.has_depth', function (e) {
+				e.stopImmediatePropagation();
+				e.preventDefault();
 
-function gnbOverPc(){
-	if($('.gnb.active').length==0){
-		$('.gnb .dep1_list > li').mouseover(function(){
-			$(this).addClass('active');
-			$(this).find('.dep2_list').addClass('active');
-		});
-		$('.gnb .dep1_list > li').mouseleave(function(){
-			$(this).removeClass('active');
-			$('.gnb .dep2_list').removeClass('active');
-		});
+				$('.gnb .dep1_list > li').removeClass('active');
+				$(this).parent('li').addClass('active');
+				$('.gnb .dep2_list').hide().removeClass('active');
+				$(this).next('.dep2_list').show().addClass('active');
+			});
+		}
 	}
 }
 
-function gnbMo(){
-	$('.gnb .dep1_list li a').on('click', function(){
-		$('.gnb .dep2_list').removeClass('active');
-		$(this).next('.dep2_list').addClass('active');
-	});
-}
-
 $(function(){
-	const lang = "en";
+	nav.init();
+
+	//pc 전체메뉴 여닫기
+	$(document).on('click', '.gnb .btn_all_menu', function () {
+		if(!$(this).hasClass('active')){
+			nav.openNavPc();
+		}else{
+			nav.closeNavPc();
+		}
+	});
+	//mo 전체메뉴 열기
+	$(document).on('click', '.top_sch .btn_gnb', function () {
+		nav.openNavMo();
+	});
+	//mo 전체메뉴 닫기
+	$(document).on('click', '.nav_mo .btn_close, .dim', function () {
+		nav.closeNavMo();
+	});
+
+	$(window).on("resize", function() {
+		nav.init();
+	});
+
+	var lang = "ko";
   	$.i18n.init({
     	load : 'unspecific',
       	lng : lang,
-      	fallbackLng : 'en',
-      	resGetPath : '/inc/js/messages-ko.json',
+      	fallbackLng : 'ko',
+      	//resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+		resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);
@@ -139,19 +206,17 @@ $(function(){
 		$('html').i18n();
   	});
 
-	if(matchMedia("screen and (min-width:768px)").matches) {
-		gnbOverPc();
-	}
+	let vh = window.innerHeight * 0.01
+	document.documentElement.style.setProperty('--vh', vh + 'px')
+	$(window).resize(function(){
+		let vh = window.innerHeight * 0.01
+		document.documentElement.style.setProperty('--vh', vh + 'px')
+	});
 
-	$(window).resize(function() {
-		if(matchMedia("screen and (min-width:768px)").matches){
-			gnbOverPc();
-		}else{
-			//gnbOverPc();
-			$('.gnb, .gnb .dep1_list > li').off('mouseover mouseleave');
-			gnbMo();
-		}
-	}).trigger("resize");
+	$('.family_site .btn_family').on('click', function(){
+		$(this).toggleClass('active');
+		$(this).next('.family_list').toggle();
+	});
 });
 
 </script>
