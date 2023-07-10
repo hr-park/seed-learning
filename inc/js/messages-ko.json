@@ -29,7 +29,9 @@
         "qna"               : "1:1문의",
         "guide"               : "구매안내",
         "login"               : "로그인",
+        "logout"               : "로그아웃",
         "join"               : "회원가입",
+        "mypage"               : "마이페이지",
         "skip-nav" : "본문 바로가기"
     },
 
@@ -215,7 +217,7 @@
             "title"              : "회원가입",
             "sub-title" : "회원가입이 안전하게 완료되었습니다.",
             "join-date" : "가입일 : ",
-            "terms" : " 이용약관 및 개인정보처리방침 ",
+            "terms" : "이용약관 및 개인정보처리방침 ",
             "marketing" : "마케팅 활용 ",
             "info-txt" : [
                 "<li>학생과 선생님을 위한<span class='pc_new_line'><em class='ft_pink'>다양한 학습 자료</em>를 제공합니다!</span><li>",
@@ -277,7 +279,6 @@
             "testprep"     : "Test Prep" 
         },
         "series-tit"        : "시리즈",
-        "search-result"        : "검색결과 <em>24</em>건",
         "btn-preview"        : "미리보기",
         "btn-data"        : "부가자료",
         "no-data"        : "리스트가 없습니다."
@@ -286,7 +287,7 @@
     "bookdetail": {
         "title"     : "교재소개",
         "btn-preview"        : "미리보기",
-        "btn_data"        : "부가자료",
+        "btn-data"        : "부가자료",
         "target"        : "학습대상",
         "cefr"        : "CEFR",
         "isbn"        : "ISBN",

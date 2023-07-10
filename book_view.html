@@ -45,10 +45,15 @@
 				<div class="book_datail">
 					<div class="detail_top">
 						<div class="img_area">
-							<span class="thumb"><img src="inc/images/sample_series.png" alt="Speaking for Speeches 1 교재 표지"></span>
+							<div class="thumb_area">
+								<span class="thumb">
+									<img src="inc/images/sample.png" alt="Speaking for Speeches 1 교재 표지">
+								</span>
+								<button type="button" class="btn_like active">관심교재 등록</button>
+							</div>
 							<div class="btns" data-device="pc">
 								<a href="javascript://" class="btn_preview" data-i18n="bookdetail.btn-preview"><!-- 미리보기 --></a>
-								<a href="javascript://" class="bookdetail.btn-data"><!-- 부가자료 --></a>
+								<a href="javascript://" class="btn_data" data-i18n="bookdetail.btn-data"><!-- 부가자료 --></a>
 							</div>
 						</div>
 						<div class="info_area">
@@ -81,20 +86,20 @@
 							<strong class="tit" data-i18n="bookdetail.series-tit"><!-- 시리즈 --></strong>
 							<div class="swiper-wrapper"><!-- 리스트없을때??? -->
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
+							<div class="btn_circle swiper-button-next"></div>
+							<div class="btn_circle swiper-button-prev"></div>
 						</div>
 						<strong class="tit" data-device="mo" data-i18n="bookdetail.series-tit"><!-- 시리즈 --></strong>
 						<div class="search_sel" data-device="mo">
@@ -108,20 +113,20 @@
 							<strong class="tit" data-i18n="bookdetail.related-tit"><!-- 관련 도서 --></strong>
 							<div class="swiper-wrapper"><!-- 리스트없을때??? -->
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="inc/images/sample_series.png" alt="">
+									<img src="inc/images/sample.png" alt="">
 								</div>
 							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
+							<div class="btn_circle swiper-button-next"></div>
+							<div class="btn_circle swiper-button-prev"></div>
 						</div>
 						<strong class="tit" data-device="mo" data-i18n="bookdetail.related-tit"><!-- 관련 도서 --></strong>
 						<div class="search_sel" data-device="mo">
@@ -211,6 +216,7 @@
 					nextEl: ".series_swiper .swiper-button-next",
 					prevEl: ".series_swiper .swiper-button-prev",
 				},
+				autoHeight:true
 			});
 			let swiper2 = new Swiper('.book_swiper', {
 				slidesPerView: 2,
@@ -218,6 +224,9 @@
 					nextEl: ".book_swiper .swiper-button-next",
 					prevEl: ".book_swiper .swiper-button-prev",
 				},
+			});
+			$('.btn_like').on('click', function(){
+				$(this).toggleClass('active');
 			});
 		});
 	</script>
