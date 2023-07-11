@@ -37,6 +37,7 @@ input[type=number],
 input[type=password],
 input[type=tel],
 textarea{-webkit-appearance:none;appearance:none;box-shadow:0 0;-moz-appearance:textfield;}
+input[type="button"],input[type="submit"],input[type="reset"]{-webkit-appearance:none;}
 input::placeholder,
 textarea::placeholder{color:#bbb;}
 input:-ms-input-placeholder{color:#bbb;}
@@ -314,7 +315,7 @@ body *{box-sizing:border-box}
 .book_list_wrap .item .thumb_area{display:flex;min-height:384px;align-content:center;justify-content:center;align-items:center;padding:40px 20px 35px;}
 .book_list_wrap .item .thumb{position:relative;}
 .book_list_wrap .item .thumb .btn_like{position:absolute;right:7px;bottom:7px;z-index:1;display:inline-block;width:38px;height:38px;background:url('../images/ico_heart.png') no-repeat 0 0 / 100% auto;border:0 none;text-indent:-9999px;}
-.book_list_wrap .item .thumb .btn_like.active{background-position:50% 100%;background-size:20px auto}
+.book_list_wrap .item .thumb .btn_like.active{background-position:50% 100%;}
 .book_list_wrap .item .info{padding:30px 10px;border-top:1px dashed #c7c7c7}
 .book_list_wrap .item .info .tit{margin-bottom:5px;font-size:22px;/* font-family:'Jalnan'; */line-height:1.2;font-weight:700}
 .book_list_wrap .item .info .detail{color:#777;font-size:18px;font-weight:300;letter-spacing:-.05em;}
@@ -332,7 +333,7 @@ body *{box-sizing:border-box}
 .book_datail .info_area .tit_box .type{font-size:18px;font-weight:700;color:#d7000f;font-family:'Jalnan';letter-spacing:-.01em;}
 .book_datail .info_area .tit_box .book_name{font-size:40px;font-weight:700;}
 .book_datail .thumb_area{position:relative}
-.book_datail .thumb_area .btn_like{position:absolute;right:7px;bottom:7px;z-index:1;display:inline-block;width:38px;height:38px;background:url('../images/ico_heart.png') no-repeat 0 0 / 100% auto;border:0 none;text-indent:-9999px;}
+.book_datail .thumb_area .btn_like{position:absolute;right:7px;bottom:7px;z-index:1;display:inline-block;width:38px;height:38px;padding:0;background:url('../images/ico_heart.png') no-repeat 0 0 / 100% auto;border:0 none;text-indent:-9999px;}
 .book_datail .thumb_area .btn_like.active{background-position:0 100%}
 .book_datail .info_area dl{display:inline-block;padding:30px 0 30px 25px;}
 .book_datail .info_area dl:after{content:'';display:block;clear:both;}
@@ -362,7 +363,7 @@ body *{box-sizing:border-box}
 .summary_list li:nth-last-child(-n+2):nth-child(2n+1),
 .summary_list li:nth-last-child(-n+2):nth-child(2n+1) ~ li{border-bottom:0 none}
 .summary_list li .thumb{position:relative;display:flex;align-items:center;justify-content:center;width:25%;flex-shrink:0;}
-.summary_list li .thumb .btn_like{position:absolute;right:7px;bottom:7px;z-index:1;display:inline-block;width:28px;height:28px;background:url('../images/ico_heart.png') no-repeat 0 0 / 100% auto;border:0 none;text-indent:-9999px;}
+.summary_list li .thumb .btn_like{position:absolute;right:7px;bottom:7px;z-index:1;display:inline-block;width:28px;height:28px;padding:0;background:url('../images/ico_heart.png') no-repeat 0 0 / 100% auto;border:0 none;text-indent:-9999px;}
 .summary_list li .thumb .btn_like.active{background-position:50% 100%}
 .summary_list li .info{padding:0 20px;}
 .summary_list li .tit{margin-bottom:20px;font-size:22px;color:#333;font-weight:700;letter-spacing:-.05em;}
