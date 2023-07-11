@@ -97,8 +97,8 @@ body *{box-sizing:border-box}
 .btn_round + .btn_round{margin-left:5px;}
 .btn_round.bg_gray{background:#999;color:#fff;}
 
-.btn_download{display:inline-block;width:20px;height:20px;text-indent:-9999px;border:0 none;background:url('../images/ico_download.png') no-repeat 50% 50%;background-size:100% auto}
-.btn_location{display:inline-block;width:22px;height:30px;text-indent:-9999px;border:0 none;background:url('../images/btn_location.png') no-repeat 50% 50%;background-size:100% auto}
+.btn_download{display:inline-block;width:20px;height:20px;padding:0;text-indent:-9999px;border:0 none;background:url('../images/ico_download.png') no-repeat 50% 50%;background-size:100% auto}
+.btn_location{display:inline-block;width:22px;height:30px;padding:0;text-indent:-9999px;border:0 none;background:url('../images/btn_location.png') no-repeat 50% 50%;background-size:100% auto}
 .btn_arrow_box{/* margin:70px 0; */margin:35px 0;text-align:center;}
 .btn_arrow_box .btn_arrrow{display:inline-block;padding:8px 40px 8px 25px;font-family:'OneMobileTitle';font-size:17px;color:#fff;border-radius:17px;background:#999 url('../images/ico_arrow.png') no-repeat right 24px top 50%;}
 /**/
@@ -403,7 +403,7 @@ body *{box-sizing:border-box}
 .faq_list li .qna_tit{position:relative;display:flex;padding:30px 0;font-size:18px;}
 .faq_list li .qna_tit .type{width:260px;flex-shrink:1;text-align:center;color:#2c93b6;font-weight:500}
 .faq_list li .qna_tit .tit{display:block;padding-left:50px}
-.faq_list li .qna_tit .btn_toggle{content:'';position:absolute;right:27px;top:50%;z-index:1;display:inline-block;width:14px;height:9px;background:url('../images/ico_selet.png') no-repeat 50% 50% / 100% auto;text-indent:-9999px;transform:translate(0, -50%);border:0 none}
+.faq_list li .qna_tit .btn_toggle{content:'';position:absolute;right:27px;top:50%;z-index:1;display:inline-block;width:14px;height:9px;padding:0;background:url('../images/ico_selet.png') no-repeat 50% 50% / 100% auto;text-indent:-9999px;transform:translate(0, -50%);border:0 none}
 .faq_list li.active .qna_tit .btn_toggle{transform:translate(0, -50%) rotate(180deg)}
 .faq_list li.active .qna_tit .tit{font-weight:500}
 .faq_list li .qna_view{display:none;padding:30px 0 30px 310px;background:#f4fbfc;border-top:1px solid #c7c7c7;font-size:18px;}

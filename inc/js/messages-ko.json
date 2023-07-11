@@ -281,7 +281,7 @@
         "series-tit"        : "시리즈",
         "btn-preview"        : "미리보기",
         "btn-data"        : "부가자료",
-        "no-data"        : "리스트가 없습니다."
+        "no-data"        : "검색 결과가 없습니다."
     },
 
     "bookdetail": {
