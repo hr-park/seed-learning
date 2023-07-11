@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header">
 	<div class="top_sch">
-		<h1><a href="../index.html"><img src="inc/images/logo.png" data-i18n="[alt]header.logo"></a></h1>
+		<h1><a href="index.html"><img src="inc/images/logo.png" data-i18n="[alt]header.logo"></a></h1>
 		<div class="search_box">
 			<input type="text" name="schKeyword" id="schKeyword" data-i18n="[placeholder]header.search-ph"><!-- 교재/자료명을 입력해주세요. -->
 			<a href="book_search.html" class="btn_search" data-i18n="header.search"><!--검색--></a>
@@ -197,8 +197,8 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'ko',
-      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
-		//resGetPath : '/inc/js/messages-ko.json',
+      	//resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+		resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
 		//console.log(err);

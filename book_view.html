@@ -82,24 +82,40 @@
 						</div>
 					</div>
 					<div class="related_wrap">
-						<div class="swiper-container series_swiper" data-device="pc">
+						<div class="swiper_wrap" data-device="pc">
 							<strong class="tit" data-i18n="bookdetail.series-tit"><!-- 시리즈 --></strong>
-							<div class="swiper-wrapper"><!-- 리스트없을때??? -->
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
+							<!-- <p class="no-data">관련 시리즈가 없습니다.</p> -->
+							<div class="swiper-container series_swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="javascript://"><img src="inc/images/sample.png" alt=""></a>
+									</div>
 								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
+								<div class="btn_circle swiper-button-next"></div>
+								<div class="btn_circle swiper-button-prev"></div>
 							</div>
-							<div class="btn_circle swiper-button-next"></div>
-							<div class="btn_circle swiper-button-prev"></div>
+						</div>
+						<div class="swiper_wrap" data-device="pc">
+							<strong class="tit" data-i18n="bookdetail.related-tit"><!-- 관련 도서 --></strong>
+							<!--<p class="no_data">관련 도서가 없습니다.</p>-->
+							<div class="swiper-container book_swiper">
+								<div class="swiper-wrapper">
+									<div classswiper_wrap="swiper-slide">
+										<a href="javascript://"><img src="inc/images/sample.png" alt=""></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript://"><img src="inc/images/sample.png" alt=""></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript://"><img src="inc/images/sample.png" alt=""></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript://"><img src="inc/images/sample.png" alt=""></a>
+									</div>
+								</div>
+								<div class="btn_circle swiper-button-next"></div>
+								<div class="btn_circle swiper-button-prev"></div>
+							</div>
 						</div>
 						<strong class="tit" data-device="mo" data-i18n="bookdetail.series-tit"><!-- 시리즈 --></strong>
 						<div class="search_sel" data-device="mo">
@@ -108,25 +124,6 @@
 								<option>Speaking for Speeches 2</option>
 								<option>Speaking for Speeches 2</option>
 							</select>
-						</div>
-						<div class="swiper-container book_swiper" data-device="pc">
-							<strong class="tit" data-i18n="bookdetail.related-tit"><!-- 관련 도서 --></strong>
-							<div class="swiper-wrapper"><!-- 리스트없을때??? -->
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="inc/images/sample.png" alt="">
-								</div>
-							</div>
-							<div class="btn_circle swiper-button-next"></div>
-							<div class="btn_circle swiper-button-prev"></div>
 						</div>
 						<strong class="tit" data-device="mo" data-i18n="bookdetail.related-tit"><!-- 관련 도서 --></strong>
 						<div class="search_sel" data-device="mo">
@@ -149,18 +146,18 @@
 							<p class="tit" data-i18n="bookdetail.data-download"><!-- 학습 부가자료 다운로드 --></p>
 							<div class="tb_wrap">
 								<ul class="ul_head">
-									<li class="w200"><input type="checkbox" value=""></li>
+									<li class="w200"><input type="checkbox" id="all_agree"></li>
 									<li class="w230" data-i18n="bookdetail.data-type"><!-- 자료유형 --></li>
 									<li class="w_auto" data-i18n="bookdetail.data-name"><!-- 자료명 --></li>
 									<li class="w200" data-i18n="bookdetail.data-file"><!-- 파일 --></li>
 								</ul>
 								<ul class="ul_body"> 
 									<li>
-										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w200" data-device="pc"><input type="checkbox" name="chk_download"></span>
 										<span class="w230" data-device="pc">MP3</span>
 										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
-										<div class="mo_view" data-device="mo">
-											<span><input type="checkbox" value=""></span>
+										<div class="mo_view flex_view" data-device="mo">
+											<div class="w30"><input type="checkbox" name="chk_download" ></div>
 											<div>
 												<strong class="txt_underline">MP3</strong>
 												<p><em>Top Phonics 1-1.mp3</em></p>
@@ -169,11 +166,11 @@
 										<span class="w200"><button type="button" class="btn_download" data-i18n="bookdetail.file-downlad"><!-- 파일 다운로드 --></button></span>
 									</li>
 									<li>
-										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w200" data-device="pc"><input type="checkbox"  name="chk_download"></span>
 										<span class="w230" data-device="pc">MP3</span>
 										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
-										<div class="mo_view" data-device="mo">
-											<span><input type="checkbox" value=""></span>
+										<div class="mo_view flex_view" data-device="mo">
+											<div class="w30"><input type="checkbox" name="chk_download" ></div>
 											<div>
 												<strong class="txt_underline">MP3</strong>
 												<p><em>Top Phonics 1-1.mp3</em></p>
@@ -182,11 +179,11 @@
 										<span class="w200"><button type="button" class="btn_download" data-i18n="bookdetail.file-downlad"><!-- 파일 다운로드 --></button></span>
 									</li>
 									<li>
-										<span class="w200" data-device="pc"><input type="checkbox" value=""></span>
+										<span class="w200" data-device="pc"><input type="checkbox"  name="chk_download"></span>
 										<span class="w230" data-device="pc">MP3</span>
 										<span class="w_auto" data-device="pc"><em>Top Phonics 1-1.mp3</em></span>
-										<div class="mo_view" data-device="mo">
-											<span><input type="checkbox" value=""></span>
+										<div class="mo_view flex_view" data-device="mo">
+											<div class="w30"><input type="checkbox" name="chk_download" ></div>
 											<div>
 												<strong class="txt_underline">MP3</strong>
 												<p><em>Top Phonics 1-1.mp3</em></p>
@@ -195,6 +192,10 @@
 										<span class="w200"><button type="button" class="btn_download" data-i18n="bookdetail.file-downlad"><!-- 파일 다운로드 --></button></span>
 									</li>
 								</ul>
+							</div>
+							<div class="btn_round_wrap">
+								<a href="javascript://" class="btn_round bg_gray" data-i18n="bookdetail.choice-downlad"><!-- 선택 다운로드 --></a>
+								<a href="javascript://" class="btn_round" data-i18n="bookdetail.all-downlad"><!-- 전체 다운로드 --></a>	
 							</div>
 							<a href="javascript://" class="btn btn_fill" data-i18n="bookdetail.list"><!-- 목록으로 --></a>
 						</div>
@@ -224,9 +225,31 @@
 					nextEl: ".book_swiper .swiper-button-next",
 					prevEl: ".book_swiper .swiper-button-prev",
 				},
+				autoHeight:true
 			});
+
 			$('.btn_like').on('click', function(){
 				$(this).toggleClass('active');
+			});
+
+			$('#all_agree').on('click', function(){
+				if($(this).is(":checked")){
+					$('input[name="chk_download"]').prop('checked', true);
+				} else{
+					$('input[name="chk_download"]').prop('checked', false);
+				}
+			});
+			
+			$('input[name="chk_download"]').on('click', function(){
+				let inpCnt = $('input[name="chk_download"]').length;
+					inpChkCnt = $('input[name="chk_download"]:checked').length;
+
+				if(inpCnt == inpChkCnt){
+					$('#all_agree').prop('checked', true);
+
+				} else if(inpCnt != inpChkCnt){
+					$('#all_agree').prop('checked', false);
+				}
 			});
 		});
 	</script>

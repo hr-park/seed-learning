@@ -220,10 +220,10 @@
             "terms" : "이용약관 및 개인정보처리방침 ",
             "marketing" : "마케팅 활용 ",
             "info-txt" : [
-                "<li>학생과 선생님을 위한<span class='pc_new_line'><em class='ft_pink'>다양한 학습 자료</em>를 제공합니다!</span><li>",
-                "<li><em class='ft_org'>씨드러닝 리더스와 스킬북</em>에 관한<span class='pc_new_line'>다양한 정보를 확인하세요!</span><li>",
-                "<li>씨드러닝 <em class='ft_mint'>신간 및 다양한 이벤트 정보</em>를<span class='pc_new_line'>가장 빠르게 전달해 드릴게요!</span><li>",
-                "<li><p class='sub_txt'>프로모션 수신 동의 시, 마이페이지 > 정보 수정에서<span class='pc_new_line'>수정 가능합니다.</span></p><li>"
+                "<li>학생과 선생님을 위한<span class='pc_new_line'><em class='ft_pink'>다양한 학습 자료</em>를 제공합니다!</span></li>",
+                "<li><em class='ft_org'>씨드러닝 리더스와 스킬북</em>에 관한<span class='pc_new_line'>다양한 정보를 확인하세요!</span></li>",
+                "<li>씨드러닝 <em class='ft_mint'>신간 및 다양한 이벤트 정보</em>를<span class='pc_new_line'>가장 빠르게 전달해 드릴게요!</span></li>",
+                "<li class='sub_txt_list'><p class='sub_txt'>프로모션 수신 동의 시, 마이페이지 > 정보 수정에서<span class='pc_new_line'>수정 가능합니다.</span></p></li>"
             ],
             "login"              : "로그인"
         },
@@ -250,7 +250,7 @@
     "bookservice": {
         "title"        : "학습/수업 자료",
         "sub-tit"        : "자료유형",
-        "sort-row-level"        : "높은 레벨순",
+        "sort-row-level"        : "낮은 레벨순",
         "sort-high-level"        : "높은 레벨순",
         "sort-book-name"        : "도서명순",
         "sort-latest"        : "최신순",
@@ -304,7 +304,9 @@
         "data-type"        : "자료유형",
         "data-name"        : "자료명",
         "data-file"        : "파일",
-        "file-downlad"        : "파일 다운로드"
+        "file-downlad"        : "파일 다운로드",
+        "choice-downlad"        : "선택 다운로드",
+        "all-downlad"        : "전체 다운로드"
     },
 
     "findpwd": {

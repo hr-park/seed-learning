@@ -50,7 +50,7 @@
 						<span class="num">2</span>
 					</div>
 				</div>
-				<div class="join_form">
+				<div class="join_form pd0">
 					<div class="all_chk">
 						<span class="inp_check">
 							<input type="checkbox" id="all_agree" name="">
@@ -59,21 +59,21 @@
 					</div>
 					<div class="chk">
 						<span class="inp_check">
-							<input type="checkbox" id="terms_agree" name="">
+							<input type="checkbox" id="terms_agree" name="chk_agree">
 							<label for="terms_agree" data-i18n="member.joinstpe1.terms-agree"><!-- [필수] 서비스 이용약관 동의 --></label>
 						</span>
 						<span class="inp_check">
-							<input type="checkbox" id="privacy_agree" name="">
+							<input type="checkbox" id="privacy_agree" name="chk_agree">
 							<label for="privacy_agree" data-i18n="member.joinstpe1.privacy-agree"><!-- [필수] 개인정보처리방침 동의 --></label>
 						</span>
 						<span class="inp_check">
-							<input type="checkbox" id="marketing_agree" name="">
+							<input type="checkbox" id="marketing_agree" name="chk_agree">
 							<label for="marketing_agree" data-i18n="member.joinstpe1.marketing-agree"><!-- [선택] 마케팅 활용 동의 --></label>
 						</span>
 					</div>
 					<div class="btn_confirm">
 						<a href="javascript://" class="btn btn_disabled" data-i18n="member.joinstpe1.cancel"></a><!-- 취소 --></a>
-						<a href="javascript://" class="btn btn_fill" data-i18n="member.joinstpe1.ok"></a><!-- 확인 --></a>
+						<a href="join_step2.html" class="btn btn_fill" data-i18n="member.joinstpe1.ok"></a><!-- 확인 --></a>
 					</div>
 				</div>
 			</div>
@@ -84,5 +84,29 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+		$(function(){
+			// 모든 약관 동의
+			$('#all_agree').on('click', function(){
+				if($(this).is(":checked")){
+					$('.join_form .chk input[type=checkbox]').prop('checked', true);
+				} else{
+					$('.join_form .chk input[type=checkbox]').prop('checked', false);
+				}
+			});
+
+			$('.join_form .chk input[name=chk_agree]').on('click', function(){
+				let inpCnt = $('.join_form .chk input[name=chk_agree]:checked').length;
+					inpChkCnt = $('.join_form .chk input[name=chk_agree]').length;
+
+				if(inpCnt == inpChkCnt){
+					$('#all_agree').prop('checked', true);
+
+				} else if(inpCnt != inpChkCnt){
+					$('#all_agree').prop('checked', false);
+				}
+			});
+		});
+	</script>
 </body>
 </html>

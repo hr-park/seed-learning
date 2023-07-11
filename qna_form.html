@@ -106,8 +106,10 @@
 							</div>
 							<div class="input_field">
 								<label for="" data-i18n="customer.qna.file"><!-- 첨부파일 --></label>								
-								<div class="inp_box">
-									<input type="file" id="" name="" placeholder="파일 선택" data-i18n="[placeholder]customer.qna.input-file">
+								<div class="inp_box filebox">
+									<input class="upload_name" data-i18n="[placeholder]customer.qna.file">
+									<label for="file" data-i18n="customer.qna.file"></label> 
+									<input type="file" id="file">
 								</div>
 							</div>
 						</fieldset>
@@ -126,5 +128,11 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+	$("#file").on('change',function(){
+		var fileName = $("#file").val();
+		$(".upload_name").val(fileName);
+	});
+	</script>
 </body>
 </html>
