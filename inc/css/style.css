@@ -23,6 +23,7 @@ caption{position:relative;visibility:hidden;overflow:hidden;line-height:0.1%;fon
 .blind{overflow:hidden;position:absolute;left:-9999px !important;top:-9999px !important}
 img,fieldset{border:0 none;}
 label,button{cursor:pointer;}
+button{padding:0}
 address{font-style:normal;}
 em{font-style:normal;font-weight:700}
 strong{font-weight:normal;}
@@ -79,10 +80,11 @@ body *{box-sizing:border-box}
 /* .sel_box select{display:block;width:100%;height:100%;border:0 none;padding: 0 26px;border:1px solid #999;border-radius:20px;font-size:16px} */
 .sel_box select{background:#fff}
 .sel_box select:invalid{color:#bbb}
+.sel_box select:disabled{background:#fbfbfb;color:#bbb}
 .sel_box select option{color:#333}
 
-/*align*/
-.t_right{text-align:right}
+/*margin, padding*/
+.mr10{margin-right:10px}
 
 /*btn*/
 .btn{display:flex;height:67px;align-items:center;justify-content:center;box-shadow:rgba(0, 0, 0, .1) 0 0 25px 0;border-radius:40px;font-size:20px;font-family:'OneMobileTitle';}
@@ -256,7 +258,11 @@ body *{box-sizing:border-box}
 .input_field .inp_box select{display:block;width:100%;height:68px;padding:0 26px;border:1px solid #999;border-radius:20px;font-size:16px;}
 .input_field .inp_box textarea{display:block;width:100%;padding:24px 26px;border:1px solid #999;border-radius:20px;font-size:16px;}
 .input_field .inp_box .btn_auth{position:absolute;right:13px;top:18px;display:inline-flex;width:132px;height:32px;align-items:center;justify-content:center;background:#999;border-radius:16px;color:#fff;font-size:17px;font-family:'OneMobileTitle';}
-.input_field .inp_box.filebox{}
+.input_field .inp_box.file_box .btn_file{position:absolute;right:15px;top:50%;display:inline-block;width:28px;height:28px;text-indent:-9999px;border:0 none;background:url('../images/ico_plus.png') no-repeat 50% 50% / 14px auto;transform:translate(0, -50%)}
+.input_field .inp_box.file_box .btn_delete{display:none;position:absolute;right:15px;top:50%;width:28px;height:28px;text-indent:-9999px;border:0 none;background:url('../images/ico_plus.png') no-repeat 50% 50% / 14px auto;transform:translate(0, -50%) rotate(45deg)}
+.input_field .inp_box.file_box input[type="file"]{overflow:hidden;position:absolute;width:0;height:0;padding:0;border:0;}
+
+
 .input_field .inp_box.phone .inp_box{flex:50%}
 
 .join_complete{padding-top:50px;border-top:1px solid #333}
@@ -430,11 +436,11 @@ body *{box-sizing:border-box}
 
 .sch_sel_type{margin-bottom:40px;padding:45px 35px;background:#fbfbfb;}
 .sch_sel_type .flex_box{overflow:hidden;display:flex;border:1px solid #999;border-radius:16px;background:#fff;}
-.sch_sel_type .flex_box > div{flex:1;}
-.sch_sel_type .sel_box{display:flex;align-items:center;}
+.sch_sel_type .flex_box > div{/* flex:1; */}
+.sch_sel_type .sel_box{width:320px;flex:1;display:flex;align-items:center;}
 .sch_sel_type .sel_box select{display:block;width:100%;height:60px;padding:0 30px;border:0 none;font-size:18px;letter-spacing:-.05em}
-.sch_sel_type .search_box{display:flex;align-items:center}
-.sch_sel_type .search_box input{width:calc(100% - 130px);padding-right:10px;border:0 none;font-size:18px;letter-spacing:-.05em}
+.sch_sel_type .search_box{display:flex;align-items:center;padding-right:10px;}
+.sch_sel_type .search_box input{padding:0 10px;border:0 none;font-size:18px;letter-spacing:-.05em}
 .sch_sel_type .search_box .btn_search{display:inline-flex;width:110px;height:32px;align-items:center;justify-content:center;background:#999;border:0 none;border-radius:16px;color:#fff;font-size:17px;font-family:'OneMobileTitle';}
 
 .pagination{margin-top:60px;text-align:center}
@@ -608,7 +614,7 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 	.main .menu_list li a{background-position:20px 50% !important;background-size:30px auto !important;}
 	.main .notice_area{height:42px;margin-top:17px;}
 	.main .notice_area .tit_notice{display:none}
-	.main .notice_area .cont{height:100%;padding:0;background:url('../images/main/ico_plus.png') no-repeat right 16px top 50% / 9px auto;}
+	.main .notice_area .cont{height:100%;padding:0;background:url('../images/ico_plus.png') no-repeat right 16px top 50% / 9px auto;}
 	.main .notice_area .cont a{line-height:40px;width:100%;padding:0 40px 0 20px;color:#777;font-size:12px}
 	.main .notice_area .cont a:before{content:'!';display:inline-flex;width:21px;height:21px;margin-right:12px;align-items:center;justify-content:center;background:#f8d461;font-family:'Jalnan';vertical-align:middle;border-radius:12px;}
 	.main .service_area{flex-direction:column; gap:8px 0;margin:16px 0 0;}
@@ -664,6 +670,8 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 	.input_field .inp_box.flex_warp .inp_check{margin:0}
 	.input_field .inp_box.col_3{flex-direction:column;}
 	.input_field .inp_box.col_3 > div{width:100%;max-width:100%;}
+	.input_field .inp_box.file_box .btn_file,
+	.input_field .inp_box.file_box .btn_delete{right:3px;background-size:10px auto}
 	.join_complete{padding-top:25px;}
 	.join_complete h3{padding:0 30px;}
 	.join_complete h3 strong{padding-right:30px;font-size:19px;background-size:22px auto}
@@ -747,6 +755,16 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 	.search_sel{overflow:hidden;position:relative;margin:15px;border:1px solid #c7c7c7;border-radius:5px;}
 	.search_sel:after{content:'';position:absolute;right:12px;top:50%;display:inline-block;width:10px;height:7px;background:url('../images/ico_selet.png') no-repeat 50% 50% / 100% auto;pointer-events:none;transform:translate(0, -50%)}
 	.search_sel select{display:block;width:100%;padding:7px 12px;background:#fff;border:0 none;font-size:13px;font-weight:500;}
+
+	.sch_sel_type{padding:25px 15px;margin-bottom:0;}
+	.sch_sel_type .flex_box{overflow:visible;flex-wrap:wrap;row-gap:5px;border:0 none}
+	.sch_sel_type .flex_box > div{overflow:hidden;flex:auto;}
+	.sch_sel_type .sel_box{width:50%;justify-content:space-between;border:1px solid #c7c7c7;border-radius:5px;}
+	.sch_sel_type .sel_box select{height:25px;padding:0 10px;font-size:13px;border-radius:5px;}
+	.sch_sel_type .sel_box:after{top:10px}
+	.sch_sel_type .search_box{padding-right:0;column-gap:10px;}
+	.sch_sel_type .search_box input{height:25px;flex:1;padding-right:0;border:1px solid #c7c7c7;border-radius:5px;font-size:13px;}
+	.sch_sel_type .search_box .btn_search{width:85px;height:24px;font-size:13px;}
 
 
 	.board_search{max-width:270px;margin:40px auto 70px}

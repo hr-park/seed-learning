@@ -48,48 +48,48 @@
 						<div class="chk_wrap">
 							<!-- -->
 							<span class="inp_category">
-								<input type="checkbox" id="all" />
-								<label for="all" data-i18n="bookintro.category.all"><!-- All --></label>
+								<input type="checkbox" id="all_chk" />
+								<label for="all_chk" data-i18n="bookintro.category.all"><!-- All --></label>
 							</span>
 							<!-- -->
 							<span class="inp_category">
-								<input type="checkbox" id="phonics" />
+								<input type="checkbox" name="category" id="phonics" />
 								<label for="phonics" data-i18n="bookintro.category.phonics"><!-- Phonics --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="coursebook" />
+								<input type="checkbox" name="category" id="coursebook" />
 								<label for="coursebook" data-i18n="bookintro.category.coursebook"><!-- Course Book --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="reading" />
+								<input type="checkbox" name="category" id="reading" />
 								<label for="reading" data-i18n="bookintro.category.reading"><!-- Reading --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="readers" />
+								<input type="checkbox" name="category" id="readers" />
 								<label for="readers" data-i18n="bookintro.category.readers"><!-- Readers --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="listening" />
+								<input type="checkbox" name="category" id="listening" />
 								<label for="listening" data-i18n="bookintro.category.listening"><!-- Listening --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="speaking" />
+								<input type="checkbox" name="category" id="speaking" />
 								<label for="speaking" data-i18n="bookintro.category.speaking"><!-- Speaking --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="writing" />
+								<input type="checkbox" name="category" id="writing" />
 								<label for="writing" data-i18n="bookintro.category.writing"><!-- Writing --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="vocabulary" />
+								<input type="checkbox" name="category" id="vocabulary" />
 								<label for="vocabulary" data-i18n="bookintro.category.vocabulary"><!-- Vocabulary --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="grammar" />
+								<input type="checkbox" name="category" id="grammar" />
 								<label for="grammar" data-i18n="bookintro.category.grammar"><!-- grammar --></label>
 							</span>
 							<span class="inp_category">
-								<input type="checkbox" id="testprep" />
+								<input type="checkbox" name="category" id="testprep" />
 								<label for="testprep" data-i18n="bookintro.category.testprep"><!-- Test Prep --></label>
 							</span>
 						</div>
@@ -253,6 +253,25 @@
 			});
 			$('.btn_like').on('click', function(){
 				$(this).toggleClass('active');
+			});
+			$('#all_chk').on('click', function(){
+				if($(this).is(":checked")){
+					$('input[name="category"]').prop('checked', true);
+				} else{
+					$('input[name="category"]').prop('checked', false);
+				}
+			});
+
+			$('input[name="category"]').on('click', function(){
+				let inpCnt = $('input[name="category"]:checked').length;
+					inpChkCnt = $('input[name="category"]').length;
+
+				if(inpCnt == inpChkCnt){
+					$('#all_chk').prop('checked', true);
+
+				} else if(inpCnt != inpChkCnt){
+					$('#all_chk').prop('checked', false);
+				}
 			});
 		});
 	</script>

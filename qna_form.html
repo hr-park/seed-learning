@@ -85,7 +85,7 @@
 										</select>
 									</div>
 									<div class="sel_box">
-										<select>
+										<select disabled="disabled">
 											<option value="" data-i18n="customer.qna.sel-volume"><!-- 권 선택 --></option>
 											<option>option</option>
 										</select>
@@ -106,10 +106,11 @@
 							</div>
 							<div class="input_field">
 								<label for="" data-i18n="customer.qna.file"><!-- 첨부파일 --></label>								
-								<div class="inp_box filebox">
-									<input class="upload_name" data-i18n="[placeholder]customer.qna.file">
-									<label for="file" data-i18n="customer.qna.file"></label> 
+								<div class="inp_box file_box">
+									<input type="text" class="upload_name" readonly data-i18n="[placeholder]customer.qna.input-file">
+									<label for="file" class="btn_file" data-i18n="customer.qna.input-file"></label> 
 									<input type="file" id="file">
+									<button type="button" class="btn_delete">파일 삭제</button>
 								</div>
 							</div>
 						</fieldset>
@@ -132,6 +133,14 @@
 	$("#file").on('change',function(){
 		var fileName = $("#file").val();
 		$(".upload_name").val(fileName);
+		$(".btn_file").hide();
+		$(".btn_delete").show();
+	});
+	$(".btn_delete").on('click',function(){
+		$("#file").val('');
+		$(".upload_name").val('');
+		$(".btn_file").show();
+		$(".btn_delete").hide();
 	});
 	</script>
 </body>
