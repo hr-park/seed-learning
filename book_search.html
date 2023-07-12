@@ -22,6 +22,7 @@
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
 	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
+	<script src="inc/js/sweetalert.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
 <body>
@@ -56,7 +57,7 @@
 							<li>
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="booksearch.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 								<div class="info">
 									<p class="tit">Top Phonics 1(SB)</p>
@@ -73,7 +74,7 @@
 							<li>
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="booksearch.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 								<div class="info">
 									<p class="tit">Top Phonics 1(SB)</p>
@@ -89,7 +90,7 @@
 							<li>
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="booksearch.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 								<div class="info">
 									<p class="tit">Top Phonics 1(SB)</p>
@@ -103,7 +104,7 @@
 								<button type="button" class="btn_download" data-i18n="booksearch.download"><!-- 다운로드 --></button>
 							</li>
 						</ul>
-						<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow">교재 더 보기</a></div>
+						<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow" data-i18n="booksearch.more-book"><!-- 교재 더 보기 --></a></div>
 						<h3 class="tit_h3" data-i18n="booksearch.sub-tit-data"><!-- 학습/수업 자료 --></h3>
 						<div class="tb_wrap">
 							<ul class="ul_head">
@@ -138,7 +139,7 @@
 									<span class="w150"><button type="button" class="btn_download" data-i18n="booksearch.file-download"><!-- 파일 다운로드 --></button></span>
 								</li>
 							</ul>
-							<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow">자료 더 보기</a></div>
+							<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow" data-i18n="booksearch.more-data"><!-- 자료 더 보기 --></a></div>
 						</div>
 					</div>
 					<div class="tab_box" data-tab="2" style="display:none">
@@ -149,7 +150,7 @@
 							<li>
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="booksearch.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 								<div class="info">
 									<p class="tit">Top Phonics 1(SB)</p>
@@ -164,7 +165,7 @@
 							</li>
 							<!-- -->
 						</ul>
-						<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow">교재 더 보기</a></div>
+						<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow" data-i18n="booksearch.more-book"><!-- 교재 더 보기 --></a></div>
 					</div>
 					<div class="tab_box" data-tab="3" style="display:none">
 						<h3 class="tit_h3" data-i18n="booksearch.sub-tit-data"><!-- 학습/수업 자료 --></h3>
@@ -201,7 +202,7 @@
 									<span class="w150"><button type="button" class="btn_download" data-i18n="booksearch.file-download"><!-- 파일 다운로드 --></button></span>
 								</li>
 							</ul>
-							<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow">자료 더 보기</a></div>
+							<div class="btn_arrow_box"><a href="javascript://" class="btn_arrrow" data-i18n="booksearch.more-data"><!-- 자료 더 보기 --></a></div>
 						</div>
 					</div>
 				</div>
@@ -213,12 +214,5 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
-	<script>
-		$(function(){
-			$('.btn_like').on('click', function(){
-				$(this).toggleClass('active');
-			});
-		});
-	</script>
 </body>
 </html>

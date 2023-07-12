@@ -22,6 +22,7 @@
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
 	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
+	<script src="inc/js/sweetalert.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
 <body>
@@ -60,27 +61,64 @@
 									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.username-ph" name="">
 								</div>
 							</div>
+							<script>
+								//test필요
+								let userEmail = $('#userEmail').val();
+								$(function(){
+									$('#userEmail').on('input keyup', function(){
+										let chkValid = true;
+										/*if(chkValid){
+											if(!$('#userEmail').parents('.inp_box').hasClass('error') && !/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/.test(userEmail)){
+												$('#userEmail').parents('.inp_box').addClass('error');
+												$('#userEmail').parents('.inp_box').find('.txt_guide').remove();
+												$('#userEmail').parents('.inp_box').append('<p class="txt_guide">이메일 형식이 올바르지 않습니다.</p>');
+												$('#userEmail').focus();
+												chkValid = false;	
+											}else{
+												$('#userEmail').parents('.inp_box').removeClass('error');
+												$('#userEmail').parents('.inp_box').find('.txt_guide').remove();
+											}
+										}*/
+									});
+
+									$('.btn_auth').on('click', function(){
+										$(this).attr('disabled',true);
+										$('#userEmail').parents('.inp_box').append('<p class="txt_info"><span class="timer">2:30</span></p>');
+											setTimeout(function(){
+												$('.timer').remove();
+												$('#userEmail').parents('.inp_box').append('<p class="txt_info">인증이 완료되었습니다.</p>');
+												$('.btn_auth').hide();
+											}, 2000);
+
+										/*if(!userEmail==''){
+											
+										}else{
+											alert('올바른 이메일 주소를 입력해 주세요.');
+										}*/
+									});
+								});
+							</script>
 							<div class="input_field">
-								<label for="" data-i18n="member.joinstpe2.email"><!-- 이메일 --><span class="required">*</span></label>
-								<div class="inp_box email">
-									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.email-ph" name="">
-									<a href="javascript://" data-i18n="member.joinstpe2.email-auth" class="btn_auth"><!-- 인증하기 --></a>
+								<label for="userEmail" data-i18n="[html]member.joinstpe2.email"><!-- 이메일 <span class="required">*</span> --></label>
+								<div class="inp_box has_btn">
+									<input type="text" id="userEmail" data-i18n="[placeholder]member.joinstpe2.email-ph" name="">
+									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_auth"><!-- 인증하기 --></button>
 								</div>
 							</div>
 							<div class="input_field align_top">
-								<label for="" data-i18n="member.joinstpe2.pwd"><!-- 비밀번호 --><span class="required">*</span></label>
+								<label for="" data-i18n="[html]member.joinstpe2.pwd"><!-- 비밀번호 <span class="required">*</span> --></label>
 								<div class="inp_box flex_column">
 									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph" name="">
 									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph2" name="">
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="" data-i18n="member.joinstpe2.phone"><!-- 휴대폰 번호 --><span class="required">*</span></label>
+								<label for="" data-i18n="[html]member.joinstpe2.phone"><!-- 휴대폰 번호 <span class="required">*</span> --></label>
 								<div class="inp_box phone">
 									<div class="sel_box">
 										<select>
 											<option value="" selected data-i18n="member.joinstpe2.phone-opt"><!-- 대한민국 +82 --></option>
-											<option>010</option>
+											<option>010</option>>
 										</select>
 									</div>
 									<input type="number" id="" ata-i18n="[placeholder]member.joinstpe2.phone-ph" name="">
@@ -131,7 +169,7 @@
 					</form>
 					<div class="btn_confirm">
 						<a href="javascript://" class="btn btn_disabled" data-i18n="member.joinstpe2.cancel"></a><!-- 취소 --></a>
-						<a href="javascript://" class="btn btn_fill" data-i18n="member.joinstpe2.ok"></a><!-- 확인 --></a>
+						<a href="join_complete.html" class="btn btn_fill" data-i18n="member.joinstpe2.ok"></a><!-- 확인 --></a>
 					</div>
 				</div>
 			</div>

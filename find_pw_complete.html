@@ -27,7 +27,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content" data-i18n="header.skip-nav"><!--���� �ٷΰ���--></a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -38,9 +38,22 @@
 		<div id="floating_wrap"></div>
 		<!-- //[include] floating_sns -->
 		<!-- Content -->
-		<section id="content" style="height:500px">
-			
-		</section>
+		<div id="content">
+			<div class="login_wrap">
+				<div class="sub_tit">
+					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
+					<h2 data-i18n="member.findpw.title"><!-- 비밀번호 찾기 --></h2>
+				</div>
+				<div class="find_complete">
+					<p class="tit" data-i18n="member.findpw.txt-complete"><!-- 임시 비밀번호가 발급되었습니다. --></p>
+					<p class="txt_data">VN1VOY</p>
+				</div>
+				<div class="btn_confirm">
+					<a href="javascript:copy();" class="btn btn_disabled" data-i18n="member.findpw.copy"><!-- 비밀번호 복사 --></a>
+					<a href="login.html" class="btn btn_fill" data-i18n="member.findpw.login"><!-- 로그인 --></a>
+				</div>
+			</div>
+		</div>
 		<!--// Content -->
 		<!-- [include] footer -->
 		<div id="footer_wrap"></div>

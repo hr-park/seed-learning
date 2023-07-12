@@ -22,6 +22,7 @@
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
 	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
+	<script src="inc/js/sweetalert.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
 <body>
@@ -49,7 +50,7 @@
 								<span class="thumb">
 									<img src="inc/images/sample.png" alt="Speaking for Speeches 1 교재 표지">
 								</span>
-								<button type="button" class="btn_like active">관심교재 등록</button>
+								<button type="button" class="btn_like" data-i18n="bookdetail.book-like"><!-- 관심교재 등록 --></button>
 							</div>
 							<div class="btns" data-device="pc">
 								<a href="javascript://" class="btn_preview" data-i18n="bookdetail.btn-preview"><!-- 미리보기 --></a>
@@ -211,7 +212,7 @@
 	<!--// wrap -->
 	<script>
 		$(function(){
-			let swiper1 = new Swiper('.series_swiper', {
+			let series_swiper = new Swiper('.series_swiper', {
 				slidesPerView: 2,
 				navigation: {
 					nextEl: ".series_swiper .swiper-button-next",
@@ -219,17 +220,13 @@
 				},
 				autoHeight:true
 			});
-			let swiper2 = new Swiper('.book_swiper', {
+			let book_swiper = new Swiper('.book_swiper', {
 				slidesPerView: 2,
 				navigation: {
 					nextEl: ".book_swiper .swiper-button-next",
 					prevEl: ".book_swiper .swiper-button-prev",
 				},
 				autoHeight:true
-			});
-
-			$('.btn_like').on('click', function(){
-				$(this).toggleClass('active');
 			});
 
 			$('#all_agree').on('click', function(){

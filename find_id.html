@@ -27,7 +27,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content" data-i18n="header.skip-nav"><!--���� �ٷΰ���--></a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -38,9 +38,28 @@
 		<div id="floating_wrap"></div>
 		<!-- //[include] floating_sns -->
 		<!-- Content -->
-		<section id="content" style="height:500px">
-			
-		</section>
+		<div id="content">
+			<div class="login_wrap">
+				<div class="sub_tit">
+					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
+					<h2 data-i18n="member.findid.title"><!-- 아이디 찾기 --></h2>
+				</div>
+				<p class="txt_find" data-i18n="member.findid.txt-info"><!-- 가입 시 입력한 정보를 입력하면 아이디를 확인할 수 있습니다. --></p>
+				<div class="input_field">
+					<label for="" data-i18n="member.findid.name"><!-- 이름 --></label>
+					<div class="inp_box">
+						<input type="text" id="" data-i18n="[placeholder]member.findid.name-ph" name="">
+					</div>
+				</div>
+				<div class="input_field">
+					<label for="" data-i18n="[html]member.findid.phone"><!-- 휴대폰 번호 --></label>
+					<div class="inp_box has_btn">
+						<input type="number" id="" data-i18n="[placeholder]member.findid.phone-ph" name="">
+					</div>
+				</div>
+				<a href="find_id_complete.html" class="btn btn_fill" data-i18n="member.findid.title"><!-- 아이디 찾기 --></a>
+			</div>
+		</div>
 		<!--// Content -->
 		<!-- [include] footer -->
 		<div id="footer_wrap"></div>

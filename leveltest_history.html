@@ -27,7 +27,7 @@
 </head>
 <body>
 	<div class="skipnav">
-		<a href="#content" data-i18n="header.skip-nav"><!--���� �ٷΰ���--></a>
+		<a href="#content" data-i18n="header.skip-nav"><!--본문 바로가기--></a>
 	</div>
 	<!-- wrap -->
 	<div class="wrap">
@@ -38,9 +38,23 @@
 		<div id="floating_wrap"></div>
 		<!-- //[include] floating_sns -->
 		<!-- Content -->
-		<section id="content" style="height:500px">
-			
-		</section>
+		<div id="content">
+			<div class="inner">
+				<div class="sub_tit">
+					<h2 data-i18n="mypage.title"><!-- 마이페이지 --></h2>
+				</div>
+				<div class="mypage_name"><p>안녕하세요, <span>김씨드</span> 님</p></div>
+				<nav class="mypage_nav">
+					<ul>
+						<li><a href="my_pick.html" data-i18n="mypage.nav.link_pick"><!-- 관심 교재 --></a></li>
+						<li class="active"><a href="leveltest_history.html" data-i18n="mypage.nav.link_lv"><!-- 레벨테스트 이력 --></a></li>
+						<li><a href="qna_history.html" data-i18n="mypage.nav.link_inquery"><!-- 나의 문의 내역 --></a></li>
+						<li><a href="modify.html" data-i18n="mypage.nav.link_modify"><!-- 회원정보 수정 --></a></li>
+					</ul>
+				</nav>
+				<!-- table -->
+			</div>
+		</div>
 		<!--// Content -->
 		<!-- [include] footer -->
 		<div id="footer_wrap"></div>

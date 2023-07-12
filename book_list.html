@@ -22,6 +22,7 @@
 	<script src="inc/js/jquery-3.7.0.min.js"></script>
 	<script src="inc/js/i18next-1.11.2.min.js"></script>
 	<script src="inc/js/swiper-bundle.min.js"></script>
+	<script src="inc/js/sweetalert.min.js"></script>
 	<script src="inc/js/common.js"></script>
 </head>
 <body>
@@ -136,7 +137,7 @@
 							<div class="thumb_area">
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like active">관심교재 등록</button>
+									<button type="button" class="btn_like active" data-i18n="bookintro.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 							</div>
 							<div class="info">
@@ -153,7 +154,7 @@
 							<div class="thumb_area">
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/logo.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like active">관심교재 등록</button>
+									<button type="button" class="btn_like active" data-i18n="bookintro.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 							</div>
 							<div class="info">
@@ -169,7 +170,7 @@
 							<div class="thumb_area">
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like active">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="bookintro.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 							</div>
 							<div class="info">
@@ -185,7 +186,7 @@
 							<div class="thumb_area">
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like active">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="bookintro.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 							</div>
 							<div class="info">
@@ -201,7 +202,7 @@
 							<div class="thumb_area">
 								<div class="thumb">
 									<a href="book_view.html"><img src="inc/images/sample.png" alt="Speaking for Speeches 1(2nd) 교재 표지"></a>
-									<button type="button" class="btn_like active">관심교재 등록</button>
+									<button type="button" class="btn_like" data-i18n="bookintro.book-like"><!-- 관심교재 등록 --></button>
 								</div>
 							</div>
 							<div class="info">
@@ -250,9 +251,6 @@
 					nextEl: ".series_box .swiper-button-next",
 					prevEl: ".series_box .swiper-button-prev",
 				},
-			});
-			$('.btn_like').on('click', function(){
-				$(this).toggleClass('active');
 			});
 			$('#all_chk').on('click', function(){
 				if($(this).is(":checked")){
