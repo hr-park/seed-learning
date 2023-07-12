@@ -49,10 +49,8 @@
 				</li>
 			</ul>
 			<div class="util" data-device="pc">
-				<a href="login.html" data-i18n="header.login">로그인</a>
-				<a href="join_step1.html" data-i18n="header.join">회원가입</a>
-				<!--<a href="javascript://" data-i18n="header.logout">로그아웃></a>
-				<a href="book_pick.html" data-i18n="header.mypage">마이페이지</a>-->
+				<a href="login.html" data-i18n="header.login"><!-- 로그인 --></a>
+				<a href="join_step1.html" data-i18n="header.join"><!-- 회원가입 --></a>
 			</div>
 		</div>
 	</nav>
@@ -64,8 +62,10 @@
 		<div class="util">
 			<a href="login.html" class="btn_login" data-i18n="header.login"><!--로그인--></a>
 			<a href="join_step1.html" class="btn_join" data-i18n="header.join"><!--회원가입--></a>
-			<!--<a href="javascript://" class="btn_logout" data-i18n="header.logout">로그아웃></a>
-			<a href="book_pick.html" class="btn_mypage" data-i18n="header.mypage">마이페이지</a>-->
+		</div>
+		<div class="util"><!-- 퍼블 확인용 -->
+			<a href="javascript://" class="btn_logout" data-i18n="header.logout"><!-- 로그아웃 -->></a>
+			<a href="my_pick.html" class="btn_mypage" data-i18n="header.mypage"><!-- 마이페이지 --></a>
 		</div>
 		<ul class="link_list">
 			<li class="active"><a href="book_list.html" data-i18n="header.book-intro.phonics"><!--Phonics--></a></li>
@@ -197,7 +197,7 @@ $(function(){
     	load : 'unspecific',
       	lng : lang,
       	fallbackLng : 'ko',
-      	resGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
+      	rresGetPath : 'https://hr-park.github.io/seed-learning/inc/js/messages-ko.json',
 		//resGetPath : '/inc/js/messages-ko.json',
       	useDataAttrOptions : true,
   	}, function(err, t) {
