@@ -508,6 +508,7 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 	.join_wrap .inp_check{padding-left:15px;}
 	.book_list_wrap{padding:0 15px}
 	.login_wrap .txt_find{margin:0 -15px;padding:0 30px;}
+	footer .info_box{padding:0 10px;}
 }
 
 @media screen and (max-width:1024px){
