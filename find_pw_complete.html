@@ -44,12 +44,10 @@
 					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
 					<h2 data-i18n="member.findpw.title"><!-- 비밀번호 찾기 --></h2>
 				</div>
-				<div class="find_complete">
-					<p class="tit" data-i18n="member.findpw.txt-complete"><!-- 임시 비밀번호가 발급되었습니다. --></p>
-					<p class="txt_data">VN1VOY</p>
-				</div>
+				<p class="txt_find" data-i18n="member.findpw.txt-complete"><!-- 임시 비밀번호가 발급되었습니다. --></p>
+				<p id="new_pw" class="txt_data">VN1VOY</p>
 				<div class="btn_confirm">
-					<a href="javascript:copy();" class="btn btn_disabled" data-i18n="member.findpw.copy"><!-- 비밀번호 복사 --></a>
+					<a href="javascript:copyToClipBoard();" class="btn btn_disabled" data-i18n="member.findpw.copy"><!-- 비밀번호 복사 --></a>
 					<a href="login.html" class="btn btn_fill" data-i18n="member.findpw.login"><!-- 로그인 --></a>
 				</div>
 			</div>
@@ -60,5 +58,24 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+		function copyToClipBoard(){
+			let newPw = $('#new_pw').text();
+			navigator.clipboard.writeText(newPw)
+			swal({
+				text : "복사를 완료했습니다.",
+				//text : i18n("findpw.txt-copy-complete"),
+				buttons: ["닫기" , "로그인 페이지로 이동"]
+			})
+			.then(function(result){
+				if(result){
+					location.href = "login.html";
+				}
+			})
+			.catch(err =>{
+				alert("복사를 실패했습니다. : "+err)
+			});
+		}
+	</script>
 </body>
 </html>

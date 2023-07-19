@@ -239,7 +239,8 @@
             "phone-ph"              : "휴대폰 번호를 입력하세요.",
             "txt-complete"              : "회원가입한 아이디입니다.",
             "findpw"              : " 비밀번호 찾기",
-            "login"              : "로그인"
+            "login"              : "로그인",
+            "txt-copy-complete"              : "복사를 완료했습니다."
         },
         "findpw": {
             "title"              : "비밀번호 찾기",
