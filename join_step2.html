@@ -61,31 +61,20 @@
 									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.username-ph" name="">
 								</div>
 							</div>
-							<script>
-								$(function(){
-									$('.btn_email_auth').on('click', function(){
-										$('#userEmail').parents('.inp_box').find('.txt_info').remove();
-										//$('#userEmail').parents('.inp_box').append('<p class="txt_info">요청하신 메일로 인증번호를 발송하였습니다.</p>');
-										$('#authNum').show();
-									});
-									$('.btn_num_auth').on('click', function(){
-										$('#userAuthNum').parents('.inp_box').append('<p class="txt_info">인증이 완료되었습니다.</p>');
-										$('.btn_num_auth').hide();
-									});
-								});
-							</script>
 							<div class="input_field">
 								<label for="userEmail" data-i18n="[html]member.joinstpe2.email"><!-- 이메일 <span class="required">*</span> --></label>
 								<div class="inp_box has_btn">
 									<input type="text" id="userEmail" data-i18n="[placeholder]member.joinstpe2.email-ph" name="">
 									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_email_auth btn_auth"><!-- 인증하기 --></button>
+									
 								</div>
 							</div>
-							<div id="authNum" class="input_field" style="display:none">
+							<div id="authNum" class="input_field">
 								<label for="userAuthNum">인증번호 입력 <span class="required">*</span></label>
 								<div class="inp_box has_btn">
 									<input type="text" id="userAuthNum" placeholder="인증번호를 입력하세요.">
-									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_num_auth btn_auth"><!-- 인증하기 --></button>
+									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_num_auth btn_auth" style="display:none"><!-- 인증하기 --></button>
+									<p class="txt_info">인증이 완료되었습니다.</p>
 								</div>
 							</div>
 							<div class="input_field align_top">

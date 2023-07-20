@@ -52,7 +52,73 @@
 						<li><a href="modify.html" data-i18n="mypage.nav.link_modify"><!-- 회원정보 수정 --></a></li>
 					</ul>
 				</nav>
-				<!-- table -->
+				<div class="tb_wrap">
+					<ul class="ul_head">
+						<li class="w180">문의 유형</li>
+						<li class="w_auto">제목</li>
+						<li class="w180">작성일</li>
+						<li class="w200">답변 상태</li>
+						<li class="w80"></li>
+					</ul>
+					<ul class="toggle_list">
+						<li class="no_data">문의 내역이 없습니다.</li>
+						<li>
+							<div class="q_tit t_center">
+								<span class="w180" data-device="pc">교재관련</span>
+								<span class="w_auto" data-device="pc">오탈자를 발견했습니다!!! 오탈자를 발견했습니다!!!</span>
+								<span class="w180" data-device="pc">2023-06-06</span>
+								<span class="w200" data-device="pc">답변 완료</span>
+								<div class="mo_view flex_view" data-device="mo">
+									<div>
+										<strong class="type">교재관련</strong>
+										<span class="ft_11">2023-06-06</span>
+										<p>오탈자를 발견했습니다!!!</p>
+									</div>
+									<span>답변 완료</span>
+								</div>
+								<span class="w80"><button class="btn_toggle">답변 여닫기</button></span>
+							</div>
+							<div class="qna_view">
+								<div class="q_box">
+									<strong class="tit">문의 내용</strong>
+									<div>
+										<p>안녕하세요.<br>오탈자를 발견했어요.<br>Speaking for Speeches 1 페이지 00쪽 확인 바랍니다.</p>
+									</div>
+								</div>
+								<div class="a_box">
+									<strong class="tit">답변</strong>
+									<div><p>안녕하세요.<br>씨드러닝 입니다.</p></div>
+								</div>
+							</div>
+						</li>
+						<!-- -->
+						<li>
+							<div class="q_tit t_center">
+								<span class="w180" data-device="pc">교재관련</span>
+								<span class="w_auto" data-device="pc">오탈자를 발견했습니다!!!</span>
+								<span class="w180" data-device="pc">2023-06-06</span>
+								<span class="w200" data-device="pc">답변 준비중</span>
+								<div class="mo_view flex_view" data-device="mo">
+									<div>
+										<strong class="type">교재관련</strong>
+										<span class="ft_11">2023-06-06</span>
+										<p>오탈자를 발견했습니다!!!</p>
+									</div>
+									<span>답변 완료</span>
+								</div>
+								<span class="w80"><button class="btn_toggle">답변 여닫기</button></span>
+							</div>
+							<div class="qna_view">
+								<div class="q_box">
+									<strong class="tit">문의 내용</strong>
+									<div>
+										<p>안녕하세요.<br>오탈자를 발견했어요.<br>Speaking for Speeches 1 페이지 00쪽 확인 바랍니다.</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--// Content -->
@@ -61,5 +127,13 @@
 		<!-- //[include] footer -->
 	</div>
 	<!--// wrap -->
+	<script>
+		$(function(){
+			$('.toggle_list .tit, .btn_toggle').on('click', function(){
+				$(this).parents('li').toggleClass('active');
+				$(this).parents('li').find('.qna_view').slideToggle();
+			});
+		});
+	</script>
 </body>
 </html>

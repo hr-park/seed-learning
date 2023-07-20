@@ -73,50 +73,49 @@
 						<option data-i18n="customer.faq.etc"><!-- 기타 --></option>
 					</select>
 				</div>
-				<ul class="faq_list">
+				<ul class="toggle_list">
 					<!--<li class="no_data" data-i18n="customer.faq.no-data">게시물이 없습니다.</li> -->
 					<!-- -->
 					<li>
-						<div class="qna_tit">
+						<div class="q_tit">
 							<strong class="type">회원관련</strong>
 							<a href="javascript://" class="tit">회원가입은 어떻게 하나요?</a>
 							<button type="button" class="btn_toggle" data-i18n="[placeholder]customer.faq.all"><!-- FAQ 열고 닫기 --></button>
 						</div>
-						<div class="qna_view">
+						<div class="ans_view">
 							<p>홈페이지 상단 메뉴 바 오른쪽에 있는 ‘회원가입’을 클릭하신 후, 간단한 회원 정보를 입력하시면 가입이 완료됩니다.</p>
 						</div>
 					</li>
 					<!-- -->
 					<li>
-						<div class="qna_tit">
+						<div class="q_tit">
 							<strong class="type">회원관련</strong>
 							<a href="javascript://" class="tit">회원가입은 어떻게 하나요?</a>
 							<button type="button" class="btn_toggle" data-i18n="[placeholder]customer.faq.all"><!-- FAQ 열고 닫기 --></button>
 						</div>
-						<div class="qna_view">
+						<div class="ans_view">
 							<p>홈페이지 상단 메뉴 바 오른쪽에 있는 ‘회원가입’을 클릭하신 후, 간단한 회원 정보를 입력하시면 가입이 완료됩니다.</p>
 						</div>
 					</li>
 					<li>
-						<div class="qna_tit">
+						<div class="q_tit">
 							<strong class="type">회원관련</strong>
 							<a href="javascript://" class="tit">회원가입은 어떻게 하나요?</a>
 							<button type="button" class="btn_toggle" data-i18n="[placeholder]customer.faq.all"><!-- FAQ 열고 닫기 --></button>
 						</div>
-						<div class="qna_view">
+						<div class="ans_view">
 							<p>홈페이지 상단 메뉴 바 오른쪽에 있는 ‘회원가입’을 클릭하신 후, 간단한 회원 정보를 입력하시면 가입이 완료됩니다.</p>
 						</div>
 					</li>
 					<li>
-						<div class="qna_tit">
+						<div class="q_tit">
 							<strong class="type">회원관련</strong>
 							<a href="javascript://" class="tit">회원가입은 어떻게 하나요?</a>
 							<button type="button" class="btn_toggle" data-i18n="[placeholder]customer.faq.all"><!-- FAQ 열고 닫기 --></button>
 						</div>
-						<div class="qna_view">
+						<div class="ans_view">
 							<p>홈페이지 상단 메뉴 바 오른쪽에 있는 ‘회원가입’을 클릭하신 후, 간단한 회원 정보를 입력하시면 가입이 완료됩니다.</p>
 						</div>
-					</li>
 					</li>
 				</ul>
 			</div>	
@@ -144,9 +143,9 @@
 	<!--// wrap -->
 	<script>
 		$(function(){
-			$('.faq_list .tit, .btn_toggle').on('click', function(){
+			$('.toggle_list .tit, .btn_toggle').on('click', function(){
 				$(this).parents('li').toggleClass('active');
-				$(this).parents('li').find('.qna_view').slideToggle();
+				$(this).parents('li').find('.ans_view').slideToggle();
 			});
 		});
 	</script>
