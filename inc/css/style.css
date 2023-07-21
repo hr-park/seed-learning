@@ -247,6 +247,7 @@ body *{box-sizing:border-box}
 .input_field{display:flex;align-items:center;padding:10px 0 10px 10px}
 .input_field > label{width:200px;flex-shrink:0;/*padding:25px 0 0 12px;padding-left:12px;*/font-size:18px;letter-spacing:-.05em;}
 .input_field > label .required{color:#d7000f}
+.input_field > label .txt_option{font-size:11px;color:#999;word-break:keep-all}
 .input_field.align_top{align-items:flex-start;}
 .input_field.align_top > label{padding-top:25px;}
 .input_field .inp_box{position:relative;display:flex;width:100%;/*flex-direction:column;*/min-height:68px;row-gap:10px;font-size:18px;align-items:center;}

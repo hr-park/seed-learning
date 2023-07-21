@@ -146,14 +146,14 @@
             "phone-ph"          : "휴대폰 번호를 입력하세요.",
             "phone-opt"          : "대한민국 +82",
             "choice"          : "(선택)",
-            "target"          : "학습대상연령",
+            "target"          : "학습대상연령 <span class='txt_option'>(선택)</span>",
             "target-chk1"          : "유아",
             "target-chk2"          : "예비초",
             "target-chk3"          : "초등 저학년",
             "target-chk4"          : "초등 고학년",
             "target-chk5"          : "중등",
             "target-chk6"          : "고등 이상",
-            "area"          : "지역명",
+            "area"          : "지역명 <span class='txt_option'>(선택)</span>",
             "area-ph"          : "지역명을 선택하세요.",
 
 
@@ -357,13 +357,65 @@
     "mypage": {
         "title" : "마이페이지",
         "nav": {
-            "link_pick"            : "관심 교재",
-            "link_lv"            : "레벨테스트 이력",
-            "link_inquery"            : "나의 문의 내역",
-            "link_modify"            : "회원정보 수정"
+            "link-pick"            : "관심 교재",
+            "link-lv"            : "레벨테스트 이력",
+            "link-inquery"            : "나의 문의 내역",
+            "link-modify"            : "회원정보 수정"
         },
-        "mypick": {
+        "testhistory": {
+            "date"            : "날짜",
+            "test"            : "테스트",
+            "result"            : "결과",
+            "recommend"            : "추천 레벨",
+            "btn-all-delete"            : "전체삭제",
+            "btn-delete"            : "선택삭제",
+            "btn-print"            : "선택인쇄"
         },
+
+        "qnahistory": {
+            "type"            : "문의 유형",
+            "title"            : "제목",
+            "date"            : "작성일",
+            "status"            : "답변 상태",
+            "none"            : "문의 내역이 없습니다.",
+            "answer-finish"            : "답변 준비중",
+            "answer-prepare"            : "답변 완료",
+            "answer"            : "답변",
+            "q-contents"            : "문의 내용",
+            "btn-toggle"            : "답변 여닫기"
+        },
+        "modify": {
+            "form-title"             : "회원 정보 변경",
+            "username"             : "이름",
+            "userid"             : "아이디",
+            "pwd-change"             : "비밀번호 변경",
+            "pwd-ph"            : "새 비밀번호를 입력하세요.(영문, 숫자, 특수문자 조합 8~12자리)",
+            "pwd-ph2"            : "새 비밀번호를 한 번 더  입력하세요.",
+            "phone"             : "휴대폰 번호",
+            "btn-phone-change"             : "번호 변경",
+            "target"          : "학습대상연령 <span class='txt_option'>(선택)</span>",
+            "target-chk1"          : "유아",
+            "target-chk2"          : "예비초",
+            "target-chk3"          : "초등 저학년",
+            "target-chk4"          : "초등 고학년",
+            "target-chk5"          : "중등",
+            "target-chk6"          : "고등 이상",
+            "area"          : "지역명 <span class='txt_option'>(선택)</span>",
+            "area-ph"          : "지역명을 선택하세요.",
+            
+
+
+            "cancel"            : "취소",
+            "ok"                : "확인",
+            
+            "phone-ph"          : "휴대폰 번호를 입력하세요.",
+            "phone-opt"          : "대한민국 +82",
+            "choice"          : "(선택)"
+            
+        },
+
+
+
         "myprofile": {
             "mypage"            : "마이페이지",
             "myprofile"         : "나의 프로필",

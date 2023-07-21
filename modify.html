@@ -39,54 +39,47 @@
 		<!-- //[include] floating_sns -->
 		<!-- Content -->
 		<div id="content">
-			<div class="join_wrap">
+			<div class="inner">
 				<div class="sub_tit">
-					<strong data-i18n="header.logo"><!-- Seed Learning --></strong>
-					<h2 data-i18n="member.joinstpe2.title"><!-- 회원가입 --></h2>
+					<h2 data-i18n="mypage.title"><!-- 마이페이지 --></h2>
 				</div>
-				<div class="page_nav">
-					<h3 data-i18n="member.joinstpe2.desc-info"><!-- 회원가입 정보를 입력해주세요. --></h3>
-					<div>
-						<span class="num">1</span>
-						<span class="num active">2</span>
-					</div>
-				</div>
+				<div class="mypage_name"><p>안녕하세요, <span>김씨드</span> 님</p></div>
+				<nav class="mypage_nav">
+					<ul>
+						<li><a href="my_pick.html" data-i18n="mypage.nav.link-pick"><!-- 관심 교재 --></a></li>
+						<li><a href="leveltest_history.html" data-i18n="mypage.nav.link-lv"><!-- 레벨테스트 이력 --></a></li>
+						<li><a href="qna_history.html" data-i18n="mypage.nav.link-inquery"><!-- 나의 문의 내역 --></a></li>
+						<li class="active"><a href="modify.html" data-i18n="mypage.nav.link-modify"><!-- 회원정보 수정 --></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="join_wrap">
 				<div class="join_form">
 					<form>
 						<fieldset>
-							<legend data-i18n="member.joinstpe2.form-title"><!-- 회원가입 정보 입력 --></legend>
+							<legend data-i18n="mypage.modify.form-title"><!-- 회원 정보 변경 --></legend>
 							<div class="input_field">
-								<label for="" data-i18n="member.joinstpe2.username"><!-- 이름 --><span data-i18n="member.joinstpe2.required"></span></label>								
-								<div class="inp_box">
-									<input type="text" id="" data-i18n="[placeholder]member.joinstpe2.username-ph" name="">
-								</div>
+								<label for="" data-i18n="mypage.modify.username"><!-- 이름 --></label>								
+								<div class="inp_box">김씨드</div>
 							</div>
 							<div class="input_field">
-								<label for="userEmail" data-i18n="[html]member.joinstpe2.email"><!-- 이메일 <span class="required">*</span> --></label>
-								<div class="inp_box has_btn">
-									<input type="text" id="userEmail" data-i18n="[placeholder]member.joinstpe2.email-ph" name="">
-									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_email_auth btn_auth"><!-- 인증하기 --></button>
-									
-								</div>
-							</div>
-							<div id="authNum" class="input_field">
-								<label for="userAuthNum">인증번호 입력 <span class="required">*</span></label>
-								<div class="inp_box has_btn">
-									<input type="text" id="userAuthNum" placeholder="인증번호를 입력하세요.">
-									<button type="button" data-i18n="member.joinstpe2.email-auth" class="btn_num_auth btn_auth" style="display:none"><!-- 인증하기 --></button>
-									<p class="txt_info">인증이 완료되었습니다.</p>
-								</div>
+								<label for="" data-i18n="mypage.modify.userid"><!-- 아이디 --></label>								
+								<div class="inp_box">seedlearning@gmail.com</div>
 							</div>
 							<div class="input_field align_top">
-								<label for="" data-i18n="[html]member.joinstpe2.pwd"><!-- 비밀번호 <span class="required">*</span> --></label>
+								<label for="" data-i18n="mypage.modify.pwd-change"><!-- 비밀번호 변경 --></label>								
 								<div class="inp_box flex_column">
-									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph" name="">
-									<input type="password" id="" data-i18n="[placeholder]member.joinstpe2.pwd-ph2" name="">
+									<input type="password" id="" data-i18n="[placeholder]mypage.modify.pwd-ph" name="">
+									<input type="password" id="" data-i18n="[placeholder]mypage.modify.pwd-ph2" name="">
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="" data-i18n="[html]member.joinstpe2.phone"><!-- 휴대폰 번호 <span class="required">*</span> --></label>
+								<label for="" data-i18n="[html]mypage.modify.phone"><!-- 휴대폰 번호 --></label>
 								<div class="inp_box phone">
+									010-1234-5678
+									<button type="button" data-i18n="mypage.modify.btn-phone-change" class="btn_auth"><!-- 번호 변경 --></button>
+								</div>
+								<div class="inp_box phone" style="display:none">
 									<div class="sel_box">
 										<select>
 											<option value="" selected data-i18n="member.joinstpe2.phone-opt"><!-- 대한민국 +82 --></option>
@@ -96,43 +89,44 @@
 									<input type="tel" id="" ata-i18n="[placeholder]member.joinstpe2.phone-ph" name="">
 								</div>
 							</div>
+
 							<div class="input_field">
-								<label for="" data-i18n="[html]member.joinstpe2.target"><!-- 학습대상연령 (선택)--></label>
+								<label for="" data-i18n="[html]mypage.modify.target"><!-- 학습대상연령 (선택) --></label>
 								<div class="inp_box flex_warp">
 									<span class="inp_check">
 										<input type="checkbox" id="target1" name="target">
-										<label for="target1" data-i18n="member.joinstpe2.target-chk1"><!-- 유아 --></label>
+										<label for="target1" data-i18n="mypage.modify.target-chk1"><!-- 유아 --></label>
 									</span>
 									<span class="inp_check">
 										<input type="checkbox" id="target2" name="target">
-										<label for="target2" data-i18n="member.joinstpe2.target-chk2"><!-- 예비초 --></label>
+										<label for="target2" data-i18n="mypage.modify.target-chk2"><!-- 예비초 --></label>
 									</span>
 									<span class="inp_check">
 										<input type="checkbox" id="target3" name="target">
-										<label for="target3" data-i18n="member.joinstpe2.target-chk3"><!-- 초등 저학년 --></label>
+										<label for="target3" data-i18n="mypage.modify.target-chk3"><!-- 초등 저학년 --></label>
 									</span>
 									<span class="inp_check">
 										<input type="checkbox" id="target4" name="target">
-										<label for="target4" data-i18n="member.joinstpe2.target-chk4"><!-- 초등 고학년 --></label>
+										<label for="target4" data-i18n="mypage.modify.target-chk4"><!-- 초등 고학년 --></label>
 									</span>
 									<span class="inp_check">
 										<input type="checkbox" id="target5" name="target">
-										<label for="target5" data-i18n="member.joinstpe2.target-chk5"><!-- 중등 --></label>
+										<label for="target5" data-i18n="mypage.modify.target-chk5"><!-- 중등 --></label>
 									</span>
 									<span class="inp_check">
 										<input type="checkbox" id="target6" name="target">
-										<label for="target6" data-i18n="member.joinstpe2.target-chk6"><!-- 고등 이상 --></label>
+										<label for="target6" data-i18n="mypage.modify.target-chk6"><!-- 고등 이상 --></label>
 									</span>
 								</div>
 							</div>
 							<div class="input_field">
-								<label for="" data-i18n="[html]member.joinstpe2.area"><!-- 지역명 (선택) --></label>
+								<label for="" data-i18n="[html]mypage.modify.area"><!-- 지역명 (선택) --></label>
 								<div class="inp_box">
 									<div class="sel_box">
 										<select>
-											<option data-i18n="member.joinstpe2.area-ph"><!-- 지역명을 선택하세요. --></option>
-											<option>option</option>
-											<option>option</option>
+											<option data-i18n="mypage.modify.area-ph"><!-- 지역명을 선택하세요. --></option>
+											<option selected>지역1</option>
+											<option>지역2</option>
 										</select>
 									</div>
 								</div>
@@ -140,8 +134,8 @@
 						</fieldset>
 					</form>
 					<div class="btn_confirm">
-						<a href="javascript://" class="btn btn_disabled" data-i18n="member.joinstpe2.cancel"></a><!-- 취소 --></a>
-						<a href="join_complete.html" class="btn btn_fill" data-i18n="member.joinstpe2.ok"></a><!-- 확인 --></a>
+						<a href="javascript://" class="btn btn_disabled" data-i18n="mypage.modify.cancel"></a><!-- 취소 --></a>
+						<a href="javascript://" class="btn btn_fill" data-i18n="mypage.modify.ok"></a><!-- 확인 --></a>
 					</div>
 				</div>
 			</div>
