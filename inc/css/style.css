@@ -788,7 +788,7 @@ footer .family_site .family_list li a{display:block;padding:9px 15px 9px 20px;co
 	.sub_nav ul li.active a{font-weight:700}
 
 	.mypage_nav{margin-bottom:35px}
-	.mypage_nav ul li a{padding:0 10px;font-size:13px;}
+	.mypage_nav ul li a{padding:0 10px;font-size:13px;line-height:1;}
 	.mypage_name{padding:30px 0;margin-bottom:35px;}
 	.mypage_name p{padding-right:22px;font-size:17px;background-size:14px auto}
 
