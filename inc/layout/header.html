@@ -64,7 +64,7 @@
 			<a href="join_step1.html" class="btn_join" data-i18n="header.join"><!--회원가입--></a>
 		</div>
 		<div class="util"><!-- 퍼블 확인용 -->
-			<a href="javascript://" class="btn_logout" data-i18n="header.logout"><!-- 로그아웃 -->></a>
+			<a href="javascript://" class="btn_logout" data-i18n="header.logout"><!-- 로그아웃 --></a>
 			<a href="my_pick.html" class="btn_mypage" data-i18n="header.mypage"><!-- 마이페이지 --></a>
 		</div>
 		<ul class="link_list">
@@ -124,15 +124,12 @@ const nav = {
 		if (windowWidth > 767) {
 			$('body').on('mouseenter focusin', '.gnb .dep1_list > li', function (e) {
 				if($('.gnb').hasClass('nav_all_opened')){
-					//전체메뉴 열려있으면...
 					$('.gnb .dep1_list > li').unbind('hover mouseenter focusin');
 					$('.gnb').removeClass('nav_hover');
 				}else{
-					//전체메뉴 안열려있으면...
 					$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
 					$('.gnb').addClass('nav_hover');
 					$(this).addClass('active');
-					//$(this).find('.dep2_list').stop().slideDown('fast');
 					$(this).find('.dep2_list').show();
 				}
 			});
@@ -141,19 +138,16 @@ const nav = {
 				if(!$('.gnb').hasClass('nav_all_opened')){
 					$('.gnb').removeClass('nav_hover');
 					$(this).removeClass('active');
-					//$(this).find('.dep2_list').stop().slideUp('fast');
 					$(this).find('.dep2_list').hide();
 				}
 			});
 		//mo
 		} else {
 			$('.gnb .dep1_list > li').bind('hover mouseenter focusin');
-			//활성화 해제
 			$('.gnb.nav_all_opened').removeClass('nav_all_opened');
 			$('.gnb.nav_hover').removeClass('nav_hover');
 			$('.dep2_list').hide();
 			$('.btn_all_menu.active').removeClass('active');
-			//활성화 해제
 
 			$('body').on('click', '.gnb .dep1_list > li > a.has_depth', function (e) {
 				e.stopImmediatePropagation();

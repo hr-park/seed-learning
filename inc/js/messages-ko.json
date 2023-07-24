@@ -67,6 +67,17 @@
         "last"        : "마지막"
     },
 
+    "intro": {
+        "tit1"              : "교재 미리보기",
+        "sub-txt1"             : "신간, 이벤트, 세미나",
+        "tit2"              : "교재 부가자료",
+        "sub-txt2"             : "교재 부가자료 다운로드",
+        "btn"             : "<span>바로가기</span>",
+        "sns-insta"             : "<p class='txt'>누구보다 빠른 소식! <strong>인스타</strong></p>",
+        "sns-naver"             : "<p class='txt'>다양한 이벤트! <strong>네이버 카페</strong></p>",
+        "sns-kakao"             : "<p class='txt'>교재 관련 문의는? <strong>카카오 채널</strong></p>"
+    },
+
     "main": {
         "visual-img-pc1" : "inc/images/main/main_slide.jpg",
         "visual-img-mo1" : "inc/images/main/main_slide_m.jpg",
@@ -97,7 +108,7 @@
         },
         "see": {
             "tit"            : "SEE",
-            "desc"            : "영어 공부방/교습소/방과후<br>수업자료 및 운영 정보 까페"
+            "desc"            : "영어 공부방/교습소/방과후<br>수업자료 및 운영 정보 카페"
         }
     },
 
@@ -120,12 +131,9 @@
             "marketing-agree"   : "[선택] 마케팅 활용 동의",
             "cancel"            : "취소",
             "ok"                : "확인",
-
-
-
-            "confirm-terms"     : "이용약관에 동의해 주세요.",
-            "confirm-privacy"   : "개인정보 보호정책에 동의해 주세요.",
-            "confirm-marketing" : "마케팅 정보수집 및 이용에 동의해주세요."
+            
+            "alert-terms"     : "서비스 약관에 동의해 주세요.",
+            "alert-privacy"   : "개인정보처리방침에 동의해 주세요."
         },
         "joinstpe2" : {
             "title"              : "회원가입",
@@ -154,67 +162,7 @@
             "target-chk5"          : "중등",
             "target-chk6"          : "고등 이상",
             "area"          : "지역명 <span class='txt_option'>(선택)</span>",
-            "area-ph"          : "지역명을 선택하세요.",
-
-
-
-            "confirm-pwd"       : "비밀번호 확인",
-            "confirm-pwd-ph"    : "비밀번호를 한 번 더 입력하세요.",
-
-
-
-
-
-
-
-            "phone-btn"         : "인증번호 받기",
-            "phone-btn2"        : "인증하기",
-            "phone-msg"         : "5분 안에 인증번호를 입력해주세요.",
-            "phone-msg2"        : "인증되었습니다.",
-
-            
-            "agree"             : "이용약관동의",
-            "login"             : "로그인",
-            "member"            : "이미 회원이신가요?",
-            "all-agree"         : "모두 동의",
-            "terms-agree"       : "이용약관 동의",
-            "privacy-agree"     : "개인정보 보호정책 동의",
-            "marketing-agree"   : "마케팅 활용을 위한 개인정보 수집 이용 안내 : 결제정보",
-            "join-message"      : "*이용약관 및 개인정보 보호정책에 모두 동의해주셔야 가입하실 수 있습니다.",
-            "purpose"           : [
-                "<li>- 수집목적: 당사 신규 상품/서비스 안내 및 권유, 사은/할인 행사 등 각종 이벤트 정보 등의 안내 및 권유.</li>",
-                "<li>- 수집항목: 이메일, 휴대전화 번호, 이름</li>",
-                "<li>- 보유기간: 회원 탈퇴 또는 이용 목적 달성 시까지.</li>"                
-            ],
-            "join"              : "회원가입",
-            "input"             : "정보입력",
-            "input01"           : "정보 입력",
-
-
-
-            "phone-txt"         : "특별 할인 혜택과 영어교육 정보를 보내 드립니다.",
-            "register"          : "가입",
-            "input-email"       : "이메일을 입력해 주세요.",
-            "input-name"        : "이름을 입력해 주세요.",
-            "type-email"        : "이메일 형식이 올바르지 않습니다.",
-            "pw-phd"         : "비밀번호를 입력해 주세요.",
-            "type-pwd"          : "비밀번호는 8자리이상입니다.",
-            "not-match-pwd"     : "비밀번호가 일치하지 않습니다.",
-            "exists-email"      : "이미 등록된 이메일입니다.",
-            "complete"          : "회원 가입이 되었습니다.",
-            "complete2"         : "회원가입 완료",
-            "register-error"    : "회원가입에 문제가 발생했습니다.",
-            "register-withraw"  : "이미 탈퇴 한 계정입니다.\n탈퇴 후 30일이 지난 후 재가입 하시거나, 새로운 이메일 아이디를 사용해 주세요.",
-            "input-phone"       : "전화번호를 입력해 주세요.",
-            "do-cert"           : "전화번호 인증이 필요합니다.",
-            "send-code-ok"      : "인증번호가 발송되었습니다.",
-            "cert-ok"           : "인증되었습니다.",
-            "cert-fail"         : "인증번호가 틀렸습니다. 다시 시도해 주세요.",
-            "doing-cert"        : "인증 요청 중입니다.<br> 잠시 후 이용해 주세요.",
-            "doing-cert-check"  : "인증번호 확인 중입니다.<br> 잠시 후 이용해 주세요.",
-            "data-error"        : "데이터가 올바르지 않습니다.",
-            "cert-error"        : "전화번호 인증 정보가 올바르지 않습니다."
-
+            "area-ph"          : "지역명을 선택하세요."
         },
         "joincomplete": {
             "title"              : "회원가입",
@@ -371,7 +319,6 @@
             "btn-delete"            : "선택삭제",
             "btn-print"            : "선택인쇄"
         },
-
         "qnahistory": {
             "type"            : "문의 유형",
             "title"            : "제목",
@@ -402,145 +349,11 @@
             "target-chk6"          : "고등 이상",
             "area"          : "지역명 <span class='txt_option'>(선택)</span>",
             "area-ph"          : "지역명을 선택하세요.",
-            
-
-
             "cancel"            : "취소",
             "ok"                : "확인",
-            
             "phone-ph"          : "휴대폰 번호를 입력하세요.",
             "phone-opt"          : "대한민국 +82",
             "choice"          : "(선택)"
-            
-        },
-
-
-
-        "myprofile": {
-            "mypage"            : "마이페이지",
-            "myprofile"         : "나의 프로필",
-            "member-info"       : "계정정보",
-            "join-route"        : "가입경로",
-            "email"             : "이메일",
-            "name"              : "이름",
-            "password"          : "비밀번호",
-            "phone"             : "연락처",
-            "address"           : "주소",
-            "payinfo"           : "결제정보",
-            "cardinfo"          : "카드정보",
-            "modify"            : "변경하기",
-            "change-pwd"        : "비밀번호 변경하기",
-            "current-pwd"       : "현재 비밀번호",
-            "current-pwd-ph"    : "본인 확인을 위해 필요합니다.",
-            "new-pwd"           : "새 비밀번호",
-            "new-pwd-ph"        : "8자 이상, 특수문자 입력을 권장합니다.",
-            "new-pwd-re"        : "비밀번호 확인",
-            "new-pwd-re-ph"     : "새 비밀번호를 한 번 더 입력하세요.",
-            "confirm"           : "확인",
-            "cancel"            : "취소",
-            "change-name"       : "이름 변경하기",
-            "change-phone"      : "연락처 변경하기",
-            "new-phone"         : "휴대폰 번호",
-            "change-addr"       : "주소 변경하기",
-            "search-addr"       : "주소 검색",
-            "zipcode"           : "우편번호",
-            "zipcode-ph"        : "우편번호(필수)",
-            "addr1"             : "주소",
-            "addr1-ph"          : "주소(필수)",
-            "addr2"             : "상세주소",
-            "addr2-ph"          : "상세주소 입력",
-            "change-card"       : "카드 변경하기",
-            "card-num"          : "카드번호",
-            "card-ym"           : "유효기간(월/년)",
-            "input-phone"       : "휴대폰 번호를 입력해 주세요",
-            "success-modify"    : "수정 되었습니다",
-            "err-modify"        : "수정에 문제가 발생했습니다.",
-            "input-zipcode"     : "우편번호를 입력해 주세요.",
-            "input-name"        : "이름을 입력해 주세요.",
-            "input-addr"        : "주소를 입력해 주세요.",
-            "input-zip-addr"    : "우편번호 및 주소를 입력해 주세요.",
-            "pw-phd"         : "비밀번호를 입력해 주세요.",
-            "input-curr-pwd"    : "현재 비밀번호를 입력해 주세요.",            
-            "input-new-pwd"     : "새 비밀번호를 입력해 주세요.",
-            "input-type-pwd"    : "비밀번호는 8자리 이상입니다.",
-            "input-not-match"   : "새 비밀번호가 일치하지 않습니다",
-            "err-curr-pwd"      : "현재 비밀번호가 틀립니다.",
-            "input-card"        : "카드번호를 입력해 주세요.",
-            "input-ym"          : "유효기간을 입력해 주세요.",
-            "cancel-billing"    : "정기구독을 취소할까요?",
-            "withdraw"          : "빅박스 계정 탈퇴하기 ▶"
-        },
-
-        "myorder": {
-            "mypage"            : "마이페이지",
-            "myorder"           : "나의 결제내역",
-            "msg"               : "구독 취소 및 환불을 원하시는 분들은 문의하기에 글을 남겨주시면 빠른 시일 내에 처리해드리겠습니다.",
-            "register-qna"      : "문의 남기기",
-            "tit-payidx"        : "주문번호",
-            "tit-title"         : "제목",
-            "tit-price"         : "금액",
-            "tit-paymethod"     : "결제방법",
-            "tit-status"        : "상태",
-            "tit-paydate"       : "결제일",
-            "tit-expired-date"  : "만료일",
-            "tit-cancel"        : "취소",
-            "success-modify"    : "수정 되었습니다",
-            "err-modify"        : "수정에 문제가 발생했습니다.",
-            "cancel-billing"    : "정기 구독을 취소 하시겠습니까?",
-            "no-payidx"         : "주문번호가 없습니다.",
-            "request-cancel"    : "취소요청이 접수되었습니다.",
-            "err-req-cancel"    : "취소요청에 문제가 발생했습니다.",
-            "req-cancel-msg1"   : "결제 후 사용일이 1/3 일 이상이 지났습니다.<br>",
-            "req-cancel-msg2"   : "결제 취소 요청을 하시겠습니까?",
-            "succ-cancel-bill"  : "정기구독이 취소되었습니다.",
-            "product"           : "결제상품",            
-            "coupon"            : "쿠폰결제",
-            "usedate"           : "이용기간",
-            "total-price"       : "총금액 : ",
-            "payinfo"           : "결제정보",
-            "tit-user"          : "구매자",
-            "tit-phone"         : "연락처",
-            "tit-email"         : "이메일",
-            "list"              : "목록"
-        },
-
-        "myreport" : {
-            "mypage"            : "마이페이지",
-            "myreport"          : "학습리포트",
-            "wrong_data"        : "데이터가 올바르지 않습니다."
-        },
-
-        "mywithdraw" : {
-            "mypage"            : "마이페이지",
-            "myprofile"         : "나의 프로필",
-            "mywithdraw"        : "빅박스 계정 탈퇴",
-            "desc-txt"          : [
-                                    "빅클래스/빅박스 계정 탈퇴를 진행합니다. ​<br>",
-                                    "빅클래스/빅박스 계정을 탈퇴하면 모든 계정 정보 및 이용 기록이 삭제됩니다.<br>",
-                                    "백업 시스템에 저장된 프로필, 학습 이력, 기타 데이터 등 모든 내용이 완전히 삭제되기까지는 최대 90일 정도 소요될 수 있습니다.<br>",
-                                    "탈퇴한 후에는 더 이상 로그인 할 수 없습니다.<br>",
-                                    "(자세한 사항은 <a href='/pages/member/privacy.asp' target='_blank'>개인정보 처리방침</a> 참조)​<br>",
-                                    "탈퇴된 빅클래스/빅박스 계정 정보와 이용 기록은 복구할 수 없으니 신중하게 선택하시기 바랍니다."
-                                ],
-            "agree"             : "안내사항을 모두 확인하였으며, 이에 동의합니다.​",
-            "reason-tit"        : "서비스 탈퇴 사유(필수):",
-            "reason1"           : "개인정보 삭제 목적으로",
-            "reason2"           : "이용이 불편해서",
-            "reason3"           : "가격이 비싸서",
-            "reason4"           : "많이 이용하지 않아서",
-            "reason5"           : "다른 서비스를 이용해서",
-            "reason6"           : "콘텐츠가 부족해서",
-            "reason-etc"        : "기타:",
-            "btn-cancel"        : "취 소",
-            "btn-withdraw"      : "탈 퇴",
-            "complete-tit"      : "빅박스 계정 탈퇴 확인",
-            "complete-txt"      : "빅박스 계정 탈퇴 완료 되었습니다.",
-            "confirm"           : "확인",
-            "alert1"            : "안내사항에 동의해주세요.",
-            "alert2"            : "서비스 탈퇴사유를 선택해주세요.",
-            "alert3"            : "탈퇴사유를 간략히 입력해주세요.",
-            "alert4"            : "탈퇴 시 계정 정보와 이용 기록은 복구할 수 없습니다.\n탈퇴 처리하시겠습니까?",
-            "withdraw-ing"      : "탈퇴 처리중입니다.\n잠시만 기다려주세요."
         }
     },
 
@@ -561,17 +374,7 @@
             "member"               : "회원",
             "etc"               : "기타",
             "toggle"               : "FAQ 열고 닫기",
-            "no-data"               : "게시물이 없습니다.",
-           
-
-            "login"             : "로그인 / 계정",
-            "pay"               : "결제 / 취소",
-            "program"           : "프로그램",
-            "study"             : "학습",
-            "service"           : "서비스",
-            
-            "out"               : "탈퇴",
-            "input-search"      : "검색어를 입력해 주세요"
+            "no-data"               : "게시물이 없습니다."
         },
         "notice": {
             "search"             : "검색",
@@ -591,7 +394,6 @@
             "btn-map"            : "지도보기",
             "no-data"            : "리스트가 없습니다."
         },
-        
         "qna": {
             "form-title"             : "1:1문의 작성",
             "name"              : "작성자",
@@ -606,479 +408,20 @@
             "question-ph"          : "내용을 입력하세요.",
             "file"            : "첨부파일",
             "input-file"            : "파일 선택",
-            "txt-history"            : "답변은 <a href='qna_history.html'>마이 페이지 > 나의 문의 내역</a>에서 확인하실 수 있습니다.",
+            "txt-history"            : "답변은 <a href='qna_history.html'>마이 페이지 &gt; 나의 문의 내역</a>에서 확인하실 수 있습니다.",
             "cancel"            : "취소",
             "ok"            : "확인",
-            "file-delete"            : "파일삭제",
-            
-
-
-
-            "no"                : "No.",
-            "regdate"           : "작성일",
-            "isanswer"          : "답변상태",
-            "no-data"           : "문의내용이 없습니다.",
-            "ready-answer"      : "답변대기",
-            "complete-answer"   : "답변완료",
-            "write"             : "문의하기",
-            "input-info"        : "정보입력",
-            
-            "parents"           : "학부모명",
-            "phone"             : "연락처",
-            "gubun"             : "분류",
-            "select"            : "선택",
-            "sel-login"         : "로그인/계정",
-            "sel-pay"           : "결제/취소",
-            "sel-program"       : "프로그램",
-            "sel-study"         : "학습",
-            "sel-service"       : "서비스",
-            "sel-etc"           : "기타",
-            "sel-out"           : "탈퇴",
-            "subject"           : "제목",
-            "content"           : "내용",
-            "content-ph"        : "1. 기기명 : \n2. 아바타 번호 : \n3. 오류내용 (최대한 상세하게 작성해 주세요.)",
-            "files"             : "첨부파일",
-            "btn-files"         : "파일첨부",
-            "files-ph"          : "파일을 업로드 하세요",
-            "upload-type"       : "이미지 파일(PNG, JPG)만 업로드가 가능합니다.",
-            "upload-size"       : "첨부파일 사이즈는 10MB 이내로 등록 가능합니다!",
-            "input-name"        : "이름을 입력해 주세요.",
-            "input-parents"     : "학부모명을 입력해 주세요.",
-            "input-phone"       : "연락처를 입력해 주세요.",
-            "input-gubun"       : "분류를 선택해 주세요.",
-            
-            "input-content"     : "내용을 입력해 주세요.",
-            "confirm"           : "문의내용을 등록할까요?",
-            "input-ok"          : "문의 내용이 등록되었습니다.",
-            "input-error"       : "데이터 처리에 문제가 발생했습니다.",
-            "regdate2"          : "등록일 : ",
-            
-            "list"              : "목록"
-        },
-        "inquiry": {
-            "title"             : "컨텐츠 제휴문의",
-            "name"              : "이름",
-            "email"             : "이메일",
-            "phone"             : "역락처",
-            "company"           : "업체명",
-            "subject"           : "제목",
-            "content"           : "내용",
-            "files"             : "첨부파일",
-            "btn-files"         : "파일첨부",
-            "send"              : "전송",
-            "upload-type"       : "이미지 파일(PNG, JPG)만 업로드가 가능합니다.",
-            "upload-size"       : "첨부파일 사이즈는 10MB 이내로 등록 가능합니다!",
-            "input-name"        : "이름을 입력해 주세요.",
-            "input-email"       : "이메일을 입력해 주세요.",
-            "err-email"         : "자못됨 이메일형식입니다.",
-            "input-phone"       : "연락처를 입력해 주세요.",
-            "input-company"     : "업체명을 입력해 주세요.",
-            "input-subject"     : "제목을 입력해 주세요.",
-            "input-content"     : "내용을 입력해 주세요.",
-            "confirm"           : "제휴문의를 전송할까요?",
-            "input-ok"          : "문의 내용이 등록되었습니다.",
-            "input-error"       : "데이터 처리에 문제가 발생했습니다."
+            "file-delete"            : "파일삭제"
         }
     },
-
-    "sub01": {
-        "woongjin-bigbox"       : " 소개",
-        "logo"                  : "/html/img/wjcompass_logo.png",
-        "message"               : "는 test의 에듀테크 브랜드입니다.",
-        "body"                  : [
-            "<p>test는 전통이 있습니다.<br>",
-            "test는 1999년부터 지금까지 영어교육 콘텐츠 개발, 보급에만 몰두해 온<br>",
-            "영어교육 전문 회사입니다. 자사가 만든 영어원서는 국내 뿐만 아니라<br>",
-            "해외 40여 개 국가에서 사랑 받고 있습니다.</p>",
-            "<p>test는 교육의 방법을 바꿨습니다.<br>",
-            "‘학생의 세대가 바뀐 만큼 교육 방법도 바뀌어야 한다’는 생각이 의 출발점이었습니다.<br>",
-            "test의 영어교육에 대한 노하우가 에듀테크 기술과 만나<br>",
-            "누구나 재미있고 유익하게 즐길 수 있는 영어 교육을 만들었습니다.</p>",
-            "<p>test는 학생의 마음을 읽습니다.<br>",
-            " “놀수록 영어가 자란다”라는 의 슬로건을 지키기 위해 노력합니다.<br>",
-            "학습자의 관심사와 학습효율을 끊임없이 분석하여, 원하는 양질의 콘텐츠를 제작 제공하고 있습니다.</p>"
-        ],
-        "brand"                 : "<em>웅진 그룹의 영어교육 전문 브랜드</em> <span></span>"
-    },
-
-    "sub02": {
-        "title"                 : "과정 안내",
-        "bigboxtv": {
-            "title"             : "빅박스TV",
-            "desc"              : "바다나무, 또봇, 시크릿 쥬쥬, 콩순이등을 영어로 흘려듣기! <br>아이가 좋아하는 영상을 하루에 30분!<br>꾸준히 노출하면 영어가 자연스럽게 자라납니다.",
-            "recommend-txt"     : "우리 아이가 들어도 될까요~?",
-            "recommend-tit"     : "<strong>빅박스 TV</strong> 이런 아이에게 추천합니다.",
-            "recommend-item1"   : "영어에 흥미를<br> 느끼지 못하는 아이",
-            "recommend-item2"   : "5-7세 영어를 처음<br> 접하는 아이",
-            "recommend-item3"   : "영어의 거부감을<br> 갖는 아이",
-            "txt"               : "아이가 좋아하는 영상을 <span>하루에 30분</span>",
-            "txt2"              : "5세~7세까지 빅박스 TV는 관심사에 따라 <br>선택하여 시청하세요.",
-            "item1"             : [
-                "<p class='ttl'><em><strong>8,000여 편의 다양한 영어 영상</strong>으로 <br>",
-				"영역별 <strong>Listening 1,000시간 달성!</strong></em></p>",
-				"<div class='tag'><span>#사회과학예술 #흘려듣기 #영어소리인식​</span><br>",
-				"<span>#만화부터다큐까지​</span></div>"
-            ],
-            "item2"             : [
-                "<p class='ttl'><em><strong>아이들이 좋아하는 영상</strong>으로<br>",
-                "자연스럽게 영어와 친해져요.</em></p>",
-                "<div class='tag'><span>#흥미유발 #국내외애니메이션​</span><br>",
-                "<span>#영어와친해지기</span></div>"
-            ],
-            "item3"             : [
-                "<p class='ttl'><em>우리 아이가 관심사를 직접 선택하고 <br>",
-                "<strong>​맞춤 큐레이션</strong>으로 학습효과 UP!​</em><br></p>",
-                "<div class='tag'><span>#아이맞춤학습 # 양질의영어콘텐츠 ​</span><br>",
-                "<span>#광고NO #유해컨텐츠NO #매일 30분씩</span></div>"
-            ],
-            "item4"             : [
-                "<p class='ttl'><em>우리 아이의 효율적인 영어 학습을 위한 <br>",
-                "빅박스TV만의 <strong>다양한 기능 탑재</strong></em></p>",
-                "<div class='tag'><span>#영상이어보기 #시청시간제어</span><br>",
-                "<span>#원하는영상검색 #선호영상리스트생성</span></div>"
-            ],
-            "item5"             : [
-                "<p class='ttl'><em>매일 퀘스트 달성하며 골드로 보상받고, <br>",
-                " <strong>영어에 대한 성취감과 자신감 향상!</strong></em></p>",
-                "<div class='tag'><span>#퀘스트달성 #골드보상<br>#동기부여 #영어자신감UP​</span>"
-            ],
-            "step-txt"          : "보고 듣다 보면 <br class='mo'>자연스럽게 영어가 늘어나는 <strong>빅박스TV</strong>로 <br><strong>우리 아이 영어 두뇌</strong> 만들어요.",
-            "step-btn"          : "<span>빅박스TV로 <br class='mo'>영어 두뇌 만들기</span>"
-        },
-
-        "wordkingdom": {
-            "title"             : "워드킹덤",
-            "desc"              : "는 영어 공부하는 게 아니에요! 영어랑 같이 노는 것!<br>놀다 보면 어느새 3000단어 마스터!",
-            "item1"             : [
-                "<p class='ttl'><em>영상을 보기만 해도</em><br>",
-                "<strong>필수 영어단어 카드 획득!</strong></p>",
-                "<div class='tag'><span>#3000단어</span><br>",
-                "<span>#흥미도 100점</span><span>#영어회화 90%가능</span></div>"
-            ],
-            "item2"             : [
-                "<p class='ttl'><em>획득한 단어로<br>",
-                "게임을 할수록</em><br>",
-                "<strong>나의 카드 레벨이 올라가요</strong></p>",
-                "<div class='tag'><span>#반복학습 할수록</span><br>",
-                "<span>#영어단어 완전 암기</span></div>"
-            ],
-            "item3"             : [
-                "<p class='ttl'><em>다양한 “워드 게임”으로</em><br>",
-                "<strong>배운 단어를 복습한다</strong></p>",
-                "<div class='tag'><span>#3000단어</span><br>",
-                "<span>#흥미도 100점</span><span>#영어회화 90%가능</span></div>"
-            ],
-            "item4"             : [
-                "<p class='ttl'><em>영상시청부터 퀴즈쇼까지!<br>",
-                "모든 퀘스트 완료하고<br>",
-                "골드로 보상받으며 단어를 외우며</em><br>",
-				"<strong>영어에 대한 자신감과 성취감을 얻어요!​</strong></p>",
-				"<div class='tag'><span>#골드보상 #워드매치 #퀴즈쇼 #목표달성​</span></div>"
-            ],
-            "graph1"            : "<em data-aos='fade-up'><span class='q-circle'>Q</span> 아이가 영어 단어를 잊어버리지 않나요?</em>",
-            "graph2"            : "<span class='a-circle'>A</span> 의 영어 습득법이라면 잊어버리지 않아요!",
-            "graph3"            : [
-                "<li><div><em>아이가 좋아하는</em><span>영상으로 단어 획득</span></div></li>",
-                "<li><div><em>단어 읽기로<br> 획득 단어 카드</em><span>레벨업</span></div></li>",
-                "<li><div><em>단어게임으로</em><span>획득 단어 복습</span></div></li>",
-                "<li><div><em>잊어버린 단어는</em><span>게임을 통해<br> 다시 획득</span></div></li>",
-                "<li><div><em>3,000단어</em><span>완벽 암기</span></div></li>"
-            ],
-            "graph4"            : "에빙하우스 망각 곡선 변형",
-            "graph-img"         : "/html/img/wordkingdom/graph.png"
-        },
-
-        "forest": {
-            "title"             : "표현의 숲",
-            "desc"              : "단어를 배웠으면, 문장을 만들 줄 알아야겠죠?<br>문장도 게임으로 재미있게!",
-            "desc2"             : "아이가 아는 단어를 기준으로 문제가 나오니까<br>게임을 깨는 <span>재미</span>가 쏠쏠! <span>영어 성취감</span>도 쑥쑥",
-            "method"            : "정답 맞추는 법 2가지",
-            "method-img1"       : "/html/img/forestofexp/learn_img1.png",
-            "method-desc1"      : "<span>첫째</span>, 문장을 바른 순서대로<br>소리 내어 읽어봐요",
-            "method-img2"       : "/html/img/forestofexp/learn_img2.png",
-            "method-desc2"      : "<span>두 번째</span>, 청크 단위로 순서를 맞춰봐요",
-            "speaking"          : "<strong>Speaking</strong><em>빅박스랑 놀다보면 영어 술술 말하는 아이 되는 건 시간문제!<br> 영어 말하고 싶은 마음, 빅박스가 아니까 몬티가 대답해줄게요~</em>",
-            "item1"             : [
-                "<p class='ttl'><em>몬티와 영어로 대화를 해봐요!<br> 실시간으로 대답해요~</em></p>",
-                "<div class='tag'><span>#HELLO MONTY</span><br>",
-                "<span>#아이회화 몬티에게 맡기세요</span><br>",
-                "<span>#엄마는 공부할 필요 없어요</span></div>"
-            ],
-            "item2"             : [
-                "<p class='ttl'><em>몬티가 하는말을<br> 따라 할 수 있어요!</em></p>",
-                "<div class='tag'><span>#Listen & Repeat</span><br>",
-                "<span>#영어 회화 지름길</span></div>"
-            ]
-        },
-
-        "ro": {
-            "title"             : "리딩오션스",
-            "desc"              : "우리 집에 영어 도서관이 생긴다?!<br> 영어 E-BOOK 독서 시스템, 리딩오션스",
-            "message"           : "우리 아이 ‘수준’과 ’취향’ 모두 잡았어요",
-            "desc2"             : [
-                "<dt>렉사일 지수란 (Lexile Level)?</dt>",
-                "<dd>미국 메타메트릭스 사에서<br>",
-                "개발한 영어읽기 능력 지수</dd>",
-                "<dt>AR 지수란 (ATOS Book Level)?</dt>",
-                "<dd>미국 르네상스러닝 사에서 개발한<br>",
-                "독서학습관리 프로그램 </dd>"
-            ],
-            "about-img1"        : "/html/img/readingoceans/about_img1.png",
-            "about-img2"        : "/html/img/readingoceans/about_img2.png",
-            "desc-title"        : "영어책 많이 읽는 아이 독서법",
-            "desc3"             : "5세~중학생까지 관심있는 책 내용에 빠져들어 기쁜 마음으로 읽게 해 주세요. ​",
-            "item1"             : [
-                "<p class='ttl'><em>아이 수준과 취향에<br> 맞는 리더스를 선택해요.</em></p>",
-                "<div class='tag'><span>#어떤 책을 고를지 고민 그만</span><br>",
-                "<span>#렉사일 지수, ar지수로 수준에 맞게</span></div>"
-            ],
-            "item2"             : [
-                "<p class='ttl'><em>매일 퀘스트 달성하고,<br>골드로 보상받으며<br>성취감을 키워요.</em></p>",
-                "<div class='tag'><span>#퀘스트달성하면_골드로보상​</span><br>",
-                "<span>#영어자신감 #영어성취감 #목표달성</span></div>"
-            ],
-            "item3"             : [
-                "<p class='ttl'><em>원어민 음성으로<br> 리더스를 같이 읽어요.</em></p>",
-                "<div class='tag'><span>#발음 걱정 뚝</span><br>",
-                "<span>#흥미진진한 스토리</span></div>"
-            ],
-            "item4"             : [
-                "<p class='ttl'><em>게임으로 독후활동까지!<br> 리더스 한 권이 완전 흡수</em></p>",
-                "<div class='tag'><span>#리더스에 나온 단어로 하는 워드 게임</span><br>",
-                "<span>#문장 순서맞추기</span><br>",
-                "<span>#Listen & Repeat 까지</span></div>"
-            ],
-            "item5-title"       : "리딩오션스로 동화책읽고<br>게임하다보면 어느새 우리 아이 영어 실력이 쑥쑥 자라요!",
-            "item5"             : [
-                "<li><div>엄마 지도 없이도<br> 영어 독서습관 완성</div></li>",
-                "<li><div>아이 영어 흥미도<br> 자연스럽게 높아져요</div></li>",
-                "<li><div>저절로 암기되는<br> 일상 영어 표현</div></li>"
-            ],
-            "section-title"     : "총 2,200여권이 수록되어 있어요",
-            "grade1"            : "Sunshine Readers : 유치 ~ 초등 저",
-            "grade2"            : "Young Learner Classic Readers : 초등",
-            "grade3"            : "Compass Classic Readers : 초등 고",
-            "grade4"            : "e-future Classic Readers : 유치 ~ 초등",
-            "grade5"            : "Highlights Library Storybook : 유치  ~ 초등 저",
-            "question"          : "빅박스가 영어 인풋에 노력하는 이유가 무엇인가요?",
-            "answer"            : "6~8살에 언어 습득 능력이 폭발적으로 증가해요<br> 이때 가장 중요한 것은 영어 노출을 통한 인풋!",
-            "graph1-title"      : "연령대 별 언어습득능력",
-            "graph1-img"        : "/html/img/readingoceans/graph1.png",
-            "graph2-title"      : "영어 노출시간별 영어실력",
-            "graph2-img"        : "/html/img/readingoceans/graph2.png",
-            "detail-view"       : "리딩오션스 자세히 보기"
-        }
-    },
-
-    "order" : {
-        "title"                 : "학습신청",
-        "desc1"                 : "는 우리 아이들 모두가<br> <span>행복하게 영어 학습을 할 수 있도록</span> 노력합니다.",
-        "desc2"                 : "아이를 행복하게 만드는 <br> 학습 목표에, 나에게 딱 맞는 맞춤 상품!",
-        "pay"                   : "상품 구매하기",
-        "pay1-title"            : "프리미엄",
-        "pay1-price"            : "<span>월 8,160원</span><em>으로 모든 서비스 이용 (12개월 결제 기준)</em>",
-        "pay1-item-img1"        : "/html/img/bb_request/premium_img1.png",
-        "pay1-item-desc1"       : "10,000 여 편의<br> 영어 캐릭터 영상",
-        "pay1-item-img2"        : "/html/img/bb_request/premium_img2.png",
-        "pay1-item-desc2"       : "1,500 여 권의 영어<br> 필독서와 학습 액티비티",
-        "pay1-item-img3"        : "/html/img/bb_request/premium_img3.png",
-        "pay1-item-desc3"       : "1,500 여 편의<br> 과학 원리 영상",
-        "pay1-item-img4"        : "/html/img/bb_request/premium_img4.png",
-        "pay1-item-desc4"       : "500 여 권의<br> ELT교재 학습 액티비티",
-        "pay1-item-img5"        : "/html/img/bb_request/premium_img5.png?v=1",
-        "pay1-item-desc5"       : "다양한 학습 게임",
-        "pay1-item-img6"        : "/html/img/bb_request/premium_img6.png",
-        "pay1-item-desc6"       : "월간 학습 리포트",
-        "pay2-title"            : "빅박스 리딩오션스",
-        "pay2-price"            : "<span>월 4,990원</span><em>으로 모든 서비스 이용 (12개월 결제 기준)</em>",
-        "pay2-item-img1"        : "/html/img/bb_request/readingoceans_img1.png",
-		"pay2-item-desc1"       : "1,500 여 권의 영어<br> 필독서와 학습 액티비티",
-        "pay2-item-img2"        : "/html/img/bb_request/readingoceans_img2.png",
-		"pay2-item-desc2"       : "7,000 여 편의<br> 영어 캐릭터 영상",
-        "pay2-item-img3"        : "/html/img/bb_request/readingoceans_img3.png",
-		"pay2-item-desc3"       : "1,500 여 편의<br> 과학 원리 영상",
-        "pay2-item-img4"        : "/html/img/bb_request/readingoceans_img4.png",
-		"pay2-item-desc4"       : "다양한 학습 게임",
-		"pay2-item-img5"        : "/html/img/bb_request/readingoceans_img5.png",
-		"pay2-item-desc5"       : "월간 학습 리포트",
-        "gift"                  : "선물하기",
-
-        "desc-txt"              : "아이를 행복하게 만드는 !<br> 학습 목표에, 나에게 딱 맞는 맞춤 상품!",
-        "pay-txt"	            : "수강 하기",
-        "pay1-tit"	            : "개별 상품",
-        "pay1-list1-title"	    : "학습 선택",
-        "pay1-list1-item1"	    : "워드 킹덤",
-        "pay1-list1-item2"	    : "리딩 오션스",
-        "pay1-list1-item3"	    : "빅박스 TV",
-        "pay1-list2-title"	    : "이용 기간",
-        "pay1-select-title"	    : "빅박스 개별상품",
-        "pay1-select-item1"	    : "워드킹덤",
-        "pay1-select-item2"	    : "3개월",
-        "pay1-select-benefit1-1": "2,200권의 영어 필독서",
-        "pay1-select-benefit2-1": "학습 액티비티 무료",
-        "pay1-select-benefit1-2": "3,000개의 회화 필수 단어 학습",
-        "pay1-select-benefit2-2": "미션형 학습을 통한 성취감 제공",
-        "pay1-select-benefit3"	: "다양한 게임 학습으로 골드 획득",
-        "pay1-select-benefit4"	: "모은 골드로 간식 사기",
-        "pay1-select-benefit5"  : "8,000여 편의 모든 영상 시청",
-        "pay1-select-benefit6"  : "다양한 테마 중 원하는 영상 선택",
-        "pay1-select-benefit7"  : "광고 없이 무제한 시청",
-        "pay2-tit"	            : "패키지 상품",
-        "pay2-list1-title"	    : "학습 선택",
-        "pay2-list1-item1"	    : "워드 킹덤 패키지",
-        "pay2-list1-item2"	    : "리딩오션스 패키지",
-        "pay2-list2-title"	    : "이용 상품",
-        "pay2-list2-item1"	    : "<span>워드킹덤 + 카드(Dack1,2) + 빙고노트 (초1-2학년용)</span><em class='lexile'>Lexile BR~125</em>",
-        "pay2-list2-item2"	    : "<span>워드킹덤 + 카드(Dack3,4) + 빙고노트 (초3-4학년용)</span><em class='lexile'>Lexile BR~125</em>",
-        "pay2-list2-item3"	    : "<span>워드킹덤 + 카드(Dack5,6,7) + 빙고노트 (초5-6학년용)</span><em class='lexile'>Lexile BR~125</em>",
-        "pay2-list3-title"	    : "이용 기간",
-        "pay2-select-title"	    : "빅박스 패키지 상품",
-        "pay2-select-item1"	    : "워드킹덤 패키지",
-        "pay2-select-item2"	    : "3개월",
-        "pay2-select-item3"	    : "워드킹덤+워드키드+빙고노트<br>(초1,2학년용)",
-        "not-select"	        : "학습 상품을 선택해주세요.",
-        "not-select-img"        : "/html/img/bb_request/icon_cart.png",
-        "price-title"	        : "결제 금액",
-        "total-price-title"	    : "최종 결제 금액",
-        "monthly"	            : "월  ",
-        "day_txt"  	            : "일",
-        "scope-img"	            : "/html/img/bb_request/scope.png",
-        "scope-txt"	            : "이용 범위 영역",
-        "month_text"	        : "개월",
-        "unit_of_money"         : "<i>원</i>",
-
-        "policy": {
-            "item1-title"       : "이용권 사용안내",
-            "item1-list1"       : "이용권 구매 즉시 사용이 시작되며, 사용 시작일은 변경이 불가합니다.",
-            "item1-list2"       : "동일 계정에서 이용권 추가 구매 시 사용기간이 종료일 이후부터 이어서 연장됩니다.",
-            "item1-lsit3"       : "이용권은 일시 정지가 불가합니다.",
-            "item1-list4"       : "한 계정당 1개 아바타만 이용 가능합니다.<br>(두 명 이상의 자녀 이용 시 계정 별 이용권 구매 후 이용 가능합니다.)",
-            "item1-list5"       : "선물 받는 사람은 90일 이내 이용권을 등록해야 합니다. (기한 내 미등록시 환불 불가)",
-            "item1-list6"       : "선물 이용권 등록 방법",
-            "item1-list6-1"     : "· 빅박스 앱에서 등록(안드로이드, PC) : 빅박스 앱 로그인 > 시작하기 > 메인 오른쪽 상단 설정 > ‘Coupon’ Code’ > 입력",
-            "item1-list6-2"     : "· 빅박스 홈페이지에서 등록(공통) : 빅박스 홈페이지 로그인 > 이용권 등록 > 입력",
-            "item2-title"       : "결제 및 환불규정",
-            "item2-list1"       : "해지일로부터 이용 일수에 해당하는 금액, 결제 수수료 등의 서비스 이용에 필요한 제반 수수료 5% 공제 후 환급합니다.",
-            "item2-list2"       : "환불 금액 = 구입금액 - 구입가/기간권일수*(구매완료일-환불 신청일) - 제반 수수료 5%",
-            "item2-list3"       : "이벤트 상품이 배송된 경우, 납부한 금액에서 이벤트 금액을 별도 차감 후 환불됩니다.",
-            "item2-list4"       : "학습 보조 상품은 개봉 후에는 반품 불가이며, 개봉 전 반품 요청 시 왕복 택배비를 제외한 후 환불이 가능합니다.",
-            "item2-list5"       : "자세한 환불 규정은 이곳에서 확인해주세요.",
-            "item2-list5-btn"   : "바로가기",
-            "pop-title"         : "결제 및 환불규정",
-            "pop-txt"           : [
-                "1) 해지일로부터 이용 일수에 해당하는 금액, 결제 수수료 등의 서비스 이용에 필요한 제반 수수료 5% 공제 후 환급합니다.<br>",
-                "2) 환불 금액 = “구입금액 - 구입가/기간권일수*(구매완료일-환불 신청일) - 제반 수수료 5% 이벤트 상품이 배송된 경우, 납부한 금액에서 이벤트 금액을 별도 차감 후 환불됩니다.<br>",
-                "학습 보조 상품은 개봉 후에는 반품 불가이며, 개봉 전 반품 요청 시 왕복 택배비를 제외한 후 환불이 가능합니다.<br>",
-                "3) 청약 철회는 회원이 전화, 전자우편 등의 방법으로 회사에 의사를 표시하여 회사에 도달될 때 그 효력이 발생하며, 회사는 회원의 의사표시를 수령한 후 지체 없이 이러한 사실을 회원에게 회신합니다.<br>",
-                "4) 회사는 회원이 청약 철회, 해지, 해제 신청을 확인 후 환불 금액이 있을 경우, 원칙적으로 회원의 해당 의사표시를 수령한 날로부터 3영업일 이내에 결제수단 별 사업자에게 대금의 청구 정지 내지 취소를 요청하고, 회원이 결제한 동일 결제수단으로 환불함을 원칙으로 합니다. 단, 회사가 사전에 회원에게 공지한 경우 및 아래의 각 경우와 같이 개별 결제 수단별 환불 방법, 환불 가능 기간 등이 차이가 있을 수 있습니다."
-            ],
-            "pop-btn-txt"       : "※ 상세 내용은 이용 약관 참조",
-            "pop-btn"           : "바로가기",
-            "pop-close"         : "닫기"
-        },
-
-        "coupon": {
-            "no-data"           : "쿠폰 정보가 없습니다.",
-            "ok"                : "정상 등록되었습니다.",
-            "use-coupon"        : "이미 사용 중인 쿠폰입니다.",
-            "unavailable-coupon": "이용하실 수 없는 쿠폰입니다.<br>관리자에게 문의하시기 바랍니다.",
-            "already-use"       : "회원님은 이미 쿠폰을 등록하셨습니다.<br>쿠폰 사용기한이 만료된 이후에 등록 가능합니다.",
-            "expired-date"      : "유효기간이 지난 쿠폰입니다.",
-            "error"             : "잘못된 이용권 번호입니다. 다시 입력해 주세요."
-        },
-
-        "cart": {
-            "select_product"    : "상품정보를 선택해 주센요.",
-            "already_pay"       : "회원님은 시리즈를 이미 구매하셨으므로<br>다시 구매하시면 기간이 연장됩니다.",
-            "add_cart"          : "장바구니에 추가되었습니다.",
-            "error1"            : "장바구니에 이미 추가된 상품입니다.",
-            "error2"            : "장바구니에서 삭제되었습니다."
-        },
-
-        "premium": {
-            "title"             : "프리미엄",
-            "desc"              : "빅박스의 모든 서비스를 자유롭게 즐기시려면!",
-            "pay2": {
-                "pc"            : "https://www.playbigbox.com/img_v2/learn/img_price2.png?v2",
-                "mobile"        : "https://www.playbigbox.com/img_v2/learn/img_price2_m.png?v2"
-            },
-            "pay3": {
-                "pc"            : "https://www.playbigbox.com/img_v2/learn/img_price3.png?v2",
-                "mobile"        : "https://www.playbigbox.com/img_v2/learn/img_price3_m.png?v2"
-            },
-            "pay4": {
-                "pc"            : "https://www.playbigbox.com/img_v2/learn/img_price4.png?v2",
-                "mobile"        : "https://www.playbigbox.com/img_v2/learn/img_price4_m.png?v2"
-            },
-            "pay5": {
-                "pc"            : "https://www.playbigbox.com/img_v2/learn/img_price5.png?v2",
-                "mobile"        : "https://www.playbigbox.com/img_v2/learn/img_price5_m.png?v2"
-            }
-        },
-
-        "ro": {
-            "title"             : "빅박스 리딩오션스",
-            "desc"              : "리딩오션스의 모든 서비스를 자유롭게 즐기시려면!",
-            "pay30": {
-                "pc"            : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-30.png?v2",
-                "mobile"        : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-30.png?v2"
-            },
-            "pay90": {
-                "pc"            : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-90.png?v2",
-                "mobile"        : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-90.png?v2"
-            },
-            "pay180": {
-                "pc"            : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-180.png?v2",
-                "mobile"        : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-180.png?v2"
-            },
-            "pay360": {
-                "pc"            : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-360.png?v2",
-                "mobile"        : "https://www.playbigbox.com/html/bigbox/promotion_v2/img_v2/lite-readingoceans/product-360.png?v2"
-            }
-        },
-
-        "payment" : {
-            "title"             : "결제하기",
-            "title-txt"         : "아래에서  결제 상품 정보를 확인하세요.",
-            "pay-product"       : "결제상품",
-            "pay-info"          : "결제정보",
-            "pay-method"        : "결제방법",
-            "pay-card"          : "카드결제",
-            "pay-bank"          : "실시간계좌이체",
-            "pay-name"          : "구매자",
-            "pay-tel"           : "연락처",
-            "pay-phone"         : "휴대폰 번호",
-            "pay-email"         : "이메일",
-            "pay-address"       : "주소",
-            "address-search"    : "주소 검색",
-            "agree1"            : "주문하실 상품, 가격, 결제 정보 등 동의하십니까?",
-            "agree2"            : "동의합니다. (전자상거래법 제 8조 제2항)",
-            "total-price"       : "총 결제금액 :",
-            "won"               : "원",
-            "pay-ok"            : "결제",
-            "pay-cancel"        : "이전",
-            "gift-send"         : "선물하는 분",
-            "gift-receive"      : "선물받는 분",
-
-
-
-
-            "input-name"        : "구매자를 입력해 주세요.",
-            "input-tel"         : "연락처를 입력해 주세요.",
-            "input-email"       : "이메일을 입력해 주세요.",
-            "check-agree"       : "구매 동의를 체크해 주세요.",
-            "extended-period"   : "이미 구매한 상품의 경우 기간이 연장됩니다.",
-            "pay-confirm"       : "결제를 진행하시겠습까?",
-            "already-account"   : "계정이 이미 존재합니다.<br>비밀번호를 다시 확인해 주시거나, 로그인 후 결제를 진행해 주세요.",
-            "input-payinfo"     : "주문정보를 입력해 주세요.",
-            "error"             : "데이터 처리에 문제가  발생했습니다.",
-            "return-txt"        : "실물 상품은 배송 완료 후 훼손(사용)되지 않은 경우에 한해 반품이 가능하며, 배송비가 부과됩니다. ​<br>(왕복 배송비 5,000원)​",
-            "return-txt2"       : "※ 교재 및 교구는 구매 완료 후 7일 이내에 훼손(사용)되지 않은 경우에 한해 반품이 가능하며, 반품 배송비가 부과됩니다.​"
-        },
-
-        "payment-complete" : {
-            "title"             : "결제완료",
-            "confirm"           : "확인"
-        }
+    "company": {
+        "title"             : "영어와 함께 성장합니다, <strong>TEST</strong>",
+        "tit1"              : "어느 때보다 영어 구사 능력이 중요해진 때",
+        "txt1"             : "화상으로 외국인 친구와 대화하고, 구글에서 해외 논문 자료를 찾는 아이들.<br>Seed Learning은 학습자가 언어의 장벽 없이 글로벌 인재로 성장할 수 있도록 돕습니다.",
+        "tit2"              : "우수한 집필진",
+        "txt2"             : "Seed Learning은 영어 교육 분야의 세계적인 석학과 다양한 경력의 원어민 저자, 그리고 영어 교육 전문가와의 협업으로 균형 잡힌 영어학습 경험을 제공합니다. 의미 중심의 인풋, 지속적인 아웃풋 유도와 유창성 개발로 모든 영역에서 영어 능력을 향상하는 것을 목표로 합니다.",
+        "tit3"              : "지속적 콘텐츠 개발",
+        "txt3"             : "교육계와 소비자의 요구에 발맞춰 전문적인 교육자료를 개발합니다. 실생활 빈출 어휘에 초점을 맞춘 1200/4500 Key English Words, 스피킹 자신감을 길러주는 Speaking for Speeches, 문화와 역사 지식을 쌓을 수 있는 Culture/History Readers 등이 교육 현장에서 활용되고 있습니다.",
+        "last-txt"       : "<strong>Seed Learning</strong>은 자라나는 새싹처럼 영어 ELT 교재를 매개로<br>학습자의 성장을 뒷받침하고자 노력하고 있습니다."
     }
 }
