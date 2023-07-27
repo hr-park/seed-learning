@@ -20,7 +20,9 @@ $(document).ready( function() {
 			swal("나의 관심 교재에서 삭제되었습니다!");
 			$(this).removeClass('active');
 		}else{
-			swal("나의 관심 교재에 등록되었습니다!");
+			swal("나의 관심 교재에 등록되었습니다!", {
+				icon: "success",
+			});
 			$(this).addClass('active');
 		}
 	});
