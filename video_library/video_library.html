@@ -325,6 +325,20 @@ PC 하위메뉴 details_list li에 active 클래스 추가
 
 
 <script type="text/javascript">
+/*퍼블확인용*/
+const urlParams = new URL(location.href).searchParams;
+let type = urlParams.get('type');
+if (type === "noToggle") {
+	document.querySelectorAll('div[data-device="mo"] .accordion.no_toggle').forEach(element => {
+		element.style.display = 'none';
+	});
+	document.querySelectorAll('div[data-device="pc"] .accordion').forEach(element => {
+		element.classList.add('no_toggle');
+	});
+}
+/*퍼블확인용*/
+
+
 //video play
 const videos = document.querySelectorAll('video');
 videos.forEach(function (video, idx){
