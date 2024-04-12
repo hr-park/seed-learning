@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+	<link rel="stylesheet" type="text/css" href="https://webfontworld.github.io/goodchoice/Jalnan.css">
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/font.css">
+	<style type="text/css">
+	
+	</style>
+</head>
+<!--
+-->
+<body>
+
+
+<!-- book_service.asp -->
+<style type="text/css">
+/*기존 style.css*/
+
+
+
+/*추가 style.css*/
+.book_list.min .item .info{height:90px;}
+/*.book_list.min .item .thumb_area{height:100%;}*/
+.book_list.min .thumb{height:308px;}
+.book_list.min .thumb a{position:relative;}
+.book_list.min .thumb .btn_video{display:none;position:absolute;left:50%;top:50%;z-index:10;width:100px;height:100px;transform:translate(-50%, -50%);background:url('ico_play.png') no-repeat 50% 50% / 100% auto;text-indent:-9999px;}
+.book_list.min .thumb:hover .btn_video{display:block;}
+.book_list.min .thumb:hover a:before{content:'';display:block;width:100%;height:100%;position:absolute;left:0;bottom:0;background:rgba(0, 0, 0, .2)}
+
+@media screen and (max-width:768px){
+	.book_list.min .item .info{height:auto;}
+	.book_list.min .item .thumb{height:auto;}
+	.book_list.min .thumb .btn_video{width:30px;height:30px}
+
+}
+
+</style>
+<div class="inner" style="margin-top:100px">
+	<div class="tab_wrap" data-device="pc">
+		<ul class="tabs">
+			<li class="active"><a href="javascript://" data-i18n="bookintro.tab-data"><!-- 부가자료 --></a></li>
+			<li><a href="javascript://" data-i18n="bookintro.tab-video"><!-- 영상자료 --></a></li>
+		</ul>
+	</div>
+	<div class="search_sel" data-device="mo">
+		<select name="category" onchange="">
+			<option value="" data-i18n="bookintro.tab-data"><!-- 부가자료 --></option>
+			<option value="" data-i18n="bookintro.tab-video"><!-- 영상자료 --></option>
+		</select>
+	</div>
+
+
+
+
+	<!-- -->
+	<div class="sch_type">
+		<div class="type_box" id="searchAfter">
+		<form name="searchForm" method="get">
+		<input type="hidden" name="orderby" value="1">
+			<div class="scr_box">
+				<h3 class="tit_h3" data-i18n="bookintro.category.title">카테고리</h3>
+				<div class="chk_wrap flex_align arr_hide">
+				<!-- -->
+					<span class="inp_check type2">
+						<input type="radio" id="category_0" name="category" value="" onclick="document.searchForm.submit();" checked="">
+						<label for="category_0">All</label>
+					</span>
+					<span class="inp_check type2">
+						<input type="radio" id="category_1" name="category" value="1" onclick="document.searchForm.submit();">
+						<label for="category_1">Phonics</label>
+					</span>
+					<span class="inp_check type2">
+						<input type="radio" id="category_2" name="category" value="2" onclick="document.searchForm.submit();">
+						<label for="category_2">Course Books</label>
+					</span>
+					<div class="btn_wrap">
+						<button type="button" class="btn_all">▼<span class="hide">전체보기</span></button>
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+		<div class="type_box">
+			<div class="scr_box">
+				<h3 class="tit_h3" data-i18n="bookservice.sub-tit">자료유형</h3>
+				<div class="chk_wrap flex_align">
+					<span class="inp_check type2">
+						<input type="checkbox" id="data_0" name="data2" value="">
+						<label for="data_0">All</label>
+					</span>
+					<!-- -->
+					<span class="inp_check type2">
+						<input type="checkbox" id="data_11" name="data" onclick="document.searchForm.submit();" value="11" checked="">
+						<label for="data_11">Errata</label>
+					</span>
+					<!-- -->
+					<span class="inp_check type2">
+						<input type="checkbox" id="data_12" name="data" onclick="document.searchForm.submit();" value="12" checked="">
+						<label for="data_12">Interview Sheet</label>
+					</span>
+					<!-- -->
+					<span class="inp_check type2">
+						<input type="checkbox" id="data_13" name="data" onclick="document.searchForm.submit();" value="13" checked="">
+						<label for="data_13">Explanations </label>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -->
+
+	<div class="book_list_wrap">
+		<ul class="book_list min">
+			<li class="item">
+				<div class="thumb_area">
+					<div class="thumb">
+						<a href="javascript:fnc_goVideo('');">
+							<img src="https://upload.seed-learning.com/files/1-3(1).jpg" alt="1-3 Foods from South Korea" loading="lazy">
+							<span class="btn_video">비디오 보기</span>
+						</a>
+					</div>
+				</div>
+				<div class="info">
+					<h3 class="tit"><a href="javascript:fnc_goVideo('');">1-3 Foods from South Korea</a></h3>
+				</div>
+			</li>
+			<li class="item">
+				<div class="thumb_area">
+					<div class="thumb">
+						<a href="javascript:fnc_goVideo('');">
+							<img src="https://upload.seed-learning.com/files/1-3(1).jpg" alt="1-3 Foods from South Korea" loading="lazy">
+							<span class="btn_video">비디오 보기</span>
+						</a>
+					</div>
+				</div>
+				<div class="info">
+					<h3 class="tit"><a href="javascript:fnc_goVideo('');">1-3 Foods from South Korea</a></h3>
+				</div>
+			</li>
+			<li class="item">
+				<div class="thumb_area">
+					<div class="thumb">
+						<a href="javascript:fnc_goVideo('');">
+							<img src="https://upload.seed-learning.com/files/1-3(1).jpg" alt="1-3 Foods from South Korea" loading="lazy">
+							<span class="btn_video">비디오 보기</span>
+						</a>
+					</div>
+				</div>
+				<div class="info">
+					<h3 class="tit"><a href="javascript:fnc_goVideo('');">1-3 Foods from South Korea</a></h3>
+				</div>
+			</li>
+			<li class="item">
+				<div class="thumb_area">
+					<div class="thumb">
+						<a href="javascript:fnc_goVideo('');">
+							<img src="https://upload.seed-learning.com/files/1-3(1).jpg" alt="1-3 Foods from South Korea" loading="lazy">
+							<span class="btn_video">비디오 보기</span>
+						</a>
+					</div>
+				</div>
+				<div class="info">
+					<h3 class="tit"><a href="javascript:fnc_goVideo('');">1-3 Foods from South Korea</a></h3>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--// book_service.asp -->
+
+
+<script type="text/javascript">
+//book_service > video window popup open
+function fnc_goVideo(seq) {
+	const popW = '1450';
+    const popH = '900';
+	let posL= (document.body.clientWidth / 2) - (popW / 2);
+	let posT= (document.body.clientHeight / 2) - ((popH / 2) - 40);
+	posL += window.screenLeft;
+
+	let newwin = window.open('sub2_video_accordian.html?seq=' + seq,'','width='+ popW +',height='+ popH +',top='+ posT +',left='+ posL +',resizable=no,scrollbars=no');
+
+    newwin.focus();
+}
+</script>
+</body>
+</html>

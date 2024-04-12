@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+	<link rel="stylesheet" type="text/css" href="https://webfontworld.github.io/goodchoice/Jalnan.css">
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/font.css">
+	<style type="text/css">
+	html, body{height:auto}
+	body{padding:40px 20px}
+
+	/**/
+	.thumb{display:flex;width:100%;align-items:center;column-gap:15px;}
+	.thumb .img_thumb_wrap{overflow:hidden;width:64px;border-radius:5px;background:#efefef}
+	.thumb .img_thumb_wrap .img_box{overflow:hidden;position:relative;display:inline-block;width:100%;height:100%;padding-bottom:56.25%;background:linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);background-size:200% 100%;background-position:100% 0;animation:load 1s infinite;box-sizing:border-box;}
+	.thumb .img_box img{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%, -50%);object-fit:cover;}
+
+	/**/
+
+	.video_wrap{max-width:1200px;margin:0 auto;}
+	.video_wrap .top_tit{display:flex;padding-left:15px;margin-bottom:25px;align-items:flex-end;font-size:12px;color:#777;}
+	.video_wrap .top_tit h1{margin-right:10px;color:#0096ba;font-weight:700;font-family:'Jalnan';font-size:30px;}
+	.video_wrap .top_tit span{display:inline-block;margin:0 5px;font-size:14px;color:#777;}
+	.video_wrap .inner{display:flex;column-gap:30px;}
+
+	/*sec_video*/
+	.sec_video{flex-grow:7;}
+	.video_wrap .sec_video .video{overflow:hidden;position:relative;display:inline-block;width:100%;height:auto;padding-bottom:56.25%;background:linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);background-size:200% 100%;background-position:100% 0;animation:load 1s infinite;border:1px solid #c7c7c7;border-radius:20px;box-shadow:0 0 3px 3px rgba(119, 119, 119, .1);box-sizing:border-box;}
+	.sec_video .video video{position:absolute;top:50%;left:50%;width:100%;/*height:auto;*/height:100%;transform:translate(-50%, -50%);object-fit:cover;}
+	.sec_video .video .vid_overlay.stop{width:100%;height:100%;position:absolute;top:0;left:0;cursor:pointer;}
+	.sec_video .video .vid_overlay.stop:after{content:'';display:inline-block;width:100px;height:100px;background:url('ico_play.png') no-repeat center / 100% auto;box-shadow:0 3px 6px rgba(0, 0, 0, .16);border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
+	
+	
+	.video_wrap .resources{display:flex;height:50px;padding:0 30px;margin-top:30px;align-items:center;justify-content:space-between;border:1px solid #c7c7c7;border-radius:25px;background:rgb(89,46,212);background:linear-gradient(120deg, rgba(89,46,212,1) 0%, rgba(238,250,251,1) 0%, rgba(253,249,234,1) 100%);box-shadow:0 0 6px 2px rgba(119, 119, 119, .1);}
+	.video_wrap .resources .tit{color:#0096ba;font-weight:700;font-family:'Jalnan';font-size:13px;}
+	.video_wrap .resources .files{display:flex;align-items:center;gap:40px;}
+	.video_wrap .resources .files a{display:flex;align-items:center;font-size:15px;color:#777;letter-spacing:-.025em;font-weight:500}
+	.video_wrap .resources .files a:before{content:'';display:inline-block;width:16px;height:16px;margin-right:7px;background:url('ico_resource.png') no-repeat;background-size:100% auto;}
+	.video_wrap .resources .files a.download:before{background-position:0 0}
+	.video_wrap .resources .files a.audio:before{background-position:0 100%}
+
+
+	/*sec_accordion*/
+	.sec_accordion{overflow:hidden;/*width:320px;*/max-width:320px;flex-grow:2.3;border-radius:20px;border:1px solid #c7c7c7;box-shadow:0 0 12px 5px rgba(119, 119, 119, .1);}
+	.accordion .accordion_item{border-top: 1px solid #ccc;}
+	.accordion .accordion_item:first-child{border-top:0 none}
+	.accordion .accordion_controls{position:relative;display:flex;/*height:56px;*/min-height:56px;padding:8px 50px 8px 16px;align-items:center;column-gap:15px;color:#777;font-weight:500;font-size:20px;letter-spacing:-.025em;cursor:pointer;}
+	.accordion .accordion_controls .tit{color:#777}
+	.accordion .accordion_controls.active .tit{color:#333;font-weight:600}
+	.accordion .accordion_controls:before{content:'';position:absolute;right:20px;top:50%;z-index:1;display:inline-block;width:10px;height:6px;padding:0;background:url('https://www.seed-learning.com/inc/images/ico_selet.png') no-repeat 50% 50% / 100% auto;text-indent:-9999px;transform:translate(0, -50%);border:0 none}
+	.accordion .accoridion_cont{display:none;animation:animate .4s ease}
+	.accordion .img_thumb_wrap + .tit{flex:1;}
+	.accordion .accordion_item.active{background:#f9f9f9;box-shadow:inset 0 30px 30px -30px rgba(0, 0, 0, 5%), inset 0 -10px 10px -10px rgb(0 0 0 / 10%)}
+	.accordion .accordion_item.active .accordion_controls{font-weight:700;color:#000}
+	.accordion .accordion_item.active .accordion_controls:before{transform:translate(0, -50%) rotate(180deg)}
+	.accordion .accordion_item.active .accoridion_cont{display:block}
+	.accordion .accordion_item.active .accoridion_cont .details_list{border-top:0 none}
+	.accordion .details_list{padding:0 16px 16px}
+	.accordion .details_list li + li{margin-top:10px;}
+	.accordion .details_list li p{font-size:16px;color:#777;letter-spacing:-.025em}
+	.accordion .details_list li.active p{text-decoration:underline;color:#000}
+	.accordion .details_list li a{display:block;height:100%}
+	/*.accordion .details_list li .thumb{display:flex;align-items:center;column-gap:15px;}*/
+
+	@keyframes load {
+		100% {background-position: -100% 0;}
+	}
+
+	@keyframes animate{
+		0% {opacity:0;transform:translateY(-5%)}
+		100% {opacity:1;transform:translateY(0)}
+	}
+
+	/**/
+	.accordion.no_toggle .accordion_controls{padding:8px 16px;}
+	.accordion.no_toggle .accordion_controls:before{display:none}
+	.accordion.no_toggle .accordion_controls .tit{word-break:break-word;flex:1;}
+	.accordion.no_toggle .thumb .img_thumb_wrap{width:23%}
+
+
+	@media screen and (max-width:768px){
+		html, body{height:100%}
+		body{padding:20px 15px}
+
+		.search_sel{margin:5.55vw 0 2.77vw 0;border-radius:3.88vw;}
+		.search_sel:after{right:3.61vw}
+		.search_sel select{height:6.94vw;padding:0 3.61vw;background:#fafafa;border-radius:3.88vw;color:#777;font-size:3.61vw;}
+
+		.thumb{width:100%;column-gap:2.77vw}
+		.thumb .img_thumb_wrap,
+		.accordion.no_toggle .thumb .img_thumb_wrap{/*width:12%*/width:25%;}
+
+		.video_wrap{position:relative;padding-bottom:16.66vw;}
+		.video_wrap .top_tit{margin-bottom:15px}
+		.video_wrap .top_tit h1{font-size:4.44vw}
+		.video_wrap .top_tit{font-size:2.36vw}
+		.video_wrap .top_tit span{font-size:2.36vw}
+		.video_wrap .inner{flex-direction:column}
+		.video_wrap .resources{position:absolute;left:0;bottom:0;width:100%;height:6.94vw;margin:5.55vw 0;padding:0 4.16vw;}
+		.video_wrap .resources .tit{font-size:2.22vw}
+		.video_wrap .resources .files{gap:6.94vw}
+		.video_wrap .resources .files a{font-size:2.22vw}
+		.video_wrap .resources .files a:before{width:3.33vw;height:3.33vw;}
+		.sec_video .video .vid_overlay.stop:after{width:13.88vw;height:13.88vw}
+
+		.sec_accordion{max-width:100%;border:0 none;border-radius:0;box-shadow:none}
+		.accordion .accordion_item.active{background:none;box-shadow:none}
+		.accordion .accordion_controls{min-height:35px;height:auto;padding:1.66vw 2.77vw;column-gap:2.77vw;cursor:default}
+		.accordion .accordion_controls .tit{font-size:3.33vw;}
+		.accordion .accordion_controls:before{display:none;}
+		.accordion .accordion_controls.active .tit:after{content:'';display:inline-block;width:0;height:0;margin-left:1.4vw;border-color:transparent #333 transparent transparent;border-style:solid; border-width:1.38vw 2.76vw 1.38vw 0;}
+		.accordion .accordion_item{border-top-style:dashed}
+
+		.accordion.no_toggle .accordion_controls .tit{font-size:3.33vw}
+	}
+	</style>
+</head>
+<!--
+모바일은 accordion에 무조건 no_toggle
+PC는 accordion 메뉴가 있는 경우에는 accordion 클래스 유지 / 일반 리스트인 경우 no_toggle 클래스 추가
+PC 리스트의 경우 활성화 or 하위 아코디언 메뉴 열려있을때 accordion_controls에 active 클래스 추가
+PC 하위메뉴 details_list li에 active 클래스 추가
+-->
+<body>
+
+<!-- video_wrap -->
+<div class="video_wrap">
+	<div class="top_tit">
+		<h1>{TESTTEST}</h1> / <span>{Unit 1}</span> / <span>{Chant Full}</span>
+	</div>
+	<!-- inner -->
+	<div class="inner">
+		<!-- video -->
+		<section class="sec_video">
+			<div class="video">
+				<video playsinline="" id="" controls>
+					<source src="https://mobilevod.neungyule.com/neungyulemobile/Free/0015_ELT_free/004_Web_AD/NE_Build_Grow_AD(web_ver).mp4" type="video/mp4">
+				</video>
+				<div class="vid_overlay stop"></div>
+			</div>
+			<div class="resources">
+				<p class="tit">Resources</p>
+				<div class="files">
+					<a href="#" class="download">Download Files</a>
+					<a href="#" class="audio">Audio</a>
+				</div>
+			</div>
+		</section>
+		<!--// video -->
+		<!-- sec_accordion -->
+		<section class="sec_accordion">
+			<!-- MOBILE -->
+			<div data-device="mo">
+				<div class="search_sel">
+					<select onchange="">
+						<option value="">Unit or Level Title 1</option>
+						<option value="">Unit or Level Title 2</option>
+						<option value="">Unit or Level Title 3</option>
+					</select>
+				</div>
+				<ul class="accordion no_toggle"> <!-- 모바일은 무조건 no_toggle -->
+					<!-- -->
+					<li class="accordion_item">
+						<div class="accordion_controls active"> <!-- 활성화 리스트인 경우 active -->
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 Unit or Level Title 1 </p>
+							</a>
+						</div>
+					</li>
+					<!-- -->
+					<li class="accordion_item">
+						<div class="accordion_controls">
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1</p>
+							</a>
+						</div>
+					</li>
+					<li class="accordion_item">
+						<div class="accordion_controls">
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--// MOBILE -->
+			<!-- PC -->
+			<div data-device="pc">
+				<!-- accordion -->
+				<ul class="accordion"> <!-- 바로가기 리스트인 경우 no_toggle -->
+					<!-- -->
+					<li class="accordion_item">
+						<div class="accordion_controls"> <!-- 활성화 리스트인 경우 active -->
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1</p>
+							</a>
+						</div>
+						<div class="accoridion_cont">
+							<ul class="details_list">
+								<li><!-- 하위 메뉴 활성화 리스트인 경우 active -->
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant or Video Title 1Chant or Video Title 1Chant or Video Title 1Chant or Video Title 1Chant or Video Title 1</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 1</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 2</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- -->
+					<li class="accordion_item">
+						<div class="accordion_controls">
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1</p>
+							</a>
+						</div>
+						<div class="accoridion_cont">
+							<ul class="details_list">
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 1</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 2</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="accordion_item">
+						<div class="accordion_controls">
+							<a href="javascript://" class="thumb">
+								<div class="img_thumb_wrap">
+									<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+								</div>
+								<p class="tit">Unit or Level Title 1</p>
+							</a>
+						</div>
+						<div class="accoridion_cont">
+							<ul class="details_list">
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 1</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript://">
+										<div class="thumb">
+											<div class="img_thumb_wrap">
+												<span class="img_box"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MzBfNTEg/MDAxNTkzNDU5NzAxMzM3.lAXAlGGZyp7RQdVfTeWy6WUaCrziMAnqUiJ95w-GBXkg.UblEGouTKAdpi3QHHEwkd_nO5eoyvdWVRlRO80SWwOEg.PNG.cw4196/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.-2.png?type=w800" alt=""></span>
+											</div>
+											<p class="tit">Chant 2</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<!--// accordion -->
+			</div>
+			<!--// PC -->
+		</section>
+		<!--// sec_accordion -->
+	</div><!--// inner -->
+</div>
+<!--// video_wrap -->
+
+
+<script type="text/javascript">
+//video play
+const videos = document.querySelectorAll('video');
+videos.forEach(function (video, idx){
+    const vidOverlay = video.nextElementSibling;
+    video.pause();
+    vidOverlay.classList.add('stop');
+    vidOverlay.addEventListener('click', function(e){
+        videos.forEach(function (vid){
+            vid.pause();
+            vid.nextElementSibling.classList.add('stop');
+        });
+        video.play();
+        vidOverlay.classList.remove('stop');
+    });
+});
+
+//accordion
+const accordion = document.querySelectorAll('.accordion:not(.no_toggle) .accordion_item');
+accordion.forEach(element =>{
+	let btn = element.querySelector('.accordion_controls');
+	var answer = element.lastElementChild;
+	btn.addEventListener('click', ()=>{
+		accordion.forEach(accItem => {
+			if (accItem !== element) {
+				accItem.classList.remove('active');
+			}
+		});
+		element.classList.toggle('active');
+	});
+});
+
+</script>
+</body>
+</html>
