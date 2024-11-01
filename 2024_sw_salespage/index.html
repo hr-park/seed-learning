@@ -5,8 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 	<!--<link rel="stylesheet" type="text/css" href="https://webfontworld.github.io/goodchoice/Jalnan.css">-->
-	<!--<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/font.css">
-	<script src="https://www.seed-learning.com/inc/js/jquery-3.7.0.min.js"></script>-->
+	<!--<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/font.css">-->
+	<script src="https://www.seed-learning.com/inc/js/jquery-3.7.0.min.js"></script>
 	<style type="text/css">
 	@font-face {
 		font-family: 'OneMobileTitle';
@@ -59,7 +59,7 @@
 	.salespage .cover_wrap .txt_info{display:none}
 	.salespage .cover_wrap .book_type{display:inline-block;padding-left:24px;margin-bottom:10px;height:26px;line-height:26px;color:#2d314c;font-size:16px;font-family: 'OneMobileTitle';border-bottom:1px dashed #494c64;background:url('ico_search.png') no-repeat 0 50% / 15px auto;letter-spacing:-.025em;font-stretch:90%;}
 	.salespage .cover_wrap a.wb .book_type{margin-bottom:15px}
-	.salespage .book_detail{opacity:1;display:block;padding:25px 0;transition:all .2s ease}
+	.salespage .book_detail{display:block;padding:25px 0;transition:all .2s ease}
 	.salespage .book_detail dt{float:left;width:156px;padding:10px 20px;font-size:18px;font-weight:300;letter-spacing:-.01em;color:#333;font-stretch:95%;}
 	.salespage .book_detail dd{display:inline-block;width:calc(100% - 156px);min-height:38px;padding:10px 10px 10px 0;font-size:18px;font-weight:300;letter-spacing:-.01em;color:#777;font-stretch:90%;}
 
@@ -91,8 +91,8 @@
 		.salespage .btn_more{display:block;padding:15px;font-size:13px;color:#333;background:none;border:none;font-weight:500}
 		.salespage .btn_more:after{content:'';display:inline-block;width:7px;height:5px;margin-left:5px;background:url('ico_arr.png') no-repeat 100% 0 / 100% auto;vertical-align:middle;}
 		.salespage .btn_more.on:after{transform:rotate(180deg)}
-		.salespage .book_detail{display:none;opacity:0;padding:15px 0;margin-top:0;margin-bottom:20px;border-top:1px dashed #999;}
-		.salespage .book_detail.active{opacity:1;display:block}
+		.salespage .book_detail{display:none;padding:15px 0;margin-top:0;margin-bottom:20px;border-top:1px dashed #999;}
+		.salespage .book_detail.active{display:block}
 		.salespage .book_detail dt{width:100px;padding:5px 15px;font-size:12px}
 		.salespage .book_detail dd{width:calc(100% - 100px);min-height:20px;padding:5px 10px;font-size:12px}
 		.salespage .info_txt{padding:0 15px;border-top:1px dashed #adadad}
@@ -283,45 +283,29 @@
 
 
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', () => {
-   //더보기 버튼 클릭
-   document.querySelectorAll('.btn_more').forEach(btn => {
-       btn.addEventListener('click', () => {
-           btn.classList.toggle('on');
-           const detail = btn.nextElementSibling;
-           
-           if (detail.classList.contains('book_detail')) {
-               detail.classList.toggle('active');
-           }
-       });
+$(document).ready(function() {
+   $('.btn_more').click(function() {
+       $(this).toggleClass('on');
+	   $(this).next('.book_detail').fadeToggle(300);
    });
 
-   window.addEventListener('resize', checkScreenSize);
+   $(window).resize(function() {
+        checkScreenSize();
+    });
 });
 
-const fadeToggle = element => {
-   if (element.style.display === 'none') {
-       element.style.opacity = 0;
-       element.style.display = 'block';
-       setTimeout(() => element.style.opacity = 1, 0);
-   } else {
-       element.style.opacity = 0;
-       setTimeout(() => element.style.display = 'none', 300);
-   }
-};
+function checkScreenSize() {
+	const bookDetail = $('.book_detail');
+	const btnMore = $('.btn_more');
 
-const checkScreenSize = () => {
-   const bookDetails = document.querySelectorAll('.book_detail');
-   const btnMores = document.querySelectorAll('.btn_more');
-   
-   if (window.innerWidth >= 768) {
-       bookDetails.forEach(detail => detail.classList.add('active'));
-       btnMores.forEach(btn => btn.style.display = 'none');
-   } else {
-       bookDetails.forEach(detail => detail.classList.remove('active'));
-       btnMores.forEach(btn => btn.style.display = 'block');
-   }
-};
+	if (window.innerWidth >= 768) {
+		bookDetail.show();
+		btnMore.hide();
+	} else {
+		bookDetail.hide();
+		btnMore.show();
+	}
+}
 </script>
 </body>
 </html>
