@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+	<!--<link rel="stylesheet" type="text/css" href="https://webfontworld.github.io/goodchoice/Jalnan.css">-->
+	<link rel="stylesheet" type="text/css" href="https://www.seed-learning.com/inc/css/font.css">
+	<script src="https://www.seed-learning.com/inc/js/jquery-3.7.0.min.js"></script>
+	<style type="text/css">
+	:root{
+		--color-writing:#67a4e5;
+	}
+	header{display:flex;align-items:center;justify-content:center;height:140px;font-weight:300;box-shadow:0 2px 5px rgba(0,0,0,.2);font-size:38px;}
+	header h1{position:relative;width:210px;padding-right:75px;margin-right:75px;}
+	header h1:after{content:'';position:absolute;right:0;top:50%;display:inline-block;width:1px;height:45px;background:#333;transform:translateY(-50%);}
+
+
+	section{max-width:1080px;margin:0 auto}
+	/*section.section_list{margin-top:85px}*/
+
+	/*.salespage .category{display:inline-flex;height:40px;margin-bottom:30px;padding:0 25px;align-items:center;justify-content:center;font-family:'Jalnan';font-size:24px;color:#fff;border-radius:20px;background:#67a4e5}*/
+
+	
+	.salespage{padding-bottom:80px}
+	.salespage h2{margin:30px 0 100px;font-size:30px;font-weight:700;text-align:center;word-break:keep-all}
+	.salespage h3 strong{font-weight:900;color:purple}
+
+	.salespage .visual{display:flex;align-items:center;justify-content:center;height:300px;background:url('bg_visual.png') no-repeat 50% 50%;/*border-top:1px solid #c7c7c7;border-bottom:1px solid #c7c7c7;*/}
+	.salespage .visual .img{display:none}
+	.salespage .visual p{position:relative;display:inline-block;}
+	.salespage .visual p:after{content:'';position:absolute;right:-90px;top:-55px;display:inline-block;width:83px;height:68px;background:url('ico_fireworks.png') no-repeat 50% 50%}
+	.salespage .tit_wrap{padding:60px 0;background:#fbfbfb;border-bottom:1px solid #c3c3c3}
+
+	.salespage .txt_info{margin-top:20px;font-size:24px;color:#d7000f;letter-spacing:-.01em;font-weight:700}
+	.salespage .series_list{display:flex;flex-wrap:wrap;gap:32px;margin-top:80px;}
+	.salespage .series_list li{width:calc(33.3% - 21px);padding-bottom:20px;}
+	.salespage .series_list .tit{position:relative;padding:0 0 20px 20px;font-size:40px;font-weight:900;color:#333;letter-spacing:-.02em;}
+	.salespage .series_list.more .tit{padding:0 0 0 20px}
+	.salespage .series_list .type{position:relative;padding-top:25px;font-size:36px;font-weight:500;color:#8c42af;letter-spacing:-.025em;}
+	.salespage .series_list .type:after{content:'';position:absolute;left:-20px;right:-20px;top:0;display:inline-block;width:calc(100% + 40px);height:1px;border-top:1px dashed #adadad;}
+	.salespage .series_list .type.type1{color:#8c42af}
+	.salespage .series_list .type.type2{color:#437dc3}
+	.salespage .series_list .type.type3{color:#f3ac26}
+	.salespage .series_list .level{margin-top:10px;font-size:18px;color:#777}
+	.salespage .info_txt{padding:0 20px 0;/*border-top:1px dashed #adadad;*/}
+	.salespage .info_txt p{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+	.salespage .btn_more{display:none;}
+	.salespage .cover_wrap{display:flex;gap:26px;padding:45px 30px;margin:20px 0 0;background:#fcfcfc;border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4;box-shadow:inset 0 5px 10px -5px rgb(194 194 194 / 30%), inset 0 -5px 10px -5px rgb(194 194 194 / 30%);align-items:flex-end;}
+	.salespage .cover_wrap > a{text-align:center;}
+	.salespage .cover_wrap > a.sb{flex:1.2}
+	.salespage .cover_wrap > a.wb{flex:0.8}
+
+	.salespage .cover_wrap .cover{display:inline-block;}
+	.salespage .cover_wrap .book_type{/*display:inline-flex;align-items:center;justify-content:center;*/display:inline-block;padding-left:24px;margin-bottom:10px;height:26px;color:#2d314c;font-size:16px;font-weight:700;font-family: 'OneMobileTitle';border-bottom:1px dashed #2d314c;background:url('ico_search.png') no-repeat 0 50% / 15px auto;letter-spacing:-.025em;}
+	.salespage .cover_wrap a.wb .book_type{margin-bottom:15px}
+	.salespage .book_detail{display:block;padding:25px 0;/*margin-top:20px;*/}
+	.salespage .book_detail dt{float:left;width:156px;padding:10px 20px;font-size:18px;font-weight:300;letter-spacing:-.01em;color:#333;}
+	.salespage .book_detail dd{display:inline-block;width:calc(100% - 156px);min-height:38px;padding:10px 10px 10px 0;font-size:18px;font-weight:300;letter-spacing:-.01em;color:#777}
+	
+
+	@media screen and (max-width:1080px){
+		.salespage .tit_wrap{padding:60px 15px}
+		.salespage .series_list .tit{font-size:30px}
+		.salespage .series_list .type{font-size:28px}
+		.salespage .series_list .level{font-size:14px}
+	}
+	@media screen and (max-width:1024px){
+		.salespage .series_list li{width:calc(50% - 16px);}
+		
+	}
+	@media screen and (max-width:768px){
+		header{height:64px;font-size:13px}
+		header h1{width:85px;padding-right:20px;margin-right:20px;}
+		header h1:after{height:20px}
+		.salespage .visual{/*height:98px;background:url('bg_visual_m.png') no-repeat 0 50%;*/height:auto;background:none}
+		/*.salespage .visual p{width:76px}
+		.salespage .visual p:after{right:-40px;top:-14px;width:35px;height:35px;background-size:100% auto}*/
+		.salespage .visual .img{display:block}
+		.salespage .visual p,
+		.salespage .visual p:after{display:none}
+		.salespage .tit_wrap{padding:30px 15px 40px;border-bottom:0 none}
+		.salespage .tit_wrap h3{width:200px}
+		.salespage .txt_info{display:none}
+		.salespage .series_list{gap:10px;margin-top:0}
+		.salespage .series_list li{width:100%}
+		.salespage .btn_more{display:block;padding:15px;font-size:13px;color:#333;background:none;border:none;font-weight:500}
+		.salespage .btn_more:after{content:'';display:inline-block;width:7px;height:5px;margin-left:5px;background:url('ico_arr.png') no-repeat 100% 0 / 100% auto;vertical-align:middle;}
+		.salespage .btn_more.on:after{transform:rotate(180deg)}
+		.salespage .book_detail{display:none;padding:15px 0;margin-top:0;margin-bottom:20px;border-top:1px dashed #999;}
+		.salespage .book_detail dt{width:100px;padding:5px 15px;font-size:12px}
+		.salespage .book_detail dd{width:calc(100% - 100px);min-height:20px;padding:5px 10px;font-size:12px}
+		.salespage .info_txt{padding:0 15px;border-top:1px dashed #adadad}
+		.salespage .series_list.more .info_txt{border-top:0 none}
+		.salespage .series_list .tit{padding:10px 0 15px 15px;;font-size:25px}
+		.salespage .series_list.more .tit{padding:10px 0 0 15px}
+		.salespage .series_list .type{padding-top:15px;font-size:23px;}
+		.salespage .series_list .type:after{display:none;}
+		.salespage .series_list .level{margin-top:5px;font-size:12px;}
+		.salespage .series_list .tit:after{content:'';position:absolute;left:0;top:0;display:inline-block;width:15px;height:2px;background:#333}
+		.salespage .cover_wrap{position:relative;gap:20px;padding:50px 55px 25px;}
+		.salespage .series_list.more .cover_wrap{padding:30px 40px}
+		.salespage .cover_wrap .txt_info{position:absolute;left:0;top:0;display:block;width:100%;font-size:11px;text-align:center;}
+		.salespage .cover_wrap > a{flex:1 !important}
+		.salespage .cover_wrap .book_type{height:17px;margin-bottom:8px;padding-left:15px;font-size:10px;background-size:10px auto}
+		.salespage .cover_wrap a.wb .book_type{margin-bottom:8px}
+	}
+	</style>
+</head>
+
+<body>
+
+<main class="salespage">
+	<header>
+		<h1><img src="logo.png" alt="Seed Learning"></h1>2024
+	</header>
+	<div class="visual">
+		<img src="visual_m.png" class="img" alt="신간출시">
+		<p><img src="txt_visual.png" alt="신간출시"></p>
+	</div>
+	<section class="section_list">
+		<div class="tit_wrap">
+			<!--<strong class="category">Writing</strong>-->
+			<h3>
+				<picture>
+					<source media="(max-width:768px)" srcset="txt_smart_writers_m.png"> <!-- MO 이미지 -->
+					<source media="(min-width:769px)" srcset="txt_smart_writers.png"> <!-- PC 이미지 -->
+					<img src="txt_smart_writers.png" alt="Smart Writers">
+				</picture>
+			</h3>
+			<p class="txt_info">* 해당 교재는 Unit 1 만 액션기능이 포함된 검토용 e-book입니다</p>
+		</div>
+		<ul class="series_list">
+			<li>
+				<p class="tit">Smart Writers 1</p>
+				<div class="info_txt">
+					<p class="type type1">Paragraph Writing</p>
+					<p class="level">Intermediate, Upper Elementry</p>
+				</div>
+				<div class="cover_wrap">
+					<p class="txt_info">* 해당 교재는 Unit 1 만 액션기능이 포함된 검토용 e-book입니다</p>
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW1_SB_watermarkSample_OkcsX4/" class="sb" target="_blank">
+						<span class="book_type">Student Book</span>
+						<span class="cover"><img src="sw_sb_1.jpg" alt=""></span>
+					</a>
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW1_WB_watermarkSample_B2pja9/" class="wb" target="_blank">
+						<span class="book_type">Workbook</span>
+						<span class="cover"><img src="sw_wb_1.jpg" alt=""></span>
+					</a>
+				</div>
+				<button type="button" class="btn_more">Learn more</button>
+				<dl class="book_detail">
+					<dt>학습대상</dt>
+					<dd>영어학습 6년차 +</dd>
+					<dt>CEFR</dt>
+					<dd>A2 Low</dd>
+					<dt>Word Count</dt>
+					<dd>110</dd>
+					<dt>Book Style</dt>
+					<dd>Student Book + Workbook (책속의 책)</dd>
+				</dl>
+			</li>
+			<li>
+				<p class="tit">Smart Writers 2</p>
+				<div class="info_txt">
+					<p class="type type2">Paragraph Types</p>
+					<p class="level">Intermediate, Upper Elementry</p>
+				</div>
+				<div class="cover_wrap">
+					<p class="txt_info">* 해당 교재는 Unit 1 만 액션기능이 포함된 검토용 e-book입니다</p>
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW2_SB_watermarkSample_asAH5S/" class="sb" target="_blank">
+						<span class="book_type">Student Book</span>
+						<span class="cover sb"><img src="sw_sb_2.jpg" alt=""></span>
+					</a>
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW2_WB_watermarkSample_7rmWlw/" class="wb" target="_blank">
+						<span class="book_type">Workbook</span>
+						<span class="cover wb"><img src="sw_wb_2.jpg" alt=""></span>
+					</a>
+				</div>
+				<button type="button" class="btn_more">Learn more</button>
+				<dl class="book_detail">
+					<dt>학습대상</dt>
+					<dd>영어학습 6년차 +</dd>
+					<dt>CEFR</dt>
+					<dd>A2 Low</dd>
+					<dt>Word Count</dt>
+					<dd>110</dd>
+					<dt>Book Style</dt>
+					<dd>Student Book + Workbook (책속의 책)</dd>
+				</dl>
+			</li>
+			<li>
+				<p class="tit">Smart Writers 3</p>
+				<div class="info_txt">
+					<p class="type type3">Essay Writing</p>
+					<p class="level">Intermediate, Upper Elementry</p>
+				</div>
+				<div class="cover_wrap">
+					<p class="txt_info">* 해당 교재는 Unit 1 만 액션기능이 포함된 검토용 e-book입니다</p>	
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW2_SB_watermarkSample_asAH5S/" class="sb" target="_blank">
+						<span class="book_type">Student Book</span>
+						<span class="cover sb"><img src="sw_sb_3.jpg" alt=""></span>
+					</a>
+					<a href="https://ebook.seed-learning.com/watermarkSample/SW2_WB_watermarkSample_7rmWlw/" class="wb" target="_blank">
+						<span class="book_type">Workbook</span>
+						<span class="cover wb"><img src="sw_wb_3.jpg" alt=""></span>
+					</a>
+				</div>
+				<button type="button" class="btn_more">Learn more</button>
+				<dl class="book_detail">
+					<dt>학습대상</dt>
+					<dd>영어학습 6년차 +</dd>
+					<dt>CEFR</dt>
+					<dd>A2 Low</dd>
+					<dt>Word Count</dt>
+					<dd>110</dd>
+					<dt>Book Style</dt>
+					<dd>Student Book + Workbook (책속의 책)</dd>
+				</dl>
+			</li>
+		</ul>
+	</section>
+	<section class="section_list">
+		<div class="tit_wrap">
+			<h3>
+				<picture>
+					<source media="(max-width:768px)" srcset="txt_writing_series_m.png"> <!-- MO 이미지 -->
+					<source media="(min-width:769px)" srcset="txt_writing_series.png"> <!-- PC 이미지 -->
+					<img src="txt_writing_series.png" alt="Seed Learning Writing Series">
+				</picture>
+			</h3>
+		</div>
+		<ul class="series_list more">
+			<li>
+				<a href="https://www.seed-learning.com/pages/books/book_list.asp?category=13&series=37&target=#searchAfter" target="_blank">
+					<p class="tit">Writing Time</p>
+					<div class="info_txt">
+						<p class="level">Lower Elementary</p>
+					</div>
+					<div class="cover_wrap">
+						<span class="cover"><img src="cover_wt.jpg" alt=""></span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.seed-learning.com/pages/books/book_list.asp?category=13&series=29&target=#searchAfter" target="_blank">
+					<p class="tit">Early Writers</p>
+					<div class="info_txt">
+						<p class="level">Lower Elementary</p>
+					</div>
+					<div class="cover_wrap">
+						<span class="cover"><img src="cover_ew.jpg" alt=""></span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.seed-learning.com/pages/books/book_list.asp?category=13&series=34&target=#searchAfter" target="_blank">
+					<p class="tit">Good Writers</p>
+					<div class="info_txt">
+						<p class="level">Lower Elementary</p>
+					</div>
+					<div class="cover_wrap">
+						<span class="cover"><img src="cover_gw.jpg" alt=""></span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+</main>
+
+
+<script type="text/javascript">
+//document.addEventListener('DOMContentLoaded', function() {
+//    const originalLi = document.querySelector('.series_list li');
+//    for(let i = 0; i < 2; i++) {
+//        document.querySelector('.series_list').appendChild(originalLi.cloneNode(true));
+//    }
+//});
+
+$(document).ready(function() {
+   $('.btn_more').click(function() {
+       $(this).toggleClass('on');
+	   $(this).next('.book_detail').fadeToggle(300);
+   });
+
+   $(window).resize(function() {
+        checkScreenSize();
+    });
+});
+
+function checkScreenSize() {
+	const bookDetail = $('.book_detail');
+	const btnMore = $('.btn_more');
+
+	if (window.innerWidth >= 768) {
+		bookDetail.show();
+		btnMore.hide();
+	} else {
+		bookDetail.hide();
+		btnMore.show();
+	}
+}
+</script>
+</body>
+</html>
